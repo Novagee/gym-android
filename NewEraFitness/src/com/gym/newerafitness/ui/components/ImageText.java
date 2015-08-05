@@ -75,7 +75,7 @@ public class ImageText extends LinearLayout{
 		case Constant.BTN_FLAG_HOME:
 			checkDrawableId = R.drawable.ico_home_selected;
 			break;
-		case Constant.BTN_FLAG_CONTACTS:
+		case Constant.BTN_FLAG_MESSAGE:
 			checkDrawableId = R.drawable.ico_contacts_selected;
 			break;
 		case Constant.BTN_FLAG_BOOK:

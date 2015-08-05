@@ -18,7 +18,7 @@ import com.gym.newerafitness.ui.components.HeadControlPanel;
 import com.gym.newerafitness.ui.components.BottomControlPanel.BottomPanelCallback;
 import com.gym.newerafitness.ui.fragment.BaseFragment;
 import com.gym.newerafitness.ui.fragment.HomeFragment;
-import com.gym.newerafitness.ui.fragment.ContactsFragment;
+import com.gym.newerafitness.ui.fragment.MessageFragment;
 import com.gym.newerafitness.ui.fragment.BookFragment;
 import com.gym.newerafitness.ui.fragment.NearbyFragment;
 
@@ -71,8 +71,8 @@ public class MainActivity extends Activity implements BottomPanelCallback {
 		String tag = "";
 		if((itemId & Constant.BTN_FLAG_HOME) != 0){
 			tag = Constant.FRAGMENT_FLAG_HOME;
-		}else if((itemId & Constant.BTN_FLAG_CONTACTS) != 0){
-			tag = Constant.FRAGMENT_FLAG_CONTACTS;
+		}else if((itemId & Constant.BTN_FLAG_MESSAGE) != 0){
+			tag = Constant.FRAGMENT_FLAG_MESSAGE;
 		}else if((itemId & Constant.BTN_FLAG_BOOK) != 0){
 			tag = Constant.FRAGMENT_FLAG_BOOK;
 		}else if((itemId & Constant.BTN_FLAG_NEARBY) != 0){

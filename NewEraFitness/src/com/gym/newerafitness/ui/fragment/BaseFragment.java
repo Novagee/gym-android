@@ -98,8 +98,8 @@ public class BaseFragment extends Fragment {
 		BaseFragment baseFragment =  null;
 		if(TextUtils.equals(tag, Constant.FRAGMENT_FLAG_HOME)){
 			baseFragment = new HomeFragment();
-		}else if(TextUtils.equals(tag, Constant.FRAGMENT_FLAG_CONTACTS)){
-			baseFragment = new ContactsFragment();
+		}else if(TextUtils.equals(tag, Constant.FRAGMENT_FLAG_MESSAGE)){
+			baseFragment = new MessageFragment();
 		}else if(TextUtils.equals(tag, Constant.FRAGMENT_FLAG_BOOK)){
 			baseFragment = new BookFragment();
 		}else if(TextUtils.equals(tag, Constant.FRAGMENT_FLAG_NEARBY)){

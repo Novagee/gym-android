@@ -21,7 +21,7 @@ import com.gym.newerafitness.adapter.MessageAdapter;
 import com.gym.newerafitness.bean.MessageBean;
 import com.gym.newerafitness.constant.Constant;
 
-public class ContactsFragment extends BaseFragment {
+public class MessageFragment extends BaseFragment {
 
 	private static final String TAG = "MessageFragment";
 	private MainActivity mMainActivity ;
@@ -30,11 +30,18 @@ public class ContactsFragment extends BaseFragment {
 	private List<MessageBean> mMsgBean = new ArrayList<MessageBean>();
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
+		/*
 		View messageLayout = inflater.inflate(R.layout.contacts_layout,
-				container, false);
+				container, false);*/
 		Log.d(TAG, "onCreateView---->");
 		mMainActivity = (MainActivity) getActivity();
 		mFragmentManager = getActivity().getFragmentManager();
+		
+		View messageLayout = inflater.inflate(R.layout.contacts_tabwidget,
+				container, false);
+		
+	
+		/*
 		mListView = (ListView)messageLayout.findViewById(R.id.listview_message);
 		mMsgAdapter = new MessageAdapter(mMsgBean, mMainActivity);
 		mListView.setAdapter(mMsgAdapter);
@@ -49,6 +56,8 @@ public class ContactsFragment extends BaseFragment {
 			}
 
 		});
+		
+		*/
 		return messageLayout;
 	}
 
@@ -96,7 +105,7 @@ public class ContactsFragment extends BaseFragment {
 		// TODO Auto-generated method stub
 		super.onResume();
 		Log.e(TAG, "onresume---->");
-		MainActivity.currFragTag = Constant.FRAGMENT_FLAG_CONTACTS;
+		MainActivity.currFragTag = Constant.FRAGMENT_FLAG_MESSAGE;
 	}
 
 	@Override

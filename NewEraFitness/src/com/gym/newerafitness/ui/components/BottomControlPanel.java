@@ -88,8 +88,8 @@ public class BottomControlPanel extends RelativeLayout implements View.OnClickLi
 			mHomeBtn.setChecked(Constant.BTN_FLAG_HOME);
 			break;
 		case R.id.btn_contacts:
-			index = Constant.BTN_FLAG_CONTACTS;
-			mContactsBtn.setChecked(Constant.BTN_FLAG_CONTACTS);
+			index = Constant.BTN_FLAG_MESSAGE;
+			mContactsBtn.setChecked(Constant.BTN_FLAG_MESSAGE);
 			break;
 		case R.id.btn_book:
 			index = Constant.BTN_FLAG_BOOK;
