@@ -44,7 +44,7 @@ public class MessageAdapter extends BaseAdapter {
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
-		View v = mInflater.inflate(R.layout.contacts_item_layout, null);
+		View v = mInflater.inflate(R.layout.message_item_layout, null);
 		
 		ImageView imageView = (ImageView) v.findViewById(R.id.img_msg_item);
 		imageView.setImageResource(mListMsgBean.get(position).getPhotoDrawableId());

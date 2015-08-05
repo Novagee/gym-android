@@ -37,7 +37,7 @@ public class MessageFragment extends BaseFragment {
 		mMainActivity = (MainActivity) getActivity();
 		mFragmentManager = getActivity().getFragmentManager();
 		
-		View messageLayout = inflater.inflate(R.layout.contacts_tabwidget,
+		View messageLayout = inflater.inflate(R.layout.message_tabwidget,
 				container, false);
 		
 	
