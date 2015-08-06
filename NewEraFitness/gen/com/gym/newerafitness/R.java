@@ -84,10 +84,13 @@ public final class R {
         public static final int head_panel_layout=0x7f030003;
         public static final int home_layout=0x7f030004;
         public static final int image_text_layout=0x7f030005;
-        public static final int message_item_layout=0x7f030006;
-        public static final int message_layout=0x7f030007;
-        public static final int message_tabwidget=0x7f030008;
-        public static final int nearby_layout=0x7f030009;
+        public static final int message_contacts_layout=0x7f030006;
+        public static final int message_history_layout=0x7f030007;
+        public static final int message_item_layout=0x7f030008;
+        public static final int message_layout=0x7f030009;
+        public static final int message_tabwidget=0x7f03000a;
+        public static final int message_talk_layout=0x7f03000b;
+        public static final int nearby_layout=0x7f03000c;
     }
     public static final class menu {
         public static final int main=0x7f080000;

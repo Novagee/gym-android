@@ -1,28 +1,24 @@
 package com.gym.newerafitness;
 
 
-import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
 import android.widget.Toast;
 
-import com.gym.newerafitness.R;
 import com.gym.newerafitness.constant.Constant;
 import com.gym.newerafitness.ui.components.BottomControlPanel;
-import com.gym.newerafitness.ui.components.HeadControlPanel;
 import com.gym.newerafitness.ui.components.BottomControlPanel.BottomPanelCallback;
+import com.gym.newerafitness.ui.components.HeadControlPanel;
 import com.gym.newerafitness.ui.fragment.BaseFragment;
-import com.gym.newerafitness.ui.fragment.HomeFragment;
-import com.gym.newerafitness.ui.fragment.MessageFragment;
-import com.gym.newerafitness.ui.fragment.BookFragment;
-import com.gym.newerafitness.ui.fragment.NearbyFragment;
 
-public class MainActivity extends Activity implements BottomPanelCallback {
+public class MainActivity extends FragmentActivity implements BottomPanelCallback {
 	BottomControlPanel bottomPanel = null;
 	HeadControlPanel headPanel = null;
 	
@@ -40,7 +36,7 @@ public class MainActivity extends Activity implements BottomPanelCallback {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		initUI();
-		fragmentManager = getFragmentManager();
+		fragmentManager = this.getSupportFragmentManager();
 		setDefaultFirstFragment(Constant.FRAGMENT_FLAG_HOME);
 	}
 
