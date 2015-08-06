@@ -1,0 +1,6 @@
+package com.jianyue;
+
+public enum FLASH_MODE
+{
+	OFF,ON,AUTO
+}

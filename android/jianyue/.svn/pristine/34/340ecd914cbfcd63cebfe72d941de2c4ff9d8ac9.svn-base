@@ -1,0 +1,51 @@
+<resources>
+
+    
+    <bool name="isTablet">true</bool>
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+   <!-- text sizes -->
+    <dimen name="txt_8sp">10sp</dimen>
+    <dimen name="txt_9sp">11sp</dimen>
+    <dimen name="txt_10sp">12sp</dimen>
+    <dimen name="txt_11sp">13sp</dimen>
+    <dimen name="txt_12sp">14sp</dimen>
+    <dimen name="txt_13sp">15sp</dimen>
+    <dimen name="txt_15sp">17sp</dimen>
+    <dimen name="txt_16sp">18sp</dimen>
+    <dimen name="txt_17sp">19sp</dimen>
+    <dimen name="txt_18sp">20sp</dimen>
+    <dimen name="txt_20sp">22sp</dimen>
+    <dimen name="txt_22sp">24sp</dimen>
+    <dimen name="txt_24sp">26sp</dimen>
+    <dimen name="txt_26sp">28sp</dimen>
+    <dimen name="txt_28sp">30sp</dimen>
+    <dimen name="txt_32sp">36sp</dimen>
+    <dimen name="txt_38sp">40sp</dimen>
+    <dimen name="txt_42sp">52sp</dimen>
+    <dimen name="txt_55sp">60sp</dimen>
+    <dimen name="txt_70sp">80sp</dimen>
+
+    <!-- dimensions -->
+    <dimen name="scale_divider">1dp</dimen>
+    <dimen name="scale_1dp">1dp</dimen>
+    <dimen name="scale_2dp">3dp</dimen>
+    <dimen name="scale_3dp">4dp</dimen>
+    <dimen name="scale_5dp">7dp</dimen>
+    <dimen name="scale_7dp">10dp</dimen>
+    <dimen name="scale_10dp">13dp</dimen>
+    <dimen name="scale_15dp">18dp</dimen>
+    <dimen name="scale_20dp">25dp</dimen>
+    <dimen name="scale_25dp">30dp</dimen>
+    <dimen name="scale_30dp">36dp</dimen>
+    <dimen name="scale_40dp">47dp</dimen>
+    <dimen name="scale_45dp">51dp</dimen>
+    <dimen name="scale_90dp">105dp</dimen>
+    <dimen name="scale_60dp">68dp</dimen>
+    
+    <dimen name="camara_marign_bottom">80dp</dimen>
+
+</resources>

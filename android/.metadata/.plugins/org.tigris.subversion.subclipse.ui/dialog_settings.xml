@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="500" key="CommitDialog.weights.0"/>
+	<item value="500" key="CommitDialog.weights.1"/>
+	<item value="564" key="passwordStores.size.y"/>
+	<item value="556" key="passwordStores.size.x"/>
+	<item value="695" key="MarkResolvedDialog.location.x"/>
+	<item value="230" key="MarkResolvedDialog.location.y"/>
+	<item value="278" key="HistoryTableProvider.SVNHistoryPage.Author"/>
+	<item value="22" key="CommitDialog.location.y"/>
+	<item value="377" key="CommitDialog.location.x"/>
+	<item value="70" key="passwordStores.location.y"/>
+	<item value="682" key="passwordStores.location.x"/>
+	<item value="530" key="MarkResolvedDialog.size.x"/>
+	<item value="428" key="MarkResolvedDialog.size.y"/>
+	<item value="http://198.100.174.20:83/svn/android/trunk" key="RepositorySelectionPage.lastRepository"/>
+	<item value="347" key="HistoryTableProvider.SVNHistoryPage.Date"/>
+	<item value="1167" key="CommitDialog.size.x"/>
+	<item value="693" key="HistoryTableProvider.SVNHistoryPage.Comment"/>
+	<item value="987" key="CommitDialog.size.y"/>
+	<item value="139" key="HistoryTableProvider.SVNHistoryPage.Revision"/>
+	<item value="" key="DirectorySelectionPage.lastParent_http://198.100.174.20:83/svn/android/trunk"/>
+	<section name="CommitWizard">
+		<item value="false" key="ShowCompare"/>
+		<item value="500" key="VWeight2"/>
+		<item value="500" key="VWeight1"/>
+	</section>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="http://198.100.174.20:83/svn/android/trunk/"/>
+			<item value=""/>
+		</list>
+	</section>
+</section>

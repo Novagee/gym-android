@@ -1,0 +1,373 @@
+package com.jianyue;
+
+import java.io.File;
+import java.util.ArrayList;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
+import android.os.Parcelable;
+import android.preference.PreferenceManager;
+import android.provider.ContactsContract.CommonDataKinds.Im;
+import android.provider.MediaStore;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.Display;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ImageView.ScaleType;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
+
+public class MainActivity extends Activity {
+
+	ScrollView scrollImages;
+	int postion = 0;
+	float y, after_scrool_y;
+	ImageView ivCamera;
+	SharedPreferences pref;
+	int image_no;
+	Bitmap current_photo = null;
+	String file_path;
+	int width, height;
+	LinearLayout llImages;
+	int img_id = 0;
+	ArrayList<String> f = new ArrayList<String>();// list of file paths
+	File[] listFile;
+	ViewPager pager;
+	View v;
+	public static Bitmap bmp;
+	public static boolean is_Add = false;
+	Button btnMale, btnFemale, btnOther;
+	ImageView ivGender;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		pref = PreferenceManager.getDefaultSharedPreferences(this);
+		WindowManager wm = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
+		Display display = wm.getDefaultDisplay();
+		DisplayMetrics metrics = new DisplayMetrics();
+		display.getMetrics(metrics);
+		width = metrics.widthPixels;
+		height = metrics.heightPixels;
+		pager = (ViewPager) findViewById(R.id.viewPager);
+		pager.setOffscreenPageLimit(4);
+		/*
+		 * pager.setOnPageChangeListener(new OnPageChangeListener() {
+		 * 
+		 * @Override public void onPageSelected(int arg0) {
+		 * Toast.makeText(MainActivity.this, "Page " + arg0 + " Selected",
+		 * Toast.LENGTH_LONG).show(); }
+		 * 
+		 * @Override public void onPageScrolled(int arg0, float arg1, int arg2)
+		 * { // TODO Auto-generated method stub
+		 * 
+		 * }
+		 * 
+		 * @Override public void onPageScrollStateChanged(int arg0) { // TODO
+		 * Auto-generated method stub
+		 * 
+		 * } });
+		 */
+		pager.setAdapter(new ViewPagerAdapter());
+		pager.setCurrentItem(3);
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		if (is_Add) {
+			is_Add = false;
+			img_id++;
+			ImageView image = new ImageView(MainActivity.this);
+			image.setId(img_id);
+			bmp = Bitmap.createScaledBitmap(bmp, width, height, true);
+			image.setImageBitmap(bmp);
+			image.setScaleType(ScaleType.FIT_XY);
+			llImages.addView(image);
+		}
+	}
+
+	public void getFromSdcard() {
+		File file = new File(
+				android.os.Environment.getExternalStorageDirectory(), "Demo");
+
+		if (file.isDirectory()) {
+			listFile = file.listFiles();
+
+			for (int i = 0; i < listFile.length; i++) {
+
+				f.add(listFile[i].getAbsolutePath());
+
+			}
+		}
+	}
+
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		Log.d("req code", "" + requestCode);
+		Log.d("resultCode ", "" + resultCode);
+		if (resultCode == RESULT_OK) {
+			switch (requestCode) {
+
+			case 1001:
+
+				File folder = null;
+				if (Environment.getExternalStorageState().equals(
+						Environment.MEDIA_MOUNTED)) {
+					folder = new File(
+							Environment.getExternalStorageDirectory(), "/Demo/");
+					if (!folder.isDirectory()) {
+						folder.mkdir();
+					}
+				} else {
+					folder = getDir("Demo", Context.MODE_WORLD_READABLE);
+				}
+				image_no = pref.getInt("Image_No", 1);
+				File fileCamera = new File(folder, "Demo_" + image_no + ".png");
+				image_no++;
+				Editor edit = pref.edit();
+				edit.putInt("Image_No", image_no);
+				edit.commit();
+				file_path = fileCamera.getPath();
+				try {
+					current_photo = BitmapFactory.decodeFile(fileCamera
+							.getPath());
+					current_photo = Bitmap.createScaledBitmap(current_photo,
+							width, height, true);
+					img_id++;
+					ImageView image = new ImageView(MainActivity.this);
+					image.setId(img_id);
+					image.setImageBitmap(current_photo);
+					image.setScaleType(ScaleType.FIT_XY);
+					llImages.addView(image);
+
+				} catch (Exception e) {
+
+				}
+
+				break;
+			}
+		}
+	};
+
+	public class ViewPagerAdapter extends PagerAdapter {
+		// private DisplayImageOptions options_view_pager;
+
+		public int getCount() {
+			return 4;
+		}
+
+		public ViewPagerAdapter() {
+			// options_view_pager = new
+			// DisplayImageOptions.Builder().showStubImage(R.drawable.big_default_image).showImageForEmptyUri(R.drawable.big_default_image)
+			// .showImageOnFail(R.drawable.big_default_image).cacheInMemory(true).cacheOnDisc(true).build();
+		}
+
+		public View instantiateItem(View collection, int position) {
+			v = null;
+
+			switch (position) {
+			case 0:
+				v = MainActivity.this.getLayoutInflater().inflate(
+						R.layout.pref_screen, null);
+				btnMale = (Button) v.findViewById(R.id.btnMale);
+				btnFemale = (Button) v.findViewById(R.id.btnFemale);
+				btnOther = (Button) v.findViewById(R.id.btnOther);
+				ivGender = (ImageView) v.findViewById(R.id.ivGender);
+
+				btnMale.setOnClickListener(new OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
+						ivGender.setBackgroundResource(R.drawable.gender_m);
+					}
+				});
+
+				btnFemale.setOnClickListener(new OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
+						ivGender.setBackgroundResource(R.drawable.gender_f);
+					}
+				});
+
+				btnOther.setOnClickListener(new OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
+						ivGender.setBackgroundResource(R.drawable.gender_o);
+					}
+				});
+				break;
+			case 1:
+				v = MainActivity.this.getLayoutInflater().inflate(
+						R.layout.friends_list, null);
+				break;
+			case 2:
+				v = MainActivity.this.getLayoutInflater().inflate(
+						R.layout.message_list, null);
+				break;
+			case 3:
+				v = MainActivity.this.getLayoutInflater().inflate(
+						R.layout.nearby_people, null);
+				llImages = (LinearLayout) v.findViewById(R.id.llImages);
+
+				ivCamera = (ImageView) v.findViewById(R.id.ivCamera);
+				ivCamera.setOnClickListener(new OnClickListener() {
+
+					@Override
+					public void onClick(View arg0) {
+						// Intent intentCamera = new
+						// Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+						//
+						// File folder = null;
+						// if
+						// (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED))
+						// {
+						// folder = new
+						// File(Environment.getExternalStorageDirectory(),
+						// "/Demo/");
+						// if (!folder.isDirectory()) {
+						// folder.mkdir();
+						// }
+						// } else {
+						// folder = MainActivity.this.getDir("Demo",
+						// Context.MODE_WORLD_READABLE);
+						// }
+						// image_no = pref.getInt("Image_No", 1);
+						// File fileCamera = new File(folder, "Demo_" + image_no
+						// + ".png");
+						// Uri uri = Uri.fromFile(fileCamera);
+						// intentCamera.putExtra(MediaStore.EXTRA_OUTPUT, uri);
+						// intentCamera.putExtra("return-data", true);
+						// MainActivity.this.startActivityForResult(intentCamera,1001);
+						Intent i = new Intent(MainActivity.this,
+								TakePictureActivity.class);
+						MainActivity.this.startActivity(i);
+						MainActivity.this.overridePendingTransition(R.anim.slide_up,R.anim.slide_up_out);
+					}
+				});
+
+				getFromSdcard();
+
+				if (f.size() > 0) {
+					for (int i = 0; i < f.size(); i++) {
+						try {
+							/*
+							 * if (current_photo != null) {
+							 * current_photo.recycle(); current_photo = null; }
+							 */
+							current_photo = BitmapFactory.decodeFile(f.get(i));
+							current_photo = Bitmap.createScaledBitmap(
+									current_photo, width, height, true);
+							img_id++;
+							ImageView image = new ImageView(MainActivity.this);
+							image.setId(img_id);
+							image.setImageBitmap(current_photo);
+							image.setScaleType(ScaleType.FIT_XY);
+							llImages.addView(image);
+
+						} catch (Exception e) {
+
+						}
+					}
+				}
+				scrollImages = (ScrollView) v.findViewById(R.id.scrollImages);
+				scrollImages.setOnTouchListener(new OnTouchListener() {
+
+					@Override
+					public boolean onTouch(View view, MotionEvent event) {
+						switch (event.getAction()) {
+
+						case MotionEvent.ACTION_DOWN:
+							y = event.getY();
+							break;
+						case MotionEvent.ACTION_MOVE:
+							view.onTouchEvent(event);
+							break;
+						case MotionEvent.ACTION_UP:
+							after_scrool_y = event.getY();
+							if (after_scrool_y - y > 20) {
+								if (postion > 0) {
+									postion--;
+									new Handler().post(new Runnable() {
+										@Override
+										public void run() {
+											scrollImages.smoothScrollTo(0,
+													postion * height);
+										}
+									});
+								}
+							} else if (y - after_scrool_y > 20) {
+								if (postion < img_id - 1) {
+									postion++;
+									new Handler().post(new Runnable() {
+										@Override
+										public void run() {
+											scrollImages.smoothScrollTo(0,
+													postion * height);
+										}
+									});
+								}
+							}
+							break;
+						}
+						return true;
+					}
+				});
+				break;
+			}
+
+			((ViewPager) collection).addView(v, 0);
+			return v;
+		}
+
+		@Override
+		public void destroyItem(View arg0, int arg1, Object arg2) {
+			((ViewPager) arg0).removeView((View) arg2);
+		}
+
+		@Override
+		public boolean isViewFromObject(View arg0, Object arg1) {
+			return arg0 == ((View) arg1);
+		}
+
+		@Override
+		public Parcelable saveState() {
+			return null;
+		}
+
+		@Override
+		public void finishUpdate(View arg0) {
+			Log.d("Tag", "FinishUpdate");
+		}
+
+		@Override
+		public void restoreState(Parcelable arg0, ClassLoader arg1) {
+			Log.d("Tag", "restoreState");
+		}
+
+		@Override
+		public void startUpdate(View arg0) {
+			Log.d("Tag", "startUpdate");
+		}
+
+	}
+}

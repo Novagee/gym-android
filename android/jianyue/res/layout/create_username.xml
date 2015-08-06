@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ivCoverImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.382"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover_image"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.618"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:paddingBottom="@dimen/scale_5dp"
+            android:paddingTop="@dimen/scale_5dp"
+            android:hint="@string/Nickname"
+            android:text="" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/ivLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_pink" />
+
+        <ImageView
+            android:id="@+id/ivOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/scale_30dp"
+            android:src="@drawable/ok_160" />
+    </LinearLayout>
+
+</LinearLayout>
