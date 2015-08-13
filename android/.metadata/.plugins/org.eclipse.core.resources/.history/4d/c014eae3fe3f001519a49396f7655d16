@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+   
+  <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrollEvent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both" >
+
+        <LinearLayout
+            android:id="@+id/llEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg_color"
+        android:padding="@dimen/scale_10dp" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/EventTitle"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_26sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/scale_30dp"
+        android:background="@color/pref_bg_color"
+        android:paddingBottom="@dimen/scale_5dp"
+        android:paddingLeft="@dimen/scale_10dp"
+        android:paddingRight="@dimen/scale_10dp"
+        android:paddingTop="@dimen/scale_5dp" >
+
+        <ListView 
+    android:id="@+id/listview_event"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@color/divider_color"
+    android:dividerHeight="1dip"></ListView>
+    </LinearLayout>
+
+    
+
+</LinearLayout>
+
+  
+
+</FrameLayout>

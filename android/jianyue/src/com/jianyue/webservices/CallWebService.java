@@ -19,7 +19,7 @@ import android.util.Log;
 
 public class CallWebService
 {
-	private static String URL = "http://198.100.174.20/jy/";
+	private static String URL = "http://123.56.155.120/jy/";
 
 	public static String convertStringToURL(String str) {
         String myString = null;

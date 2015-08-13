@@ -1228,7 +1228,7 @@ containing a value of this type.
         public static final int isTablet=0x7f09000b;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f080017;
+        public static final int abc_search_url_text_holo=0x7f080019;
         public static final int abc_search_url_text_normal=0x7f080011;
         public static final int abc_search_url_text_pressed=0x7f080013;
         public static final int abc_search_url_text_selected=0x7f080012;
@@ -1241,6 +1241,10 @@ containing a value of this type.
         public static final int default_title_indicator_selected_color=0x7f08000e;
         public static final int default_title_indicator_text_color=0x7f08000f;
         public static final int default_underline_indicator_selected_color=0x7f080010;
+        public static final int divider_color=0x7f080018;
+        public static final int event_bg_color=0x7f080017;
+        /**  <color name="main_bg_color">#F92869</color> 
+         */
         public static final int main_bg_color=0x7f080014;
         public static final int pref_bg_color=0x7f080016;
         public static final int pref_text_color=0x7f080015;
@@ -1252,8 +1256,8 @@ containing a value of this type.
         public static final int vpi__bright_foreground_holo_light=0x7f080003;
         public static final int vpi__bright_foreground_inverse_holo_dark=0x7f080006;
         public static final int vpi__bright_foreground_inverse_holo_light=0x7f080007;
-        public static final int vpi__dark_theme=0x7f080018;
-        public static final int vpi__light_theme=0x7f080019;
+        public static final int vpi__dark_theme=0x7f08001a;
+        public static final int vpi__light_theme=0x7f08001b;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1345,6 +1349,10 @@ containing a value of this type.
          Example customization of dimensions originally defined in res/values/dimens.xml
          (such as screen margins) for screens with more than 820dp of available width. This
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    
+
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
         public static final int activity_horizontal_margin=0x7f060023;
@@ -1532,77 +1540,83 @@ containing a value of this type.
         public static final int got_it=0x7f020066;
         public static final int green_toast=0x7f020067;
         public static final int ic_launcher=0x7f020068;
-        public static final int indicator_arrow=0x7f020069;
-        public static final int indicator_bg_bottom=0x7f02006a;
-        public static final int indicator_bg_top=0x7f02006b;
-        public static final int invite_friend=0x7f02006c;
-        public static final int line_pink=0x7f02006d;
-        public static final int logo_border=0x7f02006e;
-        public static final int map_pin=0x7f02006f;
-        public static final int message_accept=0x7f020070;
-        public static final int message_add_friend=0x7f020071;
-        public static final int message_close=0x7f020072;
-        public static final int message_compose=0x7f020073;
-        public static final int message_friend=0x7f020074;
-        public static final int message_friend_tutorial=0x7f020075;
-        public static final int message_icon=0x7f020076;
-        public static final int message_icon_1=0x7f020077;
-        public static final int message_ok=0x7f020078;
-        public static final int message_reply=0x7f020079;
-        public static final int near_by_tutorial=0x7f02007a;
-        public static final int notification_badge=0x7f02007b;
-        public static final int off=0x7f02007c;
-        public static final int ok_160=0x7f02007d;
-        public static final int ok_icon=0x7f02007e;
-        public static final int on=0x7f02007f;
-        public static final int panel_bg_holo_dark=0x7f020080;
-        public static final int panel_bg_holo_light=0x7f020081;
-        public static final int progress_bg_holo_dark=0x7f020082;
-        public static final int progress_bg_holo_light=0x7f020083;
-        public static final int progress_horizontal_holo_dark=0x7f020084;
-        public static final int progress_horizontal_holo_light=0x7f020085;
-        public static final int progress_indeterminate_horizontal_holo=0x7f020086;
-        public static final int progress_large_holo=0x7f020087;
-        public static final int progress_medium_holo=0x7f020088;
-        public static final int progress_primary_holo_dark=0x7f020089;
-        public static final int progress_primary_holo_light=0x7f02008a;
-        public static final int progress_secondary_holo_dark=0x7f02008b;
-        public static final int progress_secondary_holo_light=0x7f02008c;
-        public static final int progress_small_holo=0x7f02008d;
-        public static final int progressbar_indeterminate_holo1=0x7f02008e;
-        public static final int progressbar_indeterminate_holo2=0x7f02008f;
-        public static final int progressbar_indeterminate_holo3=0x7f020090;
-        public static final int progressbar_indeterminate_holo4=0x7f020091;
-        public static final int progressbar_indeterminate_holo5=0x7f020092;
-        public static final int progressbar_indeterminate_holo6=0x7f020093;
-        public static final int progressbar_indeterminate_holo7=0x7f020094;
-        public static final int progressbar_indeterminate_holo8=0x7f020095;
-        public static final int red_toast=0x7f020096;
-        public static final int scroll_arrow=0x7f020097;
-        public static final int setting_border_icon=0x7f020098;
-        public static final int setting_icon=0x7f020099;
-        public static final int shorts=0x7f02009a;
-        public static final int spinner_16_inner_holo=0x7f02009b;
-        public static final int spinner_16_outer_holo=0x7f02009c;
-        public static final int spinner_20_inner_holo=0x7f02009d;
-        public static final int spinner_20_outer_holo=0x7f02009e;
-        public static final int spinner_48_inner_holo=0x7f02009f;
-        public static final int spinner_48_outer_holo=0x7f0200a0;
-        public static final int spinner_76_inner_holo=0x7f0200a1;
-        public static final int spinner_76_outer_holo=0x7f0200a2;
-        public static final int take_photo_bottom=0x7f0200a3;
-        public static final int take_photo_top=0x7f0200a4;
-        public static final int toggle_btn=0x7f0200a5;
-        public static final int unfriend=0x7f0200a6;
-        public static final int username_bg=0x7f0200a7;
-        public static final int vpi__tab_indicator=0x7f0200a8;
-        public static final int vpi__tab_selected_focused_holo=0x7f0200a9;
-        public static final int vpi__tab_selected_holo=0x7f0200aa;
-        public static final int vpi__tab_selected_pressed_holo=0x7f0200ab;
-        public static final int vpi__tab_unselected_focused_holo=0x7f0200ac;
-        public static final int vpi__tab_unselected_holo=0x7f0200ad;
-        public static final int vpi__tab_unselected_pressed_holo=0x7f0200ae;
-        public static final int wechat=0x7f0200af;
+        public static final int ico_left_white=0x7f020069;
+        public static final int ico_love=0x7f02006a;
+        public static final int ico_money=0x7f02006b;
+        public static final int ico_pos=0x7f02006c;
+        public static final int ico_time=0x7f02006d;
+        public static final int indicator_arrow=0x7f02006e;
+        public static final int indicator_bg_bottom=0x7f02006f;
+        public static final int indicator_bg_top=0x7f020070;
+        public static final int invite_friend=0x7f020071;
+        public static final int line_pink=0x7f020072;
+        public static final int logo_border=0x7f020073;
+        public static final int map_pin=0x7f020074;
+        public static final int message_accept=0x7f020075;
+        public static final int message_add_friend=0x7f020076;
+        public static final int message_close=0x7f020077;
+        public static final int message_compose=0x7f020078;
+        public static final int message_friend=0x7f020079;
+        public static final int message_friend_tutorial=0x7f02007a;
+        public static final int message_icon=0x7f02007b;
+        public static final int message_icon_1=0x7f02007c;
+        public static final int message_ok=0x7f02007d;
+        public static final int message_reply=0x7f02007e;
+        public static final int near_by_tutorial=0x7f02007f;
+        public static final int notification_badge=0x7f020080;
+        public static final int off=0x7f020081;
+        public static final int ok_160=0x7f020082;
+        public static final int ok_icon=0x7f020083;
+        public static final int on=0x7f020084;
+        public static final int panel_bg_holo_dark=0x7f020085;
+        public static final int panel_bg_holo_light=0x7f020086;
+        public static final int progress_bg_holo_dark=0x7f020087;
+        public static final int progress_bg_holo_light=0x7f020088;
+        public static final int progress_horizontal_holo_dark=0x7f020089;
+        public static final int progress_horizontal_holo_light=0x7f02008a;
+        public static final int progress_indeterminate_horizontal_holo=0x7f02008b;
+        public static final int progress_large_holo=0x7f02008c;
+        public static final int progress_medium_holo=0x7f02008d;
+        public static final int progress_primary_holo_dark=0x7f02008e;
+        public static final int progress_primary_holo_light=0x7f02008f;
+        public static final int progress_secondary_holo_dark=0x7f020090;
+        public static final int progress_secondary_holo_light=0x7f020091;
+        public static final int progress_small_holo=0x7f020092;
+        public static final int progressbar_indeterminate_holo1=0x7f020093;
+        public static final int progressbar_indeterminate_holo2=0x7f020094;
+        public static final int progressbar_indeterminate_holo3=0x7f020095;
+        public static final int progressbar_indeterminate_holo4=0x7f020096;
+        public static final int progressbar_indeterminate_holo5=0x7f020097;
+        public static final int progressbar_indeterminate_holo6=0x7f020098;
+        public static final int progressbar_indeterminate_holo7=0x7f020099;
+        public static final int progressbar_indeterminate_holo8=0x7f02009a;
+        public static final int red_toast=0x7f02009b;
+        public static final int scroll_arrow=0x7f02009c;
+        public static final int setting_border_icon=0x7f02009d;
+        public static final int setting_icon=0x7f02009e;
+        public static final int shorts=0x7f02009f;
+        public static final int spinner_16_inner_holo=0x7f0200a0;
+        public static final int spinner_16_outer_holo=0x7f0200a1;
+        public static final int spinner_20_inner_holo=0x7f0200a2;
+        public static final int spinner_20_outer_holo=0x7f0200a3;
+        public static final int spinner_48_inner_holo=0x7f0200a4;
+        public static final int spinner_48_outer_holo=0x7f0200a5;
+        public static final int spinner_76_inner_holo=0x7f0200a6;
+        public static final int spinner_76_outer_holo=0x7f0200a7;
+        public static final int take_photo_bottom=0x7f0200a8;
+        public static final int take_photo_top=0x7f0200a9;
+        public static final int textview_style=0x7f0200aa;
+        public static final int toggle_btn=0x7f0200ab;
+        public static final int unfriend=0x7f0200ac;
+        public static final int username_bg=0x7f0200ad;
+        public static final int vpi__tab_indicator=0x7f0200ae;
+        public static final int vpi__tab_selected_focused_holo=0x7f0200af;
+        public static final int vpi__tab_selected_holo=0x7f0200b0;
+        public static final int vpi__tab_selected_pressed_holo=0x7f0200b1;
+        public static final int vpi__tab_unselected_focused_holo=0x7f0200b2;
+        public static final int vpi__tab_unselected_holo=0x7f0200b3;
+        public static final int vpi__tab_unselected_pressed_holo=0x7f0200b4;
+        public static final int wechat=0x7f0200b5;
     }
     public static final class id {
         public static final int action_bar=0x7f05002c;
@@ -1616,15 +1630,15 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050026;
         public static final int action_menu_presenter=0x7f050027;
         public static final int action_mode_close_button=0x7f050034;
-        public static final int action_settings=0x7f0500a4;
+        public static final int action_settings=0x7f0500ad;
         public static final int activity_chooser_view_content=0x7f050035;
         public static final int always=0x7f05001c;
         public static final int beginning=0x7f050021;
         public static final int both=0x7f050003;
         public static final int bottom=0x7f05000f;
-        public static final int btnFemale=0x7f05008e;
-        public static final int btnMale=0x7f05008d;
-        public static final int btnOther=0x7f05008f;
+        public static final int btnFemale=0x7f050097;
+        public static final int btnMale=0x7f050096;
+        public static final int btnOther=0x7f050098;
         public static final int checkbox=0x7f05003d;
         public static final int collapseActionView=0x7f05001e;
         public static final int default_activity_button=0x7f050038;
@@ -1634,96 +1648,103 @@ containing a value of this type.
         public static final int dropdown=0x7f050020;
         public static final int edit_query=0x7f050040;
         public static final int end=0x7f050023;
-        public static final int etMessage=0x7f05009b;
-        public static final int etUserName=0x7f050054;
+        public static final int etMessage=0x7f0500a4;
+        public static final int etUserName=0x7f05005a;
+        public static final int event_content_item=0x7f050050;
+        public static final int event_title_item=0x7f05004f;
         public static final int expand_activities_button=0x7f050036;
         public static final int expanded_menu=0x7f05003c;
-        public static final int flCameraPreview=0x7f050099;
-        public static final int flGender=0x7f05008b;
-        public static final int fl_inner=0x7f050093;
+        public static final int flCameraPreview=0x7f0500a2;
+        public static final int flGender=0x7f050094;
+        public static final int fl_inner=0x7f05009c;
         public static final int flip=0x7f050008;
         public static final int gridview=0x7f050009;
-        public static final int header=0x7f05006d;
+        public static final int head_layout=0x7f05005f;
+        public static final int header=0x7f050078;
         public static final int home=0x7f050024;
         public static final int homeAsUp=0x7f050016;
         public static final int icon=0x7f05003a;
         public static final int ifRoom=0x7f05001b;
         public static final int image=0x7f050037;
-        public static final int imageView1=0x7f05005e;
-        public static final int ivAddFriend=0x7f05005c;
-        public static final int ivCamaraBtn=0x7f05009c;
-        public static final int ivCamera=0x7f050080;
-        public static final int ivClose=0x7f05004f;
-        public static final int ivComposeMessage=0x7f050081;
-        public static final int ivCoverImage=0x7f050053;
-        public static final int ivFavMessage=0x7f050067;
-        public static final int ivFavSetting=0x7f050065;
-        public static final int ivFemale=0x7f05006b;
-        public static final int ivFriendComposer=0x7f050062;
-        public static final int ivFriendImage=0x7f05005f;
-        public static final int ivFriendTutorial=0x7f050069;
-        public static final int ivGender=0x7f05008c;
-        public static final int ivGotIt=0x7f05009e;
-        public static final int ivHomeMessage=0x7f05007e;
-        public static final int ivImage=0x7f050085;
-        public static final int ivLine=0x7f050055;
-        public static final int ivMale=0x7f05006c;
-        public static final int ivMessageAcceptFriendRequest=0x7f050072;
-        public static final int ivMessageClose=0x7f050070;
-        public static final int ivMessageFriendList=0x7f050076;
-        public static final int ivMessageFriendRequest=0x7f050071;
-        public static final int ivMessageHome=0x7f050051;
-        public static final int ivMessageImage=0x7f05006e;
-        public static final int ivMessageReply=0x7f050073;
-        public static final int ivMessageTutorial=0x7f050078;
-        public static final int ivNearByTutorial=0x7f050084;
-        public static final int ivOk=0x7f050056;
-        public static final int ivPrefCamera=0x7f050087;
-        public static final int ivPrefFriendList=0x7f050089;
-        public static final int ivShareToWeChat=0x7f050082;
-        public static final int ivTakePicBottom=0x7f0500a1;
-        public static final int ivTakePicTop=0x7f05009f;
-        public static final int ivTemp=0x7f050079;
-        public static final int ivTempFriend=0x7f050057;
-        public static final int ivTutorialBg=0x7f05009d;
-        public static final int ivUnFriend=0x7f050061;
+        public static final int imageView1=0x7f050069;
+        public static final int img_msg_item=0x7f05004e;
+        public static final int ivAddFriend=0x7f050067;
+        public static final int ivCamaraBtn=0x7f0500a5;
+        public static final int ivCamera=0x7f05008b;
+        public static final int ivClose=0x7f050055;
+        public static final int ivComposeMessage=0x7f05008c;
+        public static final int ivCoverImage=0x7f050059;
+        public static final int ivFavMessage=0x7f050072;
+        public static final int ivFavSetting=0x7f050070;
+        public static final int ivFemale=0x7f050076;
+        public static final int ivFriendComposer=0x7f05006d;
+        public static final int ivFriendImage=0x7f05006a;
+        public static final int ivFriendTutorial=0x7f050074;
+        public static final int ivGender=0x7f050095;
+        public static final int ivGotIt=0x7f0500a7;
+        public static final int ivHomeMessage=0x7f050089;
+        public static final int ivImage=0x7f050090;
+        public static final int ivLine=0x7f05005b;
+        public static final int ivMale=0x7f050077;
+        public static final int ivMessageAcceptFriendRequest=0x7f05007d;
+        public static final int ivMessageClose=0x7f05007b;
+        public static final int ivMessageFriendList=0x7f050081;
+        public static final int ivMessageFriendRequest=0x7f05007c;
+        public static final int ivMessageHome=0x7f050057;
+        public static final int ivMessageImage=0x7f050079;
+        public static final int ivMessageReply=0x7f05007e;
+        public static final int ivMessageTutorial=0x7f050083;
+        public static final int ivNearByTutorial=0x7f05008f;
+        public static final int ivOk=0x7f05005c;
+        public static final int ivPrefCamera=0x7f05004c;
+        public static final int ivPrefFriendList=0x7f050092;
+        public static final int ivShareToWeChat=0x7f05008d;
+        public static final int ivTakePicBottom=0x7f0500aa;
+        public static final int ivTakePicTop=0x7f0500a8;
+        public static final int ivTemp=0x7f050084;
+        public static final int ivTempFriend=0x7f050062;
+        public static final int ivTutorialBg=0x7f0500a6;
+        public static final int ivUnFriend=0x7f05006c;
         public static final int listMode=0x7f050012;
         public static final int list_item=0x7f050039;
-        public static final int llCamaraBtn=0x7f0500a0;
-        public static final int llFriend=0x7f050064;
-        public static final int llFriendTutorial=0x7f050068;
-        public static final int llFriendView=0x7f050058;
-        public static final int llImages=0x7f05007d;
-        public static final int llMessage=0x7f050075;
-        public static final int llMessageTutorial=0x7f050077;
-        public static final int llMessageView=0x7f05007a;
-        public static final int llNearByTutorial=0x7f050083;
-        public static final int llPager=0x7f05004c;
-        public static final int llll=0x7f05009a;
-        public static final int lvContacts=0x7f050052;
+        public static final int listview_event=0x7f050061;
+        public static final int llCamaraBtn=0x7f0500a9;
+        public static final int llEvent=0x7f05005e;
+        public static final int llFriend=0x7f05006f;
+        public static final int llFriendTutorial=0x7f050073;
+        public static final int llFriendView=0x7f050063;
+        public static final int llImages=0x7f050088;
+        public static final int llMessage=0x7f050080;
+        public static final int llMessageTutorial=0x7f050082;
+        public static final int llMessageView=0x7f050085;
+        public static final int llNearByTutorial=0x7f05008e;
+        public static final int llPager=0x7f050052;
+        public static final int llll=0x7f0500a3;
+        public static final int lvContacts=0x7f050058;
         public static final int manualOnly=0x7f050004;
         public static final int middle=0x7f050022;
         public static final int never=0x7f05001a;
         public static final int none=0x7f05000c;
         public static final int normal=0x7f050011;
-        public static final int pbFriend=0x7f050060;
-        public static final int pbMessage=0x7f05006f;
-        public static final int pbNearBy=0x7f050086;
+        public static final int pbFriend=0x7f05006b;
+        public static final int pbMessage=0x7f05007a;
+        public static final int pbNearBy=0x7f050091;
         public static final int progress_circular=0x7f050028;
         public static final int progress_horizontal=0x7f050029;
         public static final int pullDownFromTop=0x7f050005;
         public static final int pullFromEnd=0x7f050002;
         public static final int pullFromStart=0x7f050001;
         public static final int pullUpFromBottom=0x7f050006;
-        public static final int pull_to_refresh_image=0x7f050094;
-        public static final int pull_to_refresh_progress=0x7f050095;
-        public static final int pull_to_refresh_sub_text=0x7f050097;
-        public static final int pull_to_refresh_text=0x7f050096;
+        public static final int pull_to_refresh_image=0x7f05009d;
+        public static final int pull_to_refresh_progress=0x7f05009e;
+        public static final int pull_to_refresh_sub_text=0x7f0500a0;
+        public static final int pull_to_refresh_text=0x7f05009f;
         public static final int radio=0x7f05003f;
         public static final int rotate=0x7f050007;
-        public static final int scrollFriend=0x7f050063;
-        public static final int scrollImages=0x7f05007c;
-        public static final int scrollMessage=0x7f050074;
+        public static final int scrollEvent=0x7f05005d;
+        public static final int scrollFriend=0x7f05006e;
+        public static final int scrollImages=0x7f050087;
+        public static final int scrollMessage=0x7f05007f;
         public static final int scrollview=0x7f05000b;
         public static final int search_badge=0x7f050042;
         public static final int search_bar=0x7f050041;
@@ -1742,32 +1763,34 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05002e;
         public static final int submit_area=0x7f050049;
         public static final int tabMode=0x7f050013;
-        public static final int textView1=0x7f050059;
-        public static final int textView3=0x7f05005b;
-        public static final int textView4=0x7f05005d;
+        public static final int textView1=0x7f050064;
+        public static final int textView3=0x7f050066;
+        public static final int textView4=0x7f050068;
+        public static final int time_msg_item=0x7f050051;
         public static final int title=0x7f05003b;
-        public static final int toast_layout_root=0x7f0500a2;
-        public static final int toggleLocation=0x7f050091;
+        public static final int toast_layout_root=0x7f0500ab;
+        public static final int toggleLocation=0x7f05009a;
         public static final int top=0x7f050010;
         public static final int top_action_bar=0x7f050030;
         public static final int triangle=0x7f05000d;
-        public static final int tvContact=0x7f050098;
-        public static final int tvFavTitle=0x7f050066;
-        public static final int tvFriendCount=0x7f05005a;
-        public static final int tvGender=0x7f05008a;
-        public static final int tvGenderSelection=0x7f05006a;
-        public static final int tvLocation=0x7f050090;
-        public static final int tvMessageBadge=0x7f05007f;
-        public static final int tvMessageCount=0x7f05007b;
-        public static final int tvMessageTitle=0x7f050050;
-        public static final int tvPrivacyPolicy=0x7f050092;
-        public static final int tvTitle=0x7f050088;
-        public static final int tvToast=0x7f0500a3;
+        public static final int tvContact=0x7f0500a1;
+        public static final int tvEventTitle=0x7f050060;
+        public static final int tvFavTitle=0x7f050071;
+        public static final int tvFriendCount=0x7f050065;
+        public static final int tvGender=0x7f050093;
+        public static final int tvGenderSelection=0x7f050075;
+        public static final int tvLocation=0x7f050099;
+        public static final int tvMessageBadge=0x7f05008a;
+        public static final int tvMessageCount=0x7f050086;
+        public static final int tvMessageTitle=0x7f050056;
+        public static final int tvPrivacyPolicy=0x7f05009b;
+        public static final int tvTitle=0x7f05004d;
+        public static final int tvToast=0x7f0500ac;
         public static final int underline=0x7f05000e;
         public static final int up=0x7f050031;
         public static final int useLogo=0x7f050014;
-        public static final int viewPager=0x7f05004d;
-        public static final int vpIndicator=0x7f05004e;
+        public static final int viewPager=0x7f050053;
+        public static final int vpIndicator=0x7f050054;
         public static final int webview=0x7f05000a;
         public static final int withText=0x7f05001d;
     }
@@ -1825,33 +1848,40 @@ containing a value of this type.
         public static final int abc_popup_menu_item_layout=0x7f030014;
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
-        public static final int activity_main=0x7f030017;
-        public static final int activity_phone_contacts=0x7f030018;
-        public static final int create_username=0x7f030019;
-        public static final int fridend_view=0x7f03001a;
-        public static final int friend_image=0x7f03001b;
-        public static final int friends_list=0x7f03001c;
-        public static final int gender_selection=0x7f03001d;
-        public static final int header_section_list=0x7f03001e;
-        public static final int message_image=0x7f03001f;
-        public static final int message_list=0x7f030020;
-        public static final int message_view=0x7f030021;
-        public static final int nearby_people=0x7f030022;
-        public static final int nearby_people_image=0x7f030023;
-        public static final int pref_screen=0x7f030024;
-        public static final int pull_to_refresh_header_horizontal=0x7f030025;
-        public static final int pull_to_refresh_header_vertical=0x7f030026;
-        public static final int row_contact=0x7f030027;
-        public static final int send_message=0x7f030028;
-        public static final int support_simple_spinner_dropdown_item=0x7f030029;
-        public static final int take_screenshot=0x7f03002a;
-        public static final int toast=0x7f03002b;
-        public static final int tutorial_screen_camera=0x7f03002c;
+        public static final int activity_apply_event=0x7f030017;
+        public static final int activity_main=0x7f030018;
+        public static final int activity_phone_contacts=0x7f030019;
+        public static final int create_username=0x7f03001a;
+        public static final int event_item_layout=0x7f03001b;
+        public static final int event_list=0x7f03001c;
+        public static final int fridend_view=0x7f03001d;
+        public static final int friend_image=0x7f03001e;
+        public static final int friends_list=0x7f03001f;
+        public static final int gender_selection=0x7f030020;
+        public static final int header_section_list=0x7f030021;
+        public static final int message_image=0x7f030022;
+        public static final int message_list=0x7f030023;
+        public static final int message_view=0x7f030024;
+        public static final int nearby_people=0x7f030025;
+        public static final int nearby_people_image=0x7f030026;
+        public static final int pref_screen=0x7f030027;
+        public static final int pull_to_refresh_header_horizontal=0x7f030028;
+        public static final int pull_to_refresh_header_vertical=0x7f030029;
+        public static final int row_contact=0x7f03002a;
+        public static final int send_message=0x7f03002b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03002c;
+        public static final int take_screenshot=0x7f03002d;
+        public static final int toast=0x7f03002e;
+        public static final int tutorial_screen_camera=0x7f03002f;
     }
     public static final class menu {
-        public static final int main=0x7f0c0000;
+        public static final int apply_event=0x7f0c0000;
+        public static final int main=0x7f0c0001;
     }
     public static final class string {
+        /**  活动 
+         */
+        public static final int EventTitle=0x7f07002a;
         public static final int FavCurrentlyHave=0x7f070021;
         public static final int FavFriends=0x7f070022;
         public static final int FavMinutesAgo=0x7f070024;
@@ -1936,6 +1966,9 @@ containing a value of this type.
         /**  Send Message Place Holder 
          */
         public static final int sendMessageHint=0x7f070028;
+        public static final int test=0x7f07002d;
+        public static final int title_activity_apply_event=0x7f07002c;
+        public static final int txt_apply_event=0x7f07002b;
     }
     public static final class style {
         /** 
@@ -2228,7 +2261,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:background
+          @attr name android:background
         */
         public static final int ActionBar_background = 10;
         /**
@@ -2242,7 +2275,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:backgroundSplit
+          @attr name android:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
@@ -2256,7 +2289,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:backgroundStacked
+          @attr name android:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
@@ -2268,7 +2301,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:customNavigationLayout
+          @attr name android:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
@@ -2291,7 +2324,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:displayOptions
+          @attr name android:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
@@ -2303,7 +2336,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:divider
+          @attr name android:divider
         */
         public static final int ActionBar_divider = 9;
         /**
@@ -2321,7 +2354,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:height
+          @attr name android:height
         */
         public static final int ActionBar_height = 1;
         /**
@@ -2333,7 +2366,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:homeLayout
+          @attr name android:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
@@ -2345,7 +2378,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:icon
+          @attr name android:icon
         */
         public static final int ActionBar_icon = 7;
         /**
@@ -2357,7 +2390,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:indeterminateProgressStyle
+          @attr name android:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
@@ -2376,7 +2409,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:itemPadding
+          @attr name android:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
@@ -2388,7 +2421,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:logo
+          @attr name android:logo
         */
         public static final int ActionBar_logo = 8;
         /**
@@ -2408,7 +2441,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:navigationMode
+          @attr name android:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
@@ -2426,7 +2459,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:progressBarPadding
+          @attr name android:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
@@ -2438,7 +2471,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:progressBarStyle
+          @attr name android:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
@@ -2454,7 +2487,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:subtitle
+          @attr name android:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
@@ -2466,7 +2499,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:subtitleTextStyle
+          @attr name android:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
@@ -2482,7 +2515,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:title
+          @attr name android:title
         */
         public static final int ActionBar_title = 0;
         /**
@@ -2494,7 +2527,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:titleTextStyle
+          @attr name android:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /**  Valid LayoutParams for views placed in the action bar as custom views. 
@@ -2503,7 +2536,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBarLayout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarLayout_android_layout_gravity com.jianyue.main.controller:android_layout_gravity}</code></td><td></td></tr>
            </table>
            @see #ActionBarLayout_android_layout_gravity
          */
@@ -2511,9 +2544,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x010100b3
         };
         /**
-          <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
+          <p>This symbol is the offset where the {@link com.jianyue.main.controller.R.attr#android_layout_gravity}
           attribute's value can be found in the {@link #ActionBarLayout} array.
-          @attr name android:layout_gravity
+          @attr name android:android_layout_gravity
         */
         public static final int ActionBarLayout_android_layout_gravity = 0;
         /**  These attributes are meant to be specified and customized by the app.
@@ -2547,7 +2580,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.jianyue.main.controller:windowActionBar
+          @attr name android:windowActionBar
         */
         public static final int ActionBarWindow_windowActionBar = 0;
         /**
@@ -2561,7 +2594,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.jianyue.main.controller:windowActionBarOverlay
+          @attr name android:windowActionBarOverlay
         */
         public static final int ActionBarWindow_windowActionBarOverlay = 1;
         /**
@@ -2575,7 +2608,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.jianyue.main.controller:windowSplitActionBar
+          @attr name android:windowSplitActionBar
         */
         public static final int ActionBarWindow_windowSplitActionBar = 2;
         /** Attributes that can be used with a ActionMenuItemView.
@@ -2584,7 +2617,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMenuItemView_android_minWidth android:minWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMenuItemView_android_minWidth com.jianyue.main.controller:android_minWidth}</code></td><td></td></tr>
            </table>
            @see #ActionMenuItemView_android_minWidth
          */
@@ -2592,9 +2625,9 @@ containing a value of this type.
             0x0101013f
         };
         /**
-          <p>This symbol is the offset where the {@link android.R.attr#minWidth}
+          <p>This symbol is the offset where the {@link com.jianyue.main.controller.R.attr#android_minWidth}
           attribute's value can be found in the {@link #ActionMenuItemView} array.
-          @attr name android:minWidth
+          @attr name android:android_minWidth
         */
         public static final int ActionMenuItemView_android_minWidth = 0;
         /**  Size of padding on either end of a divider. 
@@ -2633,7 +2666,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:background
+          @attr name android:background
         */
         public static final int ActionMode_background = 3;
         /**
@@ -2647,7 +2680,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:backgroundSplit
+          @attr name android:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
@@ -2665,7 +2698,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:height
+          @attr name android:height
         */
         public static final int ActionMode_height = 0;
         /**
@@ -2677,7 +2710,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:subtitleTextStyle
+          @attr name android:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
@@ -2689,7 +2722,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:titleTextStyle
+          @attr name android:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /**  Attrbitutes for a ActivityChooserView. 
@@ -2721,7 +2754,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:expandActivityOverflowButtonDrawable
+          @attr name android:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
@@ -2737,7 +2770,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:initialActivityCount
+          @attr name android:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a CirclePageIndicator.
@@ -2746,8 +2779,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CirclePageIndicator_android_background android:background}</code></td><td> View background </td></tr>
-           <tr><td><code>{@link #CirclePageIndicator_android_orientation android:orientation}</code></td><td> Orientation of the indicator.</td></tr>
+           <tr><td><code>{@link #CirclePageIndicator_android_background com.jianyue.main.controller:android_background}</code></td><td> View background </td></tr>
+           <tr><td><code>{@link #CirclePageIndicator_android_orientation com.jianyue.main.controller:android_orientation}</code></td><td> Orientation of the indicator.</td></tr>
            <tr><td><code>{@link #CirclePageIndicator_centered com.jianyue.main.controller:centered}</code></td><td> Whether or not the indicators should be centered.</td></tr>
            <tr><td><code>{@link #CirclePageIndicator_fillColor com.jianyue.main.controller:fillColor}</code></td><td> Color of the filled circle that represents the current page.</td></tr>
            <tr><td><code>{@link #CirclePageIndicator_pageColor com.jianyue.main.controller:pageColor}</code></td><td> Color of the filled circles that represents pages.</td></tr>
@@ -2775,18 +2808,16 @@ containing a value of this type.
           <p>
           @attr description
            View background 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#background}.
-          @attr name android:background
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_background}.
+          @attr name android:android_background
         */
         public static final int CirclePageIndicator_android_background = 1;
         /**
           <p>
           @attr description
            Orientation of the indicator. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#orientation}.
-          @attr name android:orientation
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_orientation}.
+          @attr name android:android_orientation
         */
         public static final int CirclePageIndicator_android_orientation = 0;
         /**
@@ -2802,7 +2833,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:centered
+          @attr name android:centered
         */
         public static final int CirclePageIndicator_centered = 2;
         /**
@@ -2819,7 +2850,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:fillColor
+          @attr name android:fillColor
         */
         public static final int CirclePageIndicator_fillColor = 4;
         /**
@@ -2836,7 +2867,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:pageColor
+          @attr name android:pageColor
         */
         public static final int CirclePageIndicator_pageColor = 5;
         /**
@@ -2854,7 +2885,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:radius
+          @attr name android:radius
         */
         public static final int CirclePageIndicator_radius = 6;
         /**
@@ -2870,7 +2901,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:snap
+          @attr name android:snap
         */
         public static final int CirclePageIndicator_snap = 7;
         /**
@@ -2887,7 +2918,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:strokeColor
+          @attr name android:strokeColor
         */
         public static final int CirclePageIndicator_strokeColor = 8;
         /**
@@ -2905,7 +2936,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:strokeWidth
+          @attr name android:strokeWidth
         */
         public static final int CirclePageIndicator_strokeWidth = 3;
         /** Attributes that can be used with a CompatTextView.
@@ -2931,7 +2962,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:textAllCaps
+          @attr name android:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
         /** Attributes that can be used with a LinePageIndicator.
@@ -2940,7 +2971,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LinePageIndicator_android_background android:background}</code></td><td> View background </td></tr>
+           <tr><td><code>{@link #LinePageIndicator_android_background com.jianyue.main.controller:android_background}</code></td><td> View background </td></tr>
            <tr><td><code>{@link #LinePageIndicator_centered com.jianyue.main.controller:centered}</code></td><td> Whether or not the indicators should be centered.</td></tr>
            <tr><td><code>{@link #LinePageIndicator_gapWidth com.jianyue.main.controller:gapWidth}</code></td><td> Width of the gap between each indicator line.</td></tr>
            <tr><td><code>{@link #LinePageIndicator_lineWidth com.jianyue.main.controller:lineWidth}</code></td><td> Width of each indicator line.</td></tr>
@@ -2964,9 +2995,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>
           @attr description
            View background 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#background}.
-          @attr name android:background
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_background}.
+          @attr name android:android_background
         */
         public static final int LinePageIndicator_android_background = 0;
         /**
@@ -2982,7 +3012,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:centered
+          @attr name android:centered
         */
         public static final int LinePageIndicator_centered = 1;
         /**
@@ -3000,7 +3030,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:gapWidth
+          @attr name android:gapWidth
         */
         public static final int LinePageIndicator_gapWidth = 6;
         /**
@@ -3018,7 +3048,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:lineWidth
+          @attr name android:lineWidth
         */
         public static final int LinePageIndicator_lineWidth = 5;
         /**
@@ -3035,7 +3065,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:selectedColor
+          @attr name android:selectedColor
         */
         public static final int LinePageIndicator_selectedColor = 2;
         /**
@@ -3053,7 +3083,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:strokeWidth
+          @attr name android:strokeWidth
         */
         public static final int LinePageIndicator_strokeWidth = 3;
         /**
@@ -3070,7 +3100,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:unselectedColor
+          @attr name android:unselectedColor
         */
         public static final int LinePageIndicator_unselectedColor = 4;
         /** Attributes that can be used with a LinearLayoutICS.
@@ -3099,7 +3129,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:divider
+          @attr name android:divider
         */
         public static final int LinearLayoutICS_divider = 0;
         /**
@@ -3117,7 +3147,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:dividerPadding
+          @attr name android:dividerPadding
         */
         public static final int LinearLayoutICS_dividerPadding = 2;
         /**
@@ -3138,7 +3168,7 @@ containing a value of this type.
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:showDividers
+          @attr name android:showDividers
         */
         public static final int LinearLayoutICS_showDividers = 1;
         /**  Base attributes that are available to all groups. 
@@ -3147,12 +3177,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuGroup_android_checkableBehavior android:checkableBehavior}</code></td><td> Whether the items are capable of displaying a check mark.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_enabled android:enabled}</code></td><td> Whether the items are enabled.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_id android:id}</code></td><td> The ID of the group.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_menuCategory android:menuCategory}</code></td><td> The category applied to all items within this group.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_orderInCategory android:orderInCategory}</code></td><td> The order within the category applied to all items within this group.</td></tr>
-           <tr><td><code>{@link #MenuGroup_android_visible android:visible}</code></td><td> Whether the items are shown/visible.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_checkableBehavior com.jianyue.main.controller:android_checkableBehavior}</code></td><td> Whether the items are capable of displaying a check mark.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_enabled com.jianyue.main.controller:android_enabled}</code></td><td> Whether the items are enabled.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_id com.jianyue.main.controller:android_id}</code></td><td> The ID of the group.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_menuCategory com.jianyue.main.controller:android_menuCategory}</code></td><td> The category applied to all items within this group.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_orderInCategory com.jianyue.main.controller:android_orderInCategory}</code></td><td> The order within the category applied to all items within this group.</td></tr>
+           <tr><td><code>{@link #MenuGroup_android_visible com.jianyue.main.controller:android_visible}</code></td><td> Whether the items are shown/visible.</td></tr>
            </table>
            @see #MenuGroup_android_checkableBehavior
            @see #MenuGroup_android_enabled
@@ -3169,27 +3199,24 @@ containing a value of this type.
           <p>
           @attr description
            Whether the items are capable of displaying a check mark. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#checkableBehavior}.
-          @attr name android:checkableBehavior
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_checkableBehavior}.
+          @attr name android:android_checkableBehavior
         */
         public static final int MenuGroup_android_checkableBehavior = 5;
         /**
           <p>
           @attr description
            Whether the items are enabled. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#enabled}.
-          @attr name android:enabled
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_enabled}.
+          @attr name android:android_enabled
         */
         public static final int MenuGroup_android_enabled = 0;
         /**
           <p>
           @attr description
            The ID of the group. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#id}.
-          @attr name android:id
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_id}.
+          @attr name android:android_id
         */
         public static final int MenuGroup_android_id = 1;
         /**
@@ -3197,9 +3224,8 @@ containing a value of this type.
           @attr description
            The category applied to all items within this group.
              (This will be or'ed with the orderInCategory attribute.) 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#menuCategory}.
-          @attr name android:menuCategory
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_menuCategory}.
+          @attr name android:android_menuCategory
         */
         public static final int MenuGroup_android_menuCategory = 3;
         /**
@@ -3207,18 +3233,16 @@ containing a value of this type.
           @attr description
            The order within the category applied to all items within this group.
              (This will be or'ed with the category attribute.) 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#orderInCategory}.
-          @attr name android:orderInCategory
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_orderInCategory}.
+          @attr name android:android_orderInCategory
         */
         public static final int MenuGroup_android_orderInCategory = 4;
         /**
           <p>
           @attr description
            Whether the items are shown/visible. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#visible}.
-          @attr name android:visible
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_visible}.
+          @attr name android:android_visible
         */
         public static final int MenuGroup_android_visible = 2;
         /**  Base attributes that are available to all Item objects. 
@@ -3232,20 +3256,20 @@ containing a value of this type.
              and perform operations such as default action for that menu item.</td></tr>
            <tr><td><code>{@link #MenuItem_actionViewClass com.jianyue.main.controller:actionViewClass}</code></td><td> The name of an optional View class to instantiate and use as an
              action view.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td> The alphabetic shortcut key.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td> Whether the item is capable of displaying a check mark.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td> Whether the item is checked.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_enabled android:enabled}</code></td><td> Whether the item is enabled.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_icon android:icon}</code></td><td> The icon associated with this item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_id android:id}</code></td><td> The ID of the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_menuCategory android:menuCategory}</code></td><td> The category applied to the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td> The numeric shortcut key.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td> Name of a method on the Context used to inflate the menu that will be
+           <tr><td><code>{@link #MenuItem_android_alphabeticShortcut com.jianyue.main.controller:android_alphabeticShortcut}</code></td><td> The alphabetic shortcut key.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_checkable com.jianyue.main.controller:android_checkable}</code></td><td> Whether the item is capable of displaying a check mark.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_checked com.jianyue.main.controller:android_checked}</code></td><td> Whether the item is checked.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_enabled com.jianyue.main.controller:android_enabled}</code></td><td> Whether the item is enabled.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_icon com.jianyue.main.controller:android_icon}</code></td><td> The icon associated with this item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_id com.jianyue.main.controller:android_id}</code></td><td> The ID of the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_menuCategory com.jianyue.main.controller:android_menuCategory}</code></td><td> The category applied to the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_numericShortcut com.jianyue.main.controller:android_numericShortcut}</code></td><td> The numeric shortcut key.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_onClick com.jianyue.main.controller:android_onClick}</code></td><td> Name of a method on the Context used to inflate the menu that will be
              called when the item is clicked.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_orderInCategory android:orderInCategory}</code></td><td> The order within the category applied to the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td> The title associated with the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td> The condensed title associated with the item.</td></tr>
-           <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td> Whether the item is shown/visible.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_orderInCategory com.jianyue.main.controller:android_orderInCategory}</code></td><td> The order within the category applied to the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_title com.jianyue.main.controller:android_title}</code></td><td> The title associated with the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_titleCondensed com.jianyue.main.controller:android_titleCondensed}</code></td><td> The condensed title associated with the item.</td></tr>
+           <tr><td><code>{@link #MenuItem_android_visible com.jianyue.main.controller:android_visible}</code></td><td> Whether the item is shown/visible.</td></tr>
            <tr><td><code>{@link #MenuItem_showAsAction com.jianyue.main.controller:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
            </table>
            @see #MenuItem_actionLayout
@@ -3284,7 +3308,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:actionLayout
+          @attr name android:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
@@ -3303,7 +3327,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:actionProviderClass
+          @attr name android:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
@@ -3321,7 +3345,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:actionViewClass
+          @attr name android:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -3329,18 +3353,16 @@ containing a value of this type.
           @attr description
            The alphabetic shortcut key.  This is the shortcut when using a keyboard
              with alphabetic keys. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#alphabeticShortcut}.
-          @attr name android:alphabeticShortcut
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_alphabeticShortcut}.
+          @attr name android:android_alphabeticShortcut
         */
         public static final int MenuItem_android_alphabeticShortcut = 9;
         /**
           <p>
           @attr description
            Whether the item is capable of displaying a check mark. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#checkable}.
-          @attr name android:checkable
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_checkable}.
+          @attr name android:android_checkable
         */
         public static final int MenuItem_android_checkable = 11;
         /**
@@ -3348,18 +3370,16 @@ containing a value of this type.
           @attr description
            Whether the item is checked.  Note that you must first have enabled checking with
              the checkable attribute or else the check mark will not appear. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#checked}.
-          @attr name android:checked
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_checked}.
+          @attr name android:android_checked
         */
         public static final int MenuItem_android_checked = 3;
         /**
           <p>
           @attr description
            Whether the item is enabled. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#enabled}.
-          @attr name android:enabled
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_enabled}.
+          @attr name android:android_enabled
         */
         public static final int MenuItem_android_enabled = 1;
         /**
@@ -3367,18 +3387,16 @@ containing a value of this type.
           @attr description
            The icon associated with this item.  This icon will not always be shown, so
              the title should be sufficient in describing this item. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#icon}.
-          @attr name android:icon
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_icon}.
+          @attr name android:android_icon
         */
         public static final int MenuItem_android_icon = 0;
         /**
           <p>
           @attr description
            The ID of the item. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#id}.
-          @attr name android:id
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_id}.
+          @attr name android:android_id
         */
         public static final int MenuItem_android_id = 2;
         /**
@@ -3386,9 +3404,8 @@ containing a value of this type.
           @attr description
            The category applied to the item.
              (This will be or'ed with the orderInCategory attribute.) 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#menuCategory}.
-          @attr name android:menuCategory
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_menuCategory}.
+          @attr name android:android_menuCategory
         */
         public static final int MenuItem_android_menuCategory = 5;
         /**
@@ -3396,9 +3413,8 @@ containing a value of this type.
           @attr description
            The numeric shortcut key.  This is the shortcut when using a numeric (e.g., 12-key)
              keyboard. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#numericShortcut}.
-          @attr name android:numericShortcut
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_numericShortcut}.
+          @attr name android:android_numericShortcut
         */
         public static final int MenuItem_android_numericShortcut = 10;
         /**
@@ -3406,9 +3422,8 @@ containing a value of this type.
           @attr description
            Name of a method on the Context used to inflate the menu that will be
              called when the item is clicked. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#onClick}.
-          @attr name android:onClick
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_onClick}.
+          @attr name android:android_onClick
         */
         public static final int MenuItem_android_onClick = 12;
         /**
@@ -3416,18 +3431,16 @@ containing a value of this type.
           @attr description
            The order within the category applied to the item.
              (This will be or'ed with the category attribute.) 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#orderInCategory}.
-          @attr name android:orderInCategory
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_orderInCategory}.
+          @attr name android:android_orderInCategory
         */
         public static final int MenuItem_android_orderInCategory = 6;
         /**
           <p>
           @attr description
            The title associated with the item. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#title}.
-          @attr name android:title
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_title}.
+          @attr name android:android_title
         */
         public static final int MenuItem_android_title = 7;
         /**
@@ -3435,18 +3448,16 @@ containing a value of this type.
           @attr description
            The condensed title associated with the item.  This is used in situations where the
              normal title may be too long to be displayed. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#titleCondensed}.
-          @attr name android:titleCondensed
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_titleCondensed}.
+          @attr name android:android_titleCondensed
         */
         public static final int MenuItem_android_titleCondensed = 8;
         /**
           <p>
           @attr description
            Whether the item is shown/visible. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#visible}.
-          @attr name android:visible
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_visible}.
+          @attr name android:android_visible
         */
         public static final int MenuItem_android_visible = 4;
         /**
@@ -3477,7 +3488,7 @@ containing a value of this type.
                  larger segment of its container. </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:showAsAction
+          @attr name android:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -3486,14 +3497,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td> Default background for the menu header.</td></tr>
-           <tr><td><code>{@link #MenuView_android_horizontalDivider android:horizontalDivider}</code></td><td> Default horizontal divider between rows of menu items.</td></tr>
-           <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td> Default background for each menu item.</td></tr>
-           <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td> Default disabled icon alpha for each menu item that shows an icon.</td></tr>
-           <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td> Default appearance of menu item text.</td></tr>
-           <tr><td><code>{@link #MenuView_android_preserveIconSpacing android:preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
-           <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td> Default vertical divider between menu items.</td></tr>
-           <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td> Default animations for the menu.</td></tr>
+           <tr><td><code>{@link #MenuView_android_headerBackground com.jianyue.main.controller:android_headerBackground}</code></td><td> Default background for the menu header.</td></tr>
+           <tr><td><code>{@link #MenuView_android_horizontalDivider com.jianyue.main.controller:android_horizontalDivider}</code></td><td> Default horizontal divider between rows of menu items.</td></tr>
+           <tr><td><code>{@link #MenuView_android_itemBackground com.jianyue.main.controller:android_itemBackground}</code></td><td> Default background for each menu item.</td></tr>
+           <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha com.jianyue.main.controller:android_itemIconDisabledAlpha}</code></td><td> Default disabled icon alpha for each menu item that shows an icon.</td></tr>
+           <tr><td><code>{@link #MenuView_android_itemTextAppearance com.jianyue.main.controller:android_itemTextAppearance}</code></td><td> Default appearance of menu item text.</td></tr>
+           <tr><td><code>{@link #MenuView_android_preserveIconSpacing com.jianyue.main.controller:android_preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
+           <tr><td><code>{@link #MenuView_android_verticalDivider com.jianyue.main.controller:android_verticalDivider}</code></td><td> Default vertical divider between menu items.</td></tr>
+           <tr><td><code>{@link #MenuView_android_windowAnimationStyle com.jianyue.main.controller:android_windowAnimationStyle}</code></td><td> Default animations for the menu.</td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -3512,45 +3523,40 @@ containing a value of this type.
           <p>
           @attr description
            Default background for the menu header. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#headerBackground}.
-          @attr name android:headerBackground
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_headerBackground}.
+          @attr name android:android_headerBackground
         */
         public static final int MenuView_android_headerBackground = 4;
         /**
           <p>
           @attr description
            Default horizontal divider between rows of menu items. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#horizontalDivider}.
-          @attr name android:horizontalDivider
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_horizontalDivider}.
+          @attr name android:android_horizontalDivider
         */
         public static final int MenuView_android_horizontalDivider = 2;
         /**
           <p>
           @attr description
            Default background for each menu item. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#itemBackground}.
-          @attr name android:itemBackground
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_itemBackground}.
+          @attr name android:android_itemBackground
         */
         public static final int MenuView_android_itemBackground = 5;
         /**
           <p>
           @attr description
            Default disabled icon alpha for each menu item that shows an icon. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#itemIconDisabledAlpha}.
-          @attr name android:itemIconDisabledAlpha
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_itemIconDisabledAlpha}.
+          @attr name android:android_itemIconDisabledAlpha
         */
         public static final int MenuView_android_itemIconDisabledAlpha = 6;
         /**
           <p>
           @attr description
            Default appearance of menu item text. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#itemTextAppearance}.
-          @attr name android:itemTextAppearance
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_itemTextAppearance}.
+          @attr name android:android_itemTextAppearance
         */
         public static final int MenuView_android_itemTextAppearance = 1;
         /**
@@ -3558,25 +3564,23 @@ containing a value of this type.
           @attr description
            Whether space should be reserved in layout when an icon is missing. 
           <p>This is a private symbol.
-          @attr name android:preserveIconSpacing
+          @attr name android:android_preserveIconSpacing
         */
         public static final int MenuView_android_preserveIconSpacing = 7;
         /**
           <p>
           @attr description
            Default vertical divider between menu items. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#verticalDivider}.
-          @attr name android:verticalDivider
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_verticalDivider}.
+          @attr name android:android_verticalDivider
         */
         public static final int MenuView_android_verticalDivider = 3;
         /**
           <p>
           @attr description
            Default animations for the menu. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#windowAnimationStyle}.
-          @attr name android:windowAnimationStyle
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_windowAnimationStyle}.
+          @attr name android:android_windowAnimationStyle
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /** Attributes that can be used with a PullToRefresh.
@@ -3645,7 +3649,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrAdapterViewBackground
+          @attr name android:ptrAdapterViewBackground
         */
         public static final int PullToRefresh_ptrAdapterViewBackground = 16;
         /**
@@ -3664,7 +3668,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>flip</code></td><td>0x1</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrAnimationStyle
+          @attr name android:ptrAnimationStyle
         */
         public static final int PullToRefresh_ptrAnimationStyle = 12;
         /**
@@ -3676,7 +3680,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrDrawable
+          @attr name android:ptrDrawable
         */
         public static final int PullToRefresh_ptrDrawable = 6;
         /**
@@ -3686,7 +3690,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.jianyue.main.controller:ptrDrawableBottom
+          @attr name android:ptrDrawableBottom
         */
         public static final int PullToRefresh_ptrDrawableBottom = 18;
         /**
@@ -3698,7 +3702,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrDrawableEnd
+          @attr name android:ptrDrawableEnd
         */
         public static final int PullToRefresh_ptrDrawableEnd = 8;
         /**
@@ -3710,7 +3714,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrDrawableStart
+          @attr name android:ptrDrawableStart
         */
         public static final int PullToRefresh_ptrDrawableStart = 7;
         /**
@@ -3720,7 +3724,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.jianyue.main.controller:ptrDrawableTop
+          @attr name android:ptrDrawableTop
         */
         public static final int PullToRefresh_ptrDrawableTop = 17;
         /**
@@ -3734,7 +3738,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrHeaderBackground
+          @attr name android:ptrHeaderBackground
         */
         public static final int PullToRefresh_ptrHeaderBackground = 1;
         /**
@@ -3748,7 +3752,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrHeaderSubTextColor
+          @attr name android:ptrHeaderSubTextColor
         */
         public static final int PullToRefresh_ptrHeaderSubTextColor = 3;
         /**
@@ -3760,7 +3764,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrHeaderTextAppearance
+          @attr name android:ptrHeaderTextAppearance
         */
         public static final int PullToRefresh_ptrHeaderTextAppearance = 10;
         /**
@@ -3774,7 +3778,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrHeaderTextColor
+          @attr name android:ptrHeaderTextColor
         */
         public static final int PullToRefresh_ptrHeaderTextColor = 2;
         /**
@@ -3791,7 +3795,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrListViewExtrasEnabled
+          @attr name android:ptrListViewExtrasEnabled
         */
         public static final int PullToRefresh_ptrListViewExtrasEnabled = 14;
         /**
@@ -3815,7 +3819,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>pullUpFromBottom</code></td><td>0x2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrMode
+          @attr name android:ptrMode
         */
         public static final int PullToRefresh_ptrMode = 4;
         /**
@@ -3828,7 +3832,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrOverScroll
+          @attr name android:ptrOverScroll
         */
         public static final int PullToRefresh_ptrOverScroll = 9;
         /**
@@ -3842,7 +3846,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrRefreshableViewBackground
+          @attr name android:ptrRefreshableViewBackground
         */
         public static final int PullToRefresh_ptrRefreshableViewBackground = 0;
         /**
@@ -3858,7 +3862,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrRotateDrawableWhilePulling
+          @attr name android:ptrRotateDrawableWhilePulling
         */
         public static final int PullToRefresh_ptrRotateDrawableWhilePulling = 15;
         /**
@@ -3871,7 +3875,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrScrollingWhileRefreshingEnabled
+          @attr name android:ptrScrollingWhileRefreshingEnabled
         */
         public static final int PullToRefresh_ptrScrollingWhileRefreshingEnabled = 13;
         /**
@@ -3884,7 +3888,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrShowIndicator
+          @attr name android:ptrShowIndicator
         */
         public static final int PullToRefresh_ptrShowIndicator = 5;
         /**
@@ -3896,7 +3900,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:ptrSubHeaderTextAppearance
+          @attr name android:ptrSubHeaderTextAppearance
         */
         public static final int PullToRefresh_ptrSubHeaderTextAppearance = 11;
         /** Attributes that can be used with a SearchView.
@@ -3905,9 +3909,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td> The IME options to set on the query text field.</td></tr>
-           <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td> The input type to set on the query text field.</td></tr>
-           <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td> An optional maximum width of the SearchView.</td></tr>
+           <tr><td><code>{@link #SearchView_android_imeOptions com.jianyue.main.controller:android_imeOptions}</code></td><td> The IME options to set on the query text field.</td></tr>
+           <tr><td><code>{@link #SearchView_android_inputType com.jianyue.main.controller:android_inputType}</code></td><td> The input type to set on the query text field.</td></tr>
+           <tr><td><code>{@link #SearchView_android_maxWidth com.jianyue.main.controller:android_maxWidth}</code></td><td> An optional maximum width of the SearchView.</td></tr>
            <tr><td><code>{@link #SearchView_iconifiedByDefault com.jianyue.main.controller:iconifiedByDefault}</code></td><td> The default state of the SearchView.</td></tr>
            <tr><td><code>{@link #SearchView_queryHint com.jianyue.main.controller:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
            </table>
@@ -3925,27 +3929,24 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>
           @attr description
            The IME options to set on the query text field. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#imeOptions}.
-          @attr name android:imeOptions
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_imeOptions}.
+          @attr name android:android_imeOptions
         */
         public static final int SearchView_android_imeOptions = 2;
         /**
           <p>
           @attr description
            The input type to set on the query text field. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#inputType}.
-          @attr name android:inputType
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_inputType}.
+          @attr name android:android_inputType
         */
         public static final int SearchView_android_inputType = 1;
         /**
           <p>
           @attr description
            An optional maximum width of the SearchView. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#maxWidth}.
-          @attr name android:maxWidth
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_maxWidth}.
+          @attr name android:android_maxWidth
         */
         public static final int SearchView_android_maxWidth = 0;
         /**
@@ -3962,7 +3963,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:iconifiedByDefault
+          @attr name android:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 3;
         /**
@@ -3978,7 +3979,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:queryHint
+          @attr name android:queryHint
         */
         public static final int SearchView_queryHint = 4;
         /** Attributes that can be used with a Spinner.
@@ -3987,14 +3988,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Spinner_android_dropDownHorizontalOffset android:dropDownHorizontalOffset}</code></td><td> Horizontal offset from the spinner widget for positioning the dropdown
+           <tr><td><code>{@link #Spinner_android_dropDownHorizontalOffset com.jianyue.main.controller:android_dropDownHorizontalOffset}</code></td><td> Horizontal offset from the spinner widget for positioning the dropdown
              in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_android_dropDownSelector android:dropDownSelector}</code></td><td> List selector to use for spinnerMode="dropdown" display.</td></tr>
-           <tr><td><code>{@link #Spinner_android_dropDownVerticalOffset android:dropDownVerticalOffset}</code></td><td> Vertical offset from the spinner widget for positioning the dropdown in
+           <tr><td><code>{@link #Spinner_android_dropDownSelector com.jianyue.main.controller:android_dropDownSelector}</code></td><td> List selector to use for spinnerMode="dropdown" display.</td></tr>
+           <tr><td><code>{@link #Spinner_android_dropDownVerticalOffset com.jianyue.main.controller:android_dropDownVerticalOffset}</code></td><td> Vertical offset from the spinner widget for positioning the dropdown in
              spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
-           <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #Spinner_android_dropDownWidth com.jianyue.main.controller:android_dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #Spinner_android_gravity com.jianyue.main.controller:android_gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
+           <tr><td><code>{@link #Spinner_android_popupBackground com.jianyue.main.controller:android_popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
            <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.jianyue.main.controller:disableChildrenWhenDisabled}</code></td><td> Whether this spinner should mark child views as enabled/disabled when
              the spinner itself is enabled/disabled.</td></tr>
            <tr><td><code>{@link #Spinner_popupPromptView com.jianyue.main.controller:popupPromptView}</code></td><td> Reference to a layout to use for displaying a prompt in the dropdown for
@@ -4023,18 +4024,16 @@ containing a value of this type.
           @attr description
            Horizontal offset from the spinner widget for positioning the dropdown
              in spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#dropDownHorizontalOffset}.
-          @attr name android:dropDownHorizontalOffset
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_dropDownHorizontalOffset}.
+          @attr name android:android_dropDownHorizontalOffset
         */
         public static final int Spinner_android_dropDownHorizontalOffset = 4;
         /**
           <p>
           @attr description
            List selector to use for spinnerMode="dropdown" display. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#dropDownSelector}.
-          @attr name android:dropDownSelector
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_dropDownSelector}.
+          @attr name android:android_dropDownSelector
         */
         public static final int Spinner_android_dropDownSelector = 1;
         /**
@@ -4042,36 +4041,32 @@ containing a value of this type.
           @attr description
            Vertical offset from the spinner widget for positioning the dropdown in
              spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#dropDownVerticalOffset}.
-          @attr name android:dropDownVerticalOffset
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_dropDownVerticalOffset}.
+          @attr name android:android_dropDownVerticalOffset
         */
         public static final int Spinner_android_dropDownVerticalOffset = 5;
         /**
           <p>
           @attr description
            Width of the dropdown in spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#dropDownWidth}.
-          @attr name android:dropDownWidth
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_dropDownWidth}.
+          @attr name android:android_dropDownWidth
         */
         public static final int Spinner_android_dropDownWidth = 3;
         /**
           <p>
           @attr description
            Gravity setting for positioning the currently selected item. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#gravity}.
-          @attr name android:gravity
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_gravity}.
+          @attr name android:android_gravity
         */
         public static final int Spinner_android_gravity = 0;
         /**
           <p>
           @attr description
            Background drawable to use for the dropdown in spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#popupBackground}.
-          @attr name android:popupBackground
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_popupBackground}.
+          @attr name android:android_popupBackground
         */
         public static final int Spinner_android_popupBackground = 2;
         /**
@@ -4088,7 +4083,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:disableChildrenWhenDisabled
+          @attr name android:disableChildrenWhenDisabled
         */
         public static final int Spinner_disableChildrenWhenDisabled = 9;
         /**
@@ -4102,7 +4097,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:popupPromptView
+          @attr name android:popupPromptView
         */
         public static final int Spinner_popupPromptView = 8;
         /**
@@ -4114,7 +4109,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:prompt
+          @attr name android:prompt
         */
         public static final int Spinner_prompt = 6;
         /**
@@ -4134,7 +4129,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
                  anchored to the spinner widget itself. </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:spinnerMode
+          @attr name android:spinnerMode
         */
         public static final int Spinner_spinnerMode = 7;
         /**  These are the standard attributes that make up a complete theme. 
@@ -4170,7 +4165,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:actionDropDownStyle
+          @attr name android:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 0;
         /**
@@ -4188,7 +4183,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:dropdownListPreferredItemHeight
+          @attr name android:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 1;
         /**
@@ -4200,7 +4195,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:listChoiceBackgroundIndicator
+          @attr name android:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 5;
         /**
@@ -4212,7 +4207,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:panelMenuListTheme
+          @attr name android:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 4;
         /**
@@ -4230,7 +4225,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:panelMenuListWidth
+          @attr name android:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 3;
         /**
@@ -4242,7 +4237,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:popupMenuStyle
+          @attr name android:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 2;
         /** Attributes that can be used with a TitlePageIndicator.
@@ -4251,9 +4246,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TitlePageIndicator_android_background android:background}</code></td><td> View background </td></tr>
-           <tr><td><code>{@link #TitlePageIndicator_android_textColor android:textColor}</code></td><td> Color of regular titles.</td></tr>
-           <tr><td><code>{@link #TitlePageIndicator_android_textSize android:textSize}</code></td><td> Size of title text.</td></tr>
+           <tr><td><code>{@link #TitlePageIndicator_android_background com.jianyue.main.controller:android_background}</code></td><td> View background </td></tr>
+           <tr><td><code>{@link #TitlePageIndicator_android_textColor com.jianyue.main.controller:android_textColor}</code></td><td> Color of regular titles.</td></tr>
+           <tr><td><code>{@link #TitlePageIndicator_android_textSize com.jianyue.main.controller:android_textSize}</code></td><td> Size of title text.</td></tr>
            <tr><td><code>{@link #TitlePageIndicator_clipPadding com.jianyue.main.controller:clipPadding}</code></td><td> Screen edge padding.</td></tr>
            <tr><td><code>{@link #TitlePageIndicator_footerColor com.jianyue.main.controller:footerColor}</code></td><td> Color of the footer line and indicator.</td></tr>
            <tr><td><code>{@link #TitlePageIndicator_footerIndicatorHeight com.jianyue.main.controller:footerIndicatorHeight}</code></td><td> Height of the indicator above the footer line.</td></tr>
@@ -4293,27 +4288,24 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>
           @attr description
            View background 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#background}.
-          @attr name android:background
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_background}.
+          @attr name android:android_background
         */
         public static final int TitlePageIndicator_android_background = 2;
         /**
           <p>
           @attr description
            Color of regular titles. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#textColor}.
-          @attr name android:textColor
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_textColor}.
+          @attr name android:android_textColor
         */
         public static final int TitlePageIndicator_android_textColor = 1;
         /**
           <p>
           @attr description
            Size of title text. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#textSize}.
-          @attr name android:textSize
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_textSize}.
+          @attr name android:android_textSize
         */
         public static final int TitlePageIndicator_android_textSize = 0;
         /**
@@ -4331,7 +4323,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:clipPadding
+          @attr name android:clipPadding
         */
         public static final int TitlePageIndicator_clipPadding = 4;
         /**
@@ -4348,7 +4340,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:footerColor
+          @attr name android:footerColor
         */
         public static final int TitlePageIndicator_footerColor = 5;
         /**
@@ -4366,7 +4358,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:footerIndicatorHeight
+          @attr name android:footerIndicatorHeight
         */
         public static final int TitlePageIndicator_footerIndicatorHeight = 8;
         /**
@@ -4386,7 +4378,7 @@ containing a value of this type.
 <tr><td><code>underline</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:footerIndicatorStyle
+          @attr name android:footerIndicatorStyle
         */
         public static final int TitlePageIndicator_footerIndicatorStyle = 7;
         /**
@@ -4404,7 +4396,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:footerIndicatorUnderlinePadding
+          @attr name android:footerIndicatorUnderlinePadding
         */
         public static final int TitlePageIndicator_footerIndicatorUnderlinePadding = 9;
         /**
@@ -4422,7 +4414,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:footerLineHeight
+          @attr name android:footerLineHeight
         */
         public static final int TitlePageIndicator_footerLineHeight = 6;
         /**
@@ -4440,7 +4432,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:footerPadding
+          @attr name android:footerPadding
         */
         public static final int TitlePageIndicator_footerPadding = 10;
         /**
@@ -4459,7 +4451,7 @@ containing a value of this type.
 <tr><td><code>top</code></td><td>1</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:linePosition
+          @attr name android:linePosition
         */
         public static final int TitlePageIndicator_linePosition = 11;
         /**
@@ -4475,7 +4467,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:selectedBold
+          @attr name android:selectedBold
         */
         public static final int TitlePageIndicator_selectedBold = 12;
         /**
@@ -4492,7 +4484,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:selectedColor
+          @attr name android:selectedColor
         */
         public static final int TitlePageIndicator_selectedColor = 3;
         /**
@@ -4510,7 +4502,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:titlePadding
+          @attr name android:titlePadding
         */
         public static final int TitlePageIndicator_titlePadding = 13;
         /**
@@ -4528,7 +4520,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:topPadding
+          @attr name android:topPadding
         */
         public static final int TitlePageIndicator_topPadding = 14;
         /** Attributes that can be used with a UnderlinePageIndicator.
@@ -4537,7 +4529,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #UnderlinePageIndicator_android_background android:background}</code></td><td> View background </td></tr>
+           <tr><td><code>{@link #UnderlinePageIndicator_android_background com.jianyue.main.controller:android_background}</code></td><td> View background </td></tr>
            <tr><td><code>{@link #UnderlinePageIndicator_fadeDelay com.jianyue.main.controller:fadeDelay}</code></td><td> Length of the delay to fade the indicator.</td></tr>
            <tr><td><code>{@link #UnderlinePageIndicator_fadeLength com.jianyue.main.controller:fadeLength}</code></td><td> Length of the indicator fade to transparent.</td></tr>
            <tr><td><code>{@link #UnderlinePageIndicator_fades com.jianyue.main.controller:fades}</code></td><td> Whether or not the selected indicator fades.</td></tr>
@@ -4557,9 +4549,8 @@ containing a value of this type.
           <p>
           @attr description
            View background 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#background}.
-          @attr name android:background
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_background}.
+          @attr name android:android_background
         */
         public static final int UnderlinePageIndicator_android_background = 0;
         /**
@@ -4575,7 +4566,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:fadeDelay
+          @attr name android:fadeDelay
         */
         public static final int UnderlinePageIndicator_fadeDelay = 3;
         /**
@@ -4591,7 +4582,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:fadeLength
+          @attr name android:fadeLength
         */
         public static final int UnderlinePageIndicator_fadeLength = 4;
         /**
@@ -4607,7 +4598,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:fades
+          @attr name android:fades
         */
         public static final int UnderlinePageIndicator_fades = 2;
         /**
@@ -4624,7 +4615,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:selectedColor
+          @attr name android:selectedColor
         */
         public static final int UnderlinePageIndicator_selectedColor = 1;
         /** Attributes that can be used with a View.
@@ -4633,7 +4624,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td> Boolean that controls whether a view can take focus.</td></tr>
+           <tr><td><code>{@link #View_android_focusable com.jianyue.main.controller:android_focusable}</code></td><td> Boolean that controls whether a view can take focus.</td></tr>
            <tr><td><code>{@link #View_paddingEnd com.jianyue.main.controller:paddingEnd}</code></td><td> Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
            <tr><td><code>{@link #View_paddingStart com.jianyue.main.controller:paddingStart}</code></td><td> Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
            </table>
@@ -4653,9 +4644,8 @@ containing a value of this type.
              directly calling {@link android.view.View#requestFocus}, which will
              always request focus regardless of this view.  It only impacts where
              focus navigation will try to move focus. 
-          <p>This corresponds to the global attribute
-          resource symbol {@link android.R.attr#focusable}.
-          @attr name android:focusable
+          <p>This corresponds to the global attribute          resource symbol {@link com.jianyue.main.controller.R.attr#android_focusable}.
+          @attr name android:android_focusable
         */
         public static final int View_android_focusable = 0;
         /**
@@ -4673,7 +4663,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:paddingEnd
+          @attr name android:paddingEnd
         */
         public static final int View_paddingEnd = 2;
         /**
@@ -4691,7 +4681,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:paddingStart
+          @attr name android:paddingStart
         */
         public static final int View_paddingStart = 1;
         /** Attributes that can be used with a ViewPagerIndicator.
@@ -4727,7 +4717,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:vpiCirclePageIndicatorStyle
+          @attr name android:vpiCirclePageIndicatorStyle
         */
         public static final int ViewPagerIndicator_vpiCirclePageIndicatorStyle = 0;
         /**
@@ -4739,7 +4729,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:vpiIconPageIndicatorStyle
+          @attr name android:vpiIconPageIndicatorStyle
         */
         public static final int ViewPagerIndicator_vpiIconPageIndicatorStyle = 1;
         /**
@@ -4751,7 +4741,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:vpiLinePageIndicatorStyle
+          @attr name android:vpiLinePageIndicatorStyle
         */
         public static final int ViewPagerIndicator_vpiLinePageIndicatorStyle = 2;
         /**
@@ -4763,7 +4753,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:vpiTabPageIndicatorStyle
+          @attr name android:vpiTabPageIndicatorStyle
         */
         public static final int ViewPagerIndicator_vpiTabPageIndicatorStyle = 4;
         /**
@@ -4775,7 +4765,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:vpiTitlePageIndicatorStyle
+          @attr name android:vpiTitlePageIndicatorStyle
         */
         public static final int ViewPagerIndicator_vpiTitlePageIndicatorStyle = 3;
         /**
@@ -4787,7 +4777,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.jianyue.main.controller:vpiUnderlinePageIndicatorStyle
+          @attr name android:vpiUnderlinePageIndicatorStyle
         */
         public static final int ViewPagerIndicator_vpiUnderlinePageIndicatorStyle = 5;
     };

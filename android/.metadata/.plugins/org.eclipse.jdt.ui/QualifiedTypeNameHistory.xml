@@ -3,4 +3,6 @@
 <fullyQualifiedTypeName name="com.jianyue.webservices.WebElements"/>
 <fullyQualifiedTypeName name="com.jianyue.webservices.WebElements.SIGNUP"/>
 <fullyQualifiedTypeName name="org.apache.http.entity.mime.content.StringBody"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,9 @@
+package com.jianyue.main.controller;
+
+import android.app.ActivityGroup;
+
+ 
+public class MainGroupActivity extends ActivityGroup {
+	
+	
+}

@@ -46,7 +46,7 @@ public class NearByPeopleDataTask extends AsyncTask<String, Void, String>
 		if(!is_refresh)
 		{
 			mDialog = new ProgressDialog(context);
-			mDialog.setMessage("Retriving Nearby People...  ");
+			mDialog.setMessage("获取附近人员...  ");
 			mDialog.setCancelable(false);
 			mDialog.setCanceledOnTouchOutside(false);
 			mDialog.show();

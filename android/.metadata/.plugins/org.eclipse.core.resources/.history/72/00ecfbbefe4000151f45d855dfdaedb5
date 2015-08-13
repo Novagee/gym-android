@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">jianyue</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="Title">设置</string>
+    <string name="Gender">我想看:</string>
+    <string name="Location">我的位置</string>
+    <string name="PrivacyPolicy">用户协议与隐私条款</string>
+
+    <!-- <color name="main_bg_color">#F92869</color> -->
+    <color name="main_bg_color">#0394de</color>
+    <color name="pref_text_color">#6D6E70</color>
+    <color name="pref_bg_color">#E6E7E8</color>
+    <color name="event_bg_color">#F3F3F3</color>
+    <string name="no_internet">无网络连接</string>
+
+    <!-- Message Screen -->
+
+    <string name="MsgTitle">信箱</string>
+    <string name="MsgCurrentlyHave">您目前有</string>
+    <string name="Msg">条信息</string>
+    <string name="MsgPullUpDown">(下拉更新信息，上拉看信息)</string>
+    <string name="MsgMinutesAgo">分钟前</string>
+
+    <!-- Favourite Screen -->
+
+    <string name="FavTitle">朋友圈</string>
+    <string name="FavCurrentlyHave">您目前有</string>
+    <string name="FavFriends">个朋友</string>
+    <string name="FavPullUpDown">（下拉更新，上划翻看）</string>
+    <string name="FavMinutesAgo">分钟前</string>
+
+    <!-- Take Picture Screen -->
+
+    <string name="UpdateAvtar">更新头像</string>
+
+    <!-- Create Username -->
+
+    <string name="Nickname">昵称</string>
+
+    <!-- Gender Selection -->
+
+    <string name="GenderSelection">选择性别</string>
+
+    <!-- Send Message Place Holder -->
+
+    <string name="sendMessageHint">戳这儿输入聊天内容</string>
+    <string name="location_string">允许软件使用您当前的位置吗？</string>
+
+    <!-- 活动 -->
+    <string name="EventTitle">活动</string>
+
+    <color name="divider_color">#FFCCCCCC</color>
+
+    <string name="title_activity_apply_event">活动详情</string>
+    <string name="test">2、	根据实时考勤数据，提醒当事员工（弹窗形式）及考勤管理者（人力资源部特定员工）有未打卡情况（提醒按钮，点击进入后可查看当日所有未打卡情况）</string>
+
+</resources>

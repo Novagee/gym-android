@@ -1,0 +1,16 @@
+package com.jianyue.utils;
+
+/**
+ * 
+ * @author seeyet
+ * 活动列表的子项对象
+ */
+public class ClassEventItem {
+     /**
+      * 活动标题
+      */
+	 private String imageUrl; 
+	 
+	 
+	 
+}

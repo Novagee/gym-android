@@ -2,8 +2,12 @@
 <classpath>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
-	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="/appcompat_v7/bin/appcompat_v7.jar"/>
+	<classpathentry kind="lib" path="/page_indicator_library/bin/page_indicator_library.jar"/>
+	<classpathentry kind="lib" path="/Android-Universal-Image-Loader/bin/android-universal-image-loader.jar"/>
+	<classpathentry kind="lib" path="/Pull_to_Refresh_library/bin/pull_to_refresh_library.jar"/>
+	<classpathentry kind="lib" path="/AmazingListView/bin/amazinglistview.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
