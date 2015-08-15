@@ -54,8 +54,9 @@
 
     <color name="divider_color">#FFCCCCCC</color>
 
-     <string name="txt_apply_event">我要预约</string>
+    <string name="txt_apply_event">我要预约</string>
     <string name="title_activity_apply_event">活动详情</string>
+     <string name="apply_event_unknow">不详</string>
     <string name="test">2、	根据实时考勤数据，提醒当事员工（弹窗形式）及考勤管理者（人力资源部特定员工）有未打卡情况（提醒...</string>
 
 </resources>

@@ -48,7 +48,7 @@ public class FetchChatDataTask extends AsyncTask<String, Void, String>
 		if(!is_refresh && !is_badge_display)
 		{
 			mDialog = new ProgressDialog(context);
-			mDialog.setMessage("Fetching Chat...  ");
+			mDialog.setMessage("获取聊天数据...  ");
 			mDialog.setCancelable(false);
 			mDialog.setCanceledOnTouchOutside(false);
 			mDialog.show();

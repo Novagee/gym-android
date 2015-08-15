@@ -36,7 +36,7 @@ public class EditProfileDataTask extends AsyncTask<MultipartEntity, Void, String
 		if(is_loading)
 		{
 			mDialog = new ProgressDialog(context);
-			mDialog.setMessage("Saving...  ");
+			mDialog.setMessage("正在保存...  ");
 			mDialog.setCancelable(false);
 			mDialog.setCanceledOnTouchOutside(false);
 			mDialog.show();

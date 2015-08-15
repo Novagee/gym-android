@@ -7,3 +7,8 @@
 1439354188828	Delete element
 1439391323948	Copy compilation unit
 1439391608676	Rename type 'ClassEventItem'
+1439449904853	Rename type 'FetchEventDataTask'
+1439450535865	Copy compilation unit
+1439451693747	Rename resource 'event_list.xml'
+1439451716788	Rename resource 'event_view.xml'
+1439642854556	Rename type 'FetchEventDataTask'

@@ -44,67 +44,16 @@ public class ClassEvent {
 	  */
 	 private String pic;
 	 
-     /**
-      * 活动图片
-      */
-	 private String imageUrl; 
-	 
-	 /**
-	  * 活动标题
-	  */
-	 private String eventTitle;
-	 
-	 /**
-	  * 活动描述
-	  */
-	 private String eventContent;
-	 
-	 /**
-	  * 活动的id
-	  */
-	 private String eventId;
-	 
+
 	public ClassEvent(){
 		
 	}
 	
-	public ClassEvent(String imageUrl,String eventTitle,String eventContent,String eventId){
-		this.imageUrl = imageUrl;
-		this.eventTitle = eventTitle;
-		this.eventContent = eventContent;
-		this.eventId = eventId;
-	}
-
-	public String getImageUrl() {
-		return imageUrl;
-	}
-
-	public void setImageUrl(String imageUrl) {
-		this.imageUrl = imageUrl;
-	}
-
-	public String getEventTitle() {
-		return eventTitle;
-	}
-
-	public void setEventTitle(String eventTitle) {
-		this.eventTitle = eventTitle;
-	}
-
-	public String getEventContent() {
-		return eventContent;
-	}
-
-	public void setEventContent(String eventContent) {
-		this.eventContent = eventContent;
-	}
-
-	public String getEventId() {
-		return eventId;
-	}
-
-	public void setEventId(String eventId) {
-		this.eventId = eventId;
+	public ClassEvent(String pic,String title,String description,String id){
+		this.pic = pic;
+		this.title = title;
+		this.description = description;
+		this.id = id;
 	}
 
 	public String getId() {

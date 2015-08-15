@@ -46,7 +46,7 @@ public class FetchFriendDataTask extends AsyncTask<String, Void, String>
 		if(!is_refresh)
 		{
 			mDialog = new ProgressDialog(context);
-			mDialog.setMessage("Fetching Friend...  ");
+			mDialog.setMessage("正在获取好友...  ");
 			mDialog.setCancelable(false);
 			mDialog.setCanceledOnTouchOutside(false);
 			mDialog.show();

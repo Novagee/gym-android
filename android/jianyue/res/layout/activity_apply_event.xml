@@ -8,18 +8,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/main_bg_color"
-        android:padding="@dimen/scale_10dp" >
+        android:background="@color/main_bg_color">
 
         <ImageView
-            android:id="@+id/ivPrefCamera"
+            android:id="@+id/event_back"
+            android:padding="@dimen/scale_10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/ico_left_white" />
 
         <TextView
-            android:id="@+id/tvTitle"
+            android:id="@+id/event_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -31,7 +31,7 @@
     </LinearLayout>
     
     <ImageView
-        android:id="@+id/img_msg_item"
+        android:id="@+id/event_pic"
         android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="150dip" />
@@ -43,7 +43,7 @@
         android:padding="@dimen/scale_5dp"
         android:orientation="horizontal" >
          <TextView
-            android:id="@+id/event_title_item"
+            android:id="@+id/event_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -64,10 +64,10 @@
         android:layout_height="wrap_content" 
         android:src="@drawable/ico_love" />
             <TextView
-            android:id="@+id/event_content_item"
+            android:id="@+id/event_apply_num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_activity_apply_event"
+            android:text="@string/apply_event_unknow"
             android:textSize="12sp" />
         </LinearLayout>
      </LinearLayout>  
@@ -98,7 +98,7 @@
             android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_activity_apply_event"
+            android:text="@string/apply_event_unknow"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
      </LinearLayout>
@@ -126,7 +126,7 @@
             android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_activity_apply_event"
+            android:text="@string/apply_event_unknow"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
      </LinearLayout>
@@ -155,7 +155,7 @@
             android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_activity_apply_event"
+            android:text="@string/apply_event_unknow"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
      </LinearLayout>
@@ -182,7 +182,7 @@
         android:background="@android:color/white"
         android:orientation="vertical" >
      <TextView
-            android:id="@+id/event_content_item"
+            android:id="@+id/event_description"
             android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -191,7 +191,7 @@
             android:textSize="18sp" />
      </LinearLayout>
      <TextView
-        android:id="@+id/time_msg_item"
+        android:id="@+id/apply_event_button"
         android:clickable="true" 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

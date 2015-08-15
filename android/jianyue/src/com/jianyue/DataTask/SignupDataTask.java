@@ -32,7 +32,7 @@ public class SignupDataTask extends AsyncTask<MultipartEntity, Void, String>
 	protected void onPreExecute()
 	{
 		mDialog = new ProgressDialog(context);
-		mDialog.setMessage("Signing up...  ");
+		mDialog.setMessage("正在注册...  ");
 		mDialog.setCancelable(false);
 		mDialog.setCanceledOnTouchOutside(false);
 		mDialog.show();

@@ -62,63 +62,71 @@ public class EventListAdapter extends BaseAdapter {
 		// TODO Auto-generated method stub
 		View v = mInflater.inflate(R.layout.event_item_layout, null);
 		
-		
-		ImageView imageView = (ImageView) v.findViewById(R.id.img_msg_item);
-		
-		imageLoader.displayImage(
-				listItem.get(position).getImageUrl(), imageView,
-				options, new ImageLoadingListener() {
+		ImageView imageView = (ImageView) v.findViewById(R.id.event_pic);
+		String pic = listItem.get(position).getPic();
+		if(!(pic == null || "".equals(pic))){
+			System.out.println("event pic:"+pic);
+			imageLoader.displayImage(pic, imageView,
+					options, new ImageLoadingListener() {
+						@Override
+						public void onLoadingStarted(
+								String imageUri, View view) {
+						//	pb.setVisibility(View.VISIBLE);
+						}
 
-					@Override
-					public void onLoadingStarted(
-							String imageUri, View view) {
-					//	pb.setVisibility(View.VISIBLE);
-					}
+						@Override
+						public void onLoadingFailed(
+								String imageUri, View view,
+								FailReason failReason) {
+						//	pb.setVisibility(View.GONE);
+						}
 
-					@Override
-					public void onLoadingFailed(
-							String imageUri, View view,
-							FailReason failReason) {
-					//	pb.setVisibility(View.GONE);
-					}
+						@Override
+						public void onLoadingComplete(
+								String imageUri, View view,
+								Bitmap loadedImage) {
+						//	pb.setVisibility(View.GONE);
+						}
 
-					@Override
-					public void onLoadingComplete(
-							String imageUri, View view,
-							Bitmap loadedImage) {
-					//	pb.setVisibility(View.GONE);
-					}
+						@Override
+						public void onLoadingCancelled(
+								String imageUri, View view) {
+						//	pb.setVisibility(View.GONE);
+						}
+					});	
+				
+			
+		}
+		TextView tvEventTitle = (TextView)v.findViewById(R.id.event_title);
+		tvEventTitle.setText(listItem.get(position).getTitle());
 
-					@Override
-					public void onLoadingCancelled(
-							String imageUri, View view) {
-					//	pb.setVisibility(View.GONE);
-					}
-				});
+		TextView tvEventDescription = (TextView)v.findViewById(R.id.event_description);
+		tvEventDescription.setText(listItem.get(position).getDescription());
 		
-		//imageView.setImageResource(listItem.get(position).getPhotoDrawableId());
-		
-		TextView nameMsg = (TextView)v.findViewById(R.id.event_title_item);
-		nameMsg.setText(listItem.get(position).getEventTitle());
+		TextView eventBook = (TextView)v.findViewById(R.id.event_book);
+		eventBook.setText("预约");
+		eventBook.setOnClickListener(getOnClickListener(listItem.get(position)));
 
-		TextView contentMsg = (TextView)v.findViewById(R.id.event_content_item);
-		contentMsg.setText(listItem.get(position).getEventContent());
-		
-		TextView timeMsg = (TextView)v.findViewById(R.id.time_msg_item);
-		timeMsg.setText(listItem.get(position).getEventId());
-		timeMsg.setOnClickListener(new OnClickListener() {
+		return v;
+	}
+	
+	private OnClickListener getOnClickListener(final ClassEvent event){
+		return new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				Intent i = new Intent(mContext,
 						ApplyEventActivity.class);
-				i.putExtra("reply_mode", false);
+				i.putExtra("id", event.getId());
+				i.putExtra("title", event.getTitle());
+				i.putExtra("description", event.getDescription());
+				i.putExtra("pic", event.getPic());
+				System.out.println(event.getStarttime());
 				mContext.startActivity(i);
 			//	overridePendingTransition(R.anim.slide_up, R.anim.slide_up_out);
 		    
 			}
-			});
-
-		return v;
+		};
+		
 	}
 
 }

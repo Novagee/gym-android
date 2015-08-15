@@ -47,7 +47,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 import com.jianyue.DataTask.CommonDataTask;
 import com.jianyue.DataTask.EditProfileDataTask;
 import com.jianyue.DataTask.FetchChatDataTask;
-import com.jianyue.DataTask.FetchEventDataTask;
+import com.jianyue.DataTask.FetchEventListDataTask;
 import com.jianyue.DataTask.FetchFriendDataTask;
 import com.jianyue.DataTask.NearByPeopleDataTask;
 import com.jianyue.main.controller.adapter.EventListAdapter;
@@ -113,7 +113,6 @@ public class MainActivity extends Activity {
 	ArrayList<ClassUserDetail> near_by_users = new ArrayList<ClassUserDetail>();
 	ArrayList<ClassChat> message_list = new ArrayList<ClassChat>();
 	ArrayList<ClassFriend> friends_list = new ArrayList<ClassFriend>();
-	ArrayList<ClassEvent> events_list = new ArrayList<ClassEvent>();
 	ArrayList<String> user_ids = new ArrayList<String>();
 	ArrayList<String> chat_user_senderids = new ArrayList<String>();
 	ArrayList<String> message_ids = new ArrayList<String>();
@@ -127,7 +126,7 @@ public class MainActivity extends Activity {
 	 * 活动内容开始
 	 */
 	private ListView event_list_view;
-	private List<ClassEvent> event_list = new ArrayList<ClassEvent>();
+	private ArrayList<ClassEvent> events_list = new ArrayList<ClassEvent>();
 	private EventListAdapter event_list_adapter;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -164,7 +163,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onPageSelected(int page_no) {
 				if (page_no == 1) {
-					requestFetchEventWebservice();
+					requestFetchEventListWebservice();
 				} else if (page_no == 2) {
 					reloadChat();
 				} else if (page_no == 3) {
@@ -354,11 +353,8 @@ public class MainActivity extends Activity {
 				
 				v = MainActivity.this.getLayoutInflater().inflate(
 						R.layout.event_list, null);
-				event_list.add(new ClassEvent("http://123.56.155.120/jy/uploads/profile/20150809142506256-53adaaae-1804-413d-adbf-326de6160aa3-ID_588.jpg", "全民健身", "健身吧，活力健身优惠季", "预约"));
-				event_list.add(new ClassEvent("http://123.56.155.120/jy/uploads/profile/20150810060017017-8e1ef089-14ff-4228-a704-8253d8ff5d30-ID_591.jpg", "生命在于运动", "健身吧，活力健身优惠季", "预约"));
-				event_list.add(new ClassEvent("http://123.56.155.120/jy/uploads/profile/20150811141800180-4694b52b-d958-4546-a205-333994657fd9-TCHFileName.jpg", "生命在于睡觉", "睡觉吧，活力健身优惠季", "预约"));
 				event_list_view = (ListView)v.findViewById(R.id.listview_event);
-				event_list_adapter = new EventListAdapter(event_list, MainActivity.this);
+				event_list_adapter = new EventListAdapter(events_list, MainActivity.this);
 				event_list_view.setAdapter(event_list_adapter);
 				
 				
@@ -1491,11 +1487,11 @@ public class MainActivity extends Activity {
 	}
 	
 	
-	private void requestFetchEventWebservice() {
+	private void requestFetchEventListWebservice() {
 
 		final ClassAPIResponse apiResponse = new ClassAPIResponse();
-		friends_list.clear();
-		FetchEventDataTask task = new FetchEventDataTask(MainActivity.this,
+		events_list.clear();
+		FetchEventListDataTask task = new FetchEventListDataTask(MainActivity.this,
 				apiResponse, "r/event/", events_list, is_refresh_event) {
 			@Override
 			protected void onPostExecute(String result) {

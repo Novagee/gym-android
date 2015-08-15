@@ -49,4 +49,10 @@ public class WebElements {
 		public final static String PAGESIZE = "pageSize";
 		public final static String TIMESTAMP = "timestamp";
 	}
+	
+	public final static class FETCH_OR_APPLY_EVENT{
+		public final static String UUID = "uuid";
+		public final static String PHONE_NUMBER= "mobile";
+		public final static String TIMESTAMP = "timestamp";
+	}
 }
