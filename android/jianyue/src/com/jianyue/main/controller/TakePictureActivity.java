@@ -2,11 +2,15 @@ package com.jianyue.main.controller;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.List;
 
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntity;
 import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.entity.mime.content.StringBody;
+import org.fireking.app.imagelib.entity.ImageBean;
+import org.fireking.app.imagelib.tools.Config;
+import org.fireking.app.imagelib.widget.PicSelectActivity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,6 +18,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.hardware.Camera;
 import android.media.AudioManager;
 import android.os.Bundle;
@@ -55,6 +60,7 @@ public class TakePictureActivity extends Activity
 	
 	private boolean enable_click = true;
 
+	private boolean initFirst = true;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -116,6 +122,11 @@ public class TakePictureActivity extends Activity
 			public boolean onTouch(View v, MotionEvent event) {
 				switch (event.getAction()) {
 			    case MotionEvent.ACTION_DOWN:
+			    	Intent intent = new Intent(TakePictureActivity.this,
+			    			PicSelectActivity.class);
+			    	Config.setLimit(1);
+			    	startActivityForResult(intent, 0x123);
+			    	/*
 			    	if (mPreview == null && enable_click)
 					{
 						mPreview = new CameraPreview(TakePictureActivity.this, flash_mode);
@@ -127,12 +138,15 @@ public class TakePictureActivity extends Activity
 							Toast.makeText(TakePictureActivity.this, "Can't load camera!", Toast.LENGTH_SHORT).show();
 							backManage();
 						}
-					}
+						initFirst = true;
+					}else{
+						initFirst = false;
+					}*/
 			    	break;
 			    case MotionEvent.ACTION_MOVE:
 			    	break;
 			    case MotionEvent.ACTION_UP:
-			    	if(enable_click)
+			    	if(enable_click && initFirst ==false)
 			    	{
 				    	if (mPreview == null)
 						{
@@ -368,5 +382,31 @@ public class TakePictureActivity extends Activity
 		ivGotIt.setVisibility(View.GONE);
 		ivTakePicTop.setVisibility(View.GONE);
 		ivTakePicBottom.setVisibility(View.GONE);
+	}
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		if (requestCode == 0x123 && resultCode == RESULT_OK) {
+			Intent intent = data;
+			List<ImageBean> images = (List<ImageBean>) intent.getSerializableExtra("images");
+			if(images.size() > 0){
+				GlobalData.bmp = null;
+				GlobalData.bmp = BitmapFactory.decodeFile(images.get(0).path) ;
+				GlobalData.sd_path = images.get(0).path;
+				if(is_first_time)
+				{
+					backManage();
+				}
+				else
+				{
+					requestEditProfileWebservice();
+				}
+			}
+			/*
+			for (ImageBean b : images) {
+				System.out.println("<><<><> ???" + b.toString());
+			}*/
+		}
+		super.onActivityResult(requestCode, resultCode, data);
 	}
 }

@@ -2,17 +2,23 @@ package com.jianyue.main.controller;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.List;
 
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntity;
 import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.entity.mime.content.StringBody;
+import org.fireking.app.imagelib.entity.ImageBean;
+import org.fireking.app.imagelib.tools.Config;
+import org.fireking.app.imagelib.widget.PicSelectActivity;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.hardware.Camera;
 import android.media.AudioManager;
 import android.os.Bundle;
@@ -48,7 +54,7 @@ public class SendMessageActivity extends Activity {
 	
 	private String width = "", height = "" , receiver = "";
 	private boolean reply_mode = true;
-
+	private boolean initFirst = true;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -80,6 +86,7 @@ public class SendMessageActivity extends Activity {
 				case MotionEvent.ACTION_DOWN:
 					if(etMessage.getText().toString().trim().length() > 0)
 					{
+						/*
 						if (mPreview == null) {
 							mPreview = new CameraPreview(SendMessageActivity.this,
 									flash_mode);
@@ -92,7 +99,15 @@ public class SendMessageActivity extends Activity {
 										.show();
 								backManage();
 							}
-						}
+							initFirst = true;
+						}else{
+							initFirst = false;
+						}*/
+						Intent intent = new Intent(SendMessageActivity.this,
+				    			PicSelectActivity.class);
+				    	Config.setLimit(1);
+				    	startActivityForResult(intent, 0x123);
+						
 					}
 					else
 					{
@@ -102,7 +117,7 @@ public class SendMessageActivity extends Activity {
 				case MotionEvent.ACTION_MOVE:
 					break;
 				case MotionEvent.ACTION_UP:
-					if(etMessage.getText().toString().trim().length() > 0)
+					if(etMessage.getText().toString().trim().length() > 0 && initFirst == false)
 					{
 						if (mPreview == null) {
 							mPreview = new CameraPreview(SendMessageActivity.this,
@@ -170,6 +185,7 @@ public class SendMessageActivity extends Activity {
 	}
 
 	public String getFilePathFromSDCARD(Bitmap image) {
+		
 		File folder = null;
 		if (Environment.getExternalStorageState().equals(
 				Environment.MEDIA_MOUNTED)) {
@@ -296,6 +312,23 @@ public class SendMessageActivity extends Activity {
 			StaticMethodsUtility.showNegativeToast(SendMessageActivity.this,
 					getResources().getString(R.string.no_internet));
 		}
+	}
+	
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		if (requestCode == 0x123 && resultCode == RESULT_OK) {
+			Intent intent = data;
+			List<ImageBean> images = (List<ImageBean>) intent.getSerializableExtra("images");
+			if(images.size() > 0){
+				GlobalData.bmp = null;
+				GlobalData.bmp = BitmapFactory.decodeFile(images.get(0).path) ;
+				GlobalData.sd_path = images.get(0).path;
+				requestSendMessageWebservice();
+			}
+			
+		}
+		super.onActivityResult(requestCode, resultCode, data);
 	}
 
 }
