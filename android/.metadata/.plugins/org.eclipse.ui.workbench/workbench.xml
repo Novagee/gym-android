@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="12" version="2.0">
 <workbenchAdvisor/>
 <window height="760" maximized="true" width="1024" x="175" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -37,122 +37,19 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
-<part id="14"/>
-<part id="15"/>
-<part id="16"/>
-<part id="17"/>
-<part id="18"/>
-<part id="19"/>
-<part id="20"/>
-<part id="21"/>
-<part id="22"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ApplyEventActivity.java" partName="ApplyEventActivity.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/main/controller/ApplyEventActivity.java" title="ApplyEventActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/ApplyEventActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/main/controller/ApplyEventActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5159" selectionTopPixel="1975"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/main/controller/MainActivity.java" title="MainActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/MainActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/main/controller/MainActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11518" selectionTopPixel="23606"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EventListAdapter.java" partName="EventListAdapter.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/main/controller/adapter/EventListAdapter.java" title="EventListAdapter.java" tooltip="jianyue/src/com/jianyue/main/controller/adapter/EventListAdapter.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/main/controller/adapter/EventListAdapter.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="3763" selectionTopPixel="1653"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_apply_event.xml" partName="activity_apply_event.xml" path="E:/Projects/gym-android/android/jianyue/res/layout/activity_apply_event.xml" title="activity_apply_event.xml" tooltip="jianyue/res/layout/activity_apply_event.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/res/layout/activity_apply_event.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClassEvent.java" partName="ClassEvent.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/utils/ClassEvent.java" title="ClassEvent.java" tooltip="jianyue/src/com/jianyue/utils/ClassEvent.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/utils/ClassEvent.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="1119" selectionTopPixel="1326"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FetchEventListDataTask.java" partName="FetchEventListDataTask.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/DataTask/FetchEventListDataTask.java" title="FetchEventListDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/FetchEventListDataTask.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/DataTask/FetchEventListDataTask.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="3" selectionOffset="2937" selectionTopPixel="1102"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FetchFriendDataTask.java" partName="FetchFriendDataTask.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/DataTask/FetchFriendDataTask.java" title="FetchFriendDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/FetchFriendDataTask.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/DataTask/FetchFriendDataTask.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1519" selectionTopPixel="346"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="event_list.xml" partName="event_list.xml" path="E:/Projects/gym-android/android/jianyue/res/layout/event_list.xml" title="event_list.xml" tooltip="jianyue/res/layout/event_list.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/res/layout/event_list.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SettingActivity.java" partName="SettingActivity.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/main/controller/SettingActivity.java" title="SettingActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/SettingActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/main/controller/SettingActivity.java"/>
-<editorState selectionHorizontalPixel="67" selectionLength="6" selectionOffset="3995" selectionTopPixel="1870"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SendMessageActivity.java" partName="SendMessageActivity.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/main/controller/SendMessageActivity.java" title="SendMessageActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/SendMessageActivity.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SendMessageActivity.java" partName="SendMessageActivity.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/main/controller/SendMessageActivity.java" title="SendMessageActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/SendMessageActivity.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/main/controller/SendMessageActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="68" selectionOffset="4916" selectionTopPixel="1972"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="event_item_layout.xml" partName="event_item_layout.xml" path="E:/Projects/gym-android/android/jianyue/res/layout/event_item_layout.xml" title="event_item_layout.xml" tooltip="jianyue/res/layout/event_item_layout.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/res/layout/event_item_layout.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WebElements.java" partName="WebElements.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/webservices/WebElements.java" title="WebElements.java" tooltip="jianyue/src/com/jianyue/webservices/WebElements.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/webservices/WebElements.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="20" selectionOffset="2056" selectionTopPixel="391"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CallWebService.java" partName="CallWebService.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/webservices/CallWebService.java" title="CallWebService.java" tooltip="jianyue/src/com/jianyue/webservices/CallWebService.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/webservices/CallWebService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2707" selectionTopPixel="597"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FetchChatDataTask.java" partName="FetchChatDataTask.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/DataTask/FetchChatDataTask.java" title="FetchChatDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/FetchChatDataTask.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/DataTask/FetchChatDataTask.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1646" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EditProfileDataTask.java" partName="EditProfileDataTask.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/DataTask/EditProfileDataTask.java" title="EditProfileDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/EditProfileDataTask.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/DataTask/EditProfileDataTask.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1132" selectionTopPixel="359"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommonDataTask.java" partName="CommonDataTask.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/DataTask/CommonDataTask.java" title="CommonDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/CommonDataTask.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/DataTask/CommonDataTask.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="222"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SignupDataTask.java" partName="SignupDataTask.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/DataTask/SignupDataTask.java" title="SignupDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/SignupDataTask.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/DataTask/SignupDataTask.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1006" selectionTopPixel="204"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SendMessageDataTask.java" partName="SendMessageDataTask.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/DataTask/SendMessageDataTask.java" title="SendMessageDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/SendMessageDataTask.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/DataTask/SendMessageDataTask.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="266"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NearByPeopleDataTask.java" partName="NearByPeopleDataTask.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/DataTask/NearByPeopleDataTask.java" title="NearByPeopleDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/NearByPeopleDataTask.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/DataTask/NearByPeopleDataTask.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="287"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TakePictureActivity.java" partName="TakePictureActivity.java" path="E:/Projects/gym-android/android/jianyue/src/com/jianyue/main/controller/TakePictureActivity.java" title="TakePictureActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/TakePictureActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/src/com/jianyue/main/controller/TakePictureActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="3845" selectionTopPixel="1165"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="ImageLib Manifest" path="E:/Projects/imagelib-master/bin/AndroidManifest.xml" title="ImageLib Manifest" tooltip="ImageLib/bin/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ImageLib/bin/AndroidManifest.xml"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HostActivity.java" partName="HostActivity.java" path="E:/Projects/imagelib-master/src/org/fireking/app/imagelib/HostActivity.java" title="HostActivity.java" tooltip="ImageLib/src/org/fireking/app/imagelib/HostActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ImageLib/src/org/fireking/app/imagelib/HostActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="24" selectionOffset="8" selectionTopPixel="2021"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="jianyue Manifest" path="E:/Projects/gym-android/android/jianyue/AndroidManifest.xml" title="jianyue Manifest" tooltip="jianyue/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jianyue/AndroidManifest.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="3" selectionOffset="2522" selectionTopPixel="466"/>
 </editor>
 </editors>
 <views>
-<view id="com.android.ide.eclipse.ddms.views.ThreadView" partName="Threads"/>
+<view id="com.android.ide.eclipse.ddms.views.ThreadView" partName="Threads">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 <view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Type Hierarchy">
 <viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" input="=jianyue/src&lt;com.jianyue.main.controller{CameraPreview.java[CameraPreview" link_editors="0" mv_vertical_scroll="0" orientation="3" qualified_names="0" ratio="350" selection="=jianyue/src&lt;com.jianyue.main.controller{CameraPreview.java[CameraPreview" showinherited="false" sortbydefiningtype="false" vertical_scroll="0" view="2" workingSetName=""/>
@@ -188,6 +85,7 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (71 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -205,6 +103,7 @@
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
 </viewState>
 </view>
 <view id="org.eclipse.debug.ui.VariableView" partName="Variables">
@@ -243,12 +142,14 @@
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
 <viewState/>
 </view>
-<view id="com.android.ide.eclipse.ddms.views.DeviceView" partName="Devices"/>
+<view id="com.android.ide.eclipse.ddms.views.DeviceView" partName="Devices">
+<viewState/>
+</view>
 <view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="0" fixed="0" version="0.016">
 <descriptor class="com.android.ide.eclipse.ddms.Perspective" id="com.android.ide.eclipse.ddms.Perspective" label="DDMS"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -277,9 +178,9 @@
 <perspective_action id="org.eclipse.ui.resourcePerspective"/>
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
 <view id="com.android.ide.eclipse.ddms.views.DeviceView"/>
 <view id="com.android.ide.eclipse.ddms.views.ThreadView"/>
@@ -290,21 +191,36 @@
 <view id="com.android.ide.eclipse.ddms.views.EmulatorControlView"/>
 <view id="com.android.ide.eclipse.ddms.views.SysInfoView"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="devices">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.DeviceView:*" label="LabelNotFound"/>
+<layout>
+<mainWindow>
+<info folder="true" part="devices">
+<folder activePageID="com.android.ide.eclipse.ddms.views.DeviceView" appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.DeviceView" label="Devices"/>
+<page content="com.android.ide.eclipse.ddms.views.DeviceView:*" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="devices">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="devices">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="logcat" ratio="0.799687" ratioLeft="511" ratioRight="128" relationship="4" relative="devices">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.LogCatView:*" label="LabelNotFound"/>
+<info folder="true" part="logcat" ratio="0.799687" ratioLeft="511" ratioRight="128" relationship="4" relative="devices">
+<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<page content="com.android.ide.eclipse.ddms.views.LogCatView:*" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.3" ratioLeft="300" ratioRight="700" relationship="2" relative="devices"/>
-<info folder="true" part="ddms-detail" ratio="0.5" ratioLeft="350" ratioRight="350" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.ThreadView:*" label="LabelNotFound"/>
+<info folder="true" part="ddms-detail" ratio="0.5" ratioLeft="350" ratioRight="350" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.android.ide.eclipse.ddms.views.ThreadView" appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.ThreadView" label="Threads"/>
 <page content="com.android.ide.eclipse.ddms.views.HeapView" label="Heap"/>
 <page content="com.android.ide.eclipse.ddms.views.AllocTrackerView" label="Allocation Tracker"/>
@@ -312,6 +228,16 @@
 <page content="com.android.ide.eclipse.ddms.views.FileExplorerView" label="File Explorer"/>
 <page content="com.android.ide.eclipse.ddms.views.EmulatorControlView" label="Emulator Control"/>
 <page content="com.android.ide.eclipse.ddms.views.SysInfoView" label="System Information"/>
+<page content="com.android.ide.eclipse.ddms.views.ThreadView:*" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+</presentation>
 </folder>
 </info>
 </mainWindow>
@@ -409,8 +335,8 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.38691884" ratioLeft="491" ratioRight="778" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.56374806" ratioLeft="367" ratioRight="284" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.37746257" ratioLeft="479" ratioRight="790" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.5529954" ratioLeft="360" ratioRight="291" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -489,11 +415,11 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.cdt.debug.ui.executablesView"/>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
@@ -519,7 +445,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74923545" ratioLeft="490" ratioRight="164" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.57757294" ratioLeft="376" ratioRight="275" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
 <folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -579,32 +505,35 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/main/controller/ApplyEventActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/DataTask/ApplyEventDataTask.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=jianyue/D:\/adt-bundle-windows-x86-20130219\/sdk\/platforms\/android-19\/android.jar&lt;android.telephony(TelephonyManager.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/main/controller/SendMessageActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/DataTask/FetchChatDataTask.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/DataTask/EditProfileDataTask.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/DataTask/CommonDataTask.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/DataTask/ApplyEventDataTask.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/DataTask/SignupDataTask.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/DataTask/SendMessageDataTask.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/DataTask/NearByPeopleDataTask.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/DataTask/FetchFriendDataTask.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/DataTask/FetchEventListDataTask.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/main/controller/ApplyEventActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/main/controller/TakePictureActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ImageLib/src/org/fireking/app/imagelib/HostActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/DataTask/NearByPeopleDataTask.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/ImageLib/bin/AndroidManifest.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/jianyue/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=jianyue/D:\/adt-bundle-windows-x86-20130219\/sdk\/platforms\/android-19\/android.jar&lt;java.lang(System.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/main/controller/CreateUserNameActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/main/controller/UILApplication.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/main/controller/SettingActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/main/controller/PhoneContactActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/main/controller/GenderSelectionActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/main/controller/FLASH_MODE.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/utils/LocationHandler.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/utils/LocationService.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/jianyue/res/values/strings.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/jianyue/res/values/styles.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/utils/AlertDialogUtility.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jianyue/src/com/jianyue/main/controller/SendMessageActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/jianyue/res/layout/send_message.xml"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=jianyue/D:\/adt-bundle-windows-x86-20130219\/sdk\/platforms\/android-19\/android.jar&lt;android.view(View.class"/>
 </editors>
-<item historyLabel="ApplyEventDataTask.java" index="1">
-<position info="not_deleted" x="537" y="14"/>
+<item historyLabel="ApplyEventActivity.java" index="0">
+<position/>
 </item>
 <item historyLabel="ApplyEventActivity.java" index="0">
-<position info="not_deleted" x="5698" y="0"/>
+<position/>
+</item>
+<item historyLabel="ApplyEventActivity.java" index="0">
+<position info="not_deleted" x="3979" y="0"/>
+</item>
+<item historyLabel="ApplyEventActivity.java" index="0">
+<position info="not_deleted" x="3762" y="0"/>
+</item>
+<item historyLabel="ApplyEventActivity.java" index="0">
+<position info="not_deleted" x="4890" y="0"/>
 </item>
 <item historyLabel="ApplyEventActivity.java" index="0">
 <position/>
@@ -613,116 +542,123 @@
 <position/>
 </item>
 <item historyLabel="ApplyEventActivity.java" index="0">
-<position info="not_deleted" x="3423" y="0"/>
+<position info="not_deleted" x="4890" y="0"/>
+</item>
+<item historyLabel="ApplyEventActivity.java" index="0">
+<position/>
+</item>
+<item historyLabel="System.class" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="ApplyEventActivity.java" index="0">
 <position/>
 </item>
 <item historyLabel="ApplyEventActivity.java" index="0">
+<position info="not_deleted" x="4505" y="0"/>
+</item>
+<item historyLabel="ApplyEventActivity.java" index="0">
+<position info="not_deleted" x="4994" y="20"/>
+</item>
+<item historyLabel="ApplyEventActivity.java" index="0">
+<position info="not_deleted" x="4890" y="0"/>
+</item>
+<item historyLabel="ApplyEventActivity.java" index="0">
+<position info="not_deleted" x="4479" y="0"/>
+</item>
+<item historyLabel="ApplyEventActivity.java" index="0">
+<position info="not_deleted" x="6115" y="0"/>
+</item>
+<item historyLabel="ApplyEventActivity.java" index="0">
+<position info="not_deleted" x="4888" y="0"/>
+</item>
+<item historyLabel="CreateUserNameActivity.java" index="2">
 <position/>
 </item>
-<item historyLabel="TelephonyManager.class" index="2">
+<item historyLabel="ApplyEventActivity.java" index="0">
+<position info="not_deleted" x="4888" y="0"/>
+</item>
+<item historyLabel="UILApplication.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SettingActivity.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PhoneContactActivity.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="GenderSelectionActivity.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FLASH_MODE.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CreateUserNameActivity.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="ApplyEventActivity.java" index="0">
-<position info="not_deleted" x="3683" y="0"/>
+<position info="not_deleted" x="4888" y="0"/>
 </item>
-<item historyLabel="SendMessageActivity.java" index="3">
-<position info="not_deleted" x="4916" y="68"/>
+<item historyLabel="LocationHandler.java" index="8">
+<position/>
 </item>
 <item historyLabel="ApplyEventActivity.java" index="0">
-<position info="not_deleted" x="5159" y="0"/>
+<position info="not_deleted" x="4888" y="0"/>
 </item>
-<item historyLabel="FetchChatDataTask.java" index="4">
-<position info="not_deleted" x="1646" y="0"/>
-</item>
-<item historyLabel="EditProfileDataTask.java" index="5">
-<position info="not_deleted" x="1132" y="0"/>
-</item>
-<item historyLabel="CommonDataTask.java" index="6">
+<item historyLabel="LocationService.java" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ApplyEventDataTask.java" index="7">
-<position info="not_deleted" x="537" y="14"/>
-</item>
-<item historyLabel="SignupDataTask.java" index="8">
-<position info="not_deleted" x="1006" y="0"/>
-</item>
-<item historyLabel="SendMessageDataTask.java" index="9">
+<item historyLabel="strings.xml" index="10"/>
+<item historyLabel="LocationService.java" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="NearByPeopleDataTask.java" index="10">
+<item historyLabel="LocationHandler.java" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="FetchFriendDataTask.java" index="11">
-<position info="not_deleted" x="2739" y="744"/>
-</item>
-<item historyLabel="FetchEventListDataTask.java" index="12">
-<position info="not_deleted" x="2937" y="3"/>
-</item>
-<item historyLabel="FetchChatDataTask.java" index="4">
-<position info="not_deleted" x="1646" y="0"/>
-</item>
-<item historyLabel="EditProfileDataTask.java" index="5">
-<position info="not_deleted" x="1132" y="0"/>
-</item>
-<item historyLabel="CommonDataTask.java" index="6">
+<item historyLabel="AlertDialogUtility.java" index="11">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ApplyEventDataTask.java" index="7">
-<position info="not_deleted" x="537" y="14"/>
+<item historyLabel="AlertDialogUtility.java" index="11">
+<position info="not_deleted" x="877" y="0"/>
 </item>
-<item historyLabel="ApplyEventActivity.java" index="13">
-<position info="not_deleted" x="5159" y="0"/>
+<item historyLabel="AlertDialogUtility.java" index="11">
+<position info="not_deleted" x="626" y="17"/>
 </item>
-<item historyLabel="TakePictureActivity.java" index="14">
-<position info="not_deleted" x="4451" y="0"/>
+<item historyLabel="ApplyEventActivity.java" index="0">
+<position info="not_deleted" x="4888" y="0"/>
 </item>
-<item historyLabel="HostActivity.java" index="15">
+<item historyLabel="GenderSelectionActivity.java" index="6">
+<position info="not_deleted" x="289" y="0"/>
+</item>
+<item historyLabel="CreateUserNameActivity.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="NearByPeopleDataTask.java" index="16">
+<item historyLabel="CreateUserNameActivity.java" index="2">
+<position info="not_deleted" x="2488" y="0"/>
+</item>
+<item historyLabel="strings.xml" index="10"/>
+<item historyLabel="AlertDialogUtility.java" index="11">
+<position info="not_deleted" x="626" y="17"/>
+</item>
+<item historyLabel="strings.xml" index="10"/>
+<item historyLabel="SendMessageActivity.java" index="12">
+<position info="not_deleted" x="2243" y="21"/>
+</item>
+<item historyLabel="send_message.xml" index="13"/>
+<item historyLabel="SendMessageActivity.java" index="12">
+<position info="not_deleted" x="2258" y="0"/>
+</item>
+<item historyLabel="send_message.xml" index="13"/>
+<item historyLabel="SendMessageActivity.java" index="12">
+<position info="not_deleted" x="2258" y="0"/>
+</item>
+<item historyLabel="SendMessageActivity.java" index="12">
+<position info="not_deleted" x="2580" y="36"/>
+</item>
+<item historyLabel="View.class" index="14">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="TakePictureActivity.java" index="14">
-<position info="not_deleted" x="3827" y="0"/>
-</item>
-<item historyLabel="HostActivity.java" index="15">
-<position info="not_deleted" x="658" y="12"/>
-</item>
-<item historyLabel="TakePictureActivity.java" index="14">
-<position info="not_deleted" x="3827" y="0"/>
-</item>
-<item historyLabel="TakePictureActivity.java" index="14">
-<position info="not_deleted" x="3857" y="0"/>
-</item>
-<item historyLabel="HostActivity.java" index="15">
-<position info="not_deleted" x="658" y="12"/>
-</item>
-<item historyLabel="ImageLib Manifest" index="17"/>
-<item historyLabel="TakePictureActivity.java" index="14">
-<position info="not_deleted" x="3857" y="0"/>
-</item>
-<item historyLabel="ImageLib Manifest" index="17"/>
-<item historyLabel="jianyue Manifest" index="18"/>
-<item historyLabel="ImageLib Manifest" index="17"/>
-<item historyLabel="jianyue Manifest" index="18"/>
-<item historyLabel="HostActivity.java" index="15">
-<position info="not_deleted" x="658" y="12"/>
-</item>
-<item historyLabel="jianyue Manifest" index="18"/>
-<item historyLabel="HostActivity.java" index="15">
-<position info="not_deleted" x="8" y="24"/>
-</item>
-<item historyLabel="jianyue Manifest" index="18"/>
-<item historyLabel="strings.xml" index="19"/>
-<item historyLabel="jianyue Manifest" index="18"/>
-<item historyLabel="styles.xml" index="20"/>
-<item historyLabel="jianyue Manifest" index="18"/>
-<item historyLabel="ImageLib Manifest" index="17"/>
-<item historyLabel="jianyue Manifest" index="18"/>
-<item active="true" historyLabel="HostActivity.java" index="15">
-<position info="not_deleted" x="8" y="24"/>
+<item active="true" historyLabel="SendMessageActivity.java" index="12">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -754,50 +690,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="styles.xml" tooltip="jianyue/res/values/styles.xml">
-<persistable path="/jianyue/res/values/styles.xml"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="View.class" tooltip="android.view.View">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=jianyue/D:\/adt-bundle-windows-x86-20130219\/sdk\/platforms\/android-19\/android.jar&lt;android.view(View.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="send_message.xml" tooltip="jianyue/res/layout/send_message.xml">
+<persistable path="/jianyue/res/layout/send_message.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SendMessageActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/SendMessageActivity.java">
+<persistable path="/jianyue/src/com/jianyue/main/controller/SendMessageActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AlertDialogUtility.java" tooltip="jianyue/src/com/jianyue/utils/AlertDialogUtility.java">
+<persistable path="/jianyue/src/com/jianyue/utils/AlertDialogUtility.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LocationHandler.java" tooltip="jianyue/src/com/jianyue/utils/LocationHandler.java">
+<persistable path="/jianyue/src/com/jianyue/utils/LocationHandler.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="jianyue/res/values/strings.xml">
 <persistable path="/jianyue/res/values/strings.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="jianyue/AndroidManifest.xml">
-<persistable path="/jianyue/AndroidManifest.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LocationService.java" tooltip="jianyue/src/com/jianyue/utils/LocationService.java">
+<persistable path="/jianyue/src/com/jianyue/utils/LocationService.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="AmazingListView/AndroidManifest.xml">
-<persistable path="/AmazingListView/AndroidManifest.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CreateUserNameActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/CreateUserNameActivity.java">
+<persistable path="/jianyue/src/com/jianyue/main/controller/CreateUserNameActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HostActivity.java" tooltip="ImageLib/src/org/fireking/app/imagelib/HostActivity.java">
-<persistable path="/ImageLib/src/org/fireking/app/imagelib/HostActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FLASH_MODE.java" tooltip="jianyue/src/com/jianyue/main/controller/FLASH_MODE.java">
+<persistable path="/jianyue/src/com/jianyue/main/controller/FLASH_MODE.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="ImageLib/bin/AndroidManifest.xml">
-<persistable path="/ImageLib/bin/AndroidManifest.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GenderSelectionActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/GenderSelectionActivity.java">
+<persistable path="/jianyue/src/com/jianyue/main/controller/GenderSelectionActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TakePictureActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/TakePictureActivity.java">
-<persistable path="/jianyue/src/com/jianyue/main/controller/TakePictureActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PhoneContactActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/PhoneContactActivity.java">
+<persistable path="/jianyue/src/com/jianyue/main/controller/PhoneContactActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NearByPeopleDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/NearByPeopleDataTask.java">
-<persistable path="/jianyue/src/com/jianyue/DataTask/NearByPeopleDataTask.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SettingActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/SettingActivity.java">
+<persistable path="/jianyue/src/com/jianyue/main/controller/SettingActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SendMessageDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/SendMessageDataTask.java">
-<persistable path="/jianyue/src/com/jianyue/DataTask/SendMessageDataTask.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UILApplication.java" tooltip="jianyue/src/com/jianyue/main/controller/UILApplication.java">
+<persistable path="/jianyue/src/com/jianyue/main/controller/UILApplication.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SignupDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/SignupDataTask.java">
-<persistable path="/jianyue/src/com/jianyue/DataTask/SignupDataTask.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="System.class" tooltip="java.lang.System">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=jianyue/D:\/adt-bundle-windows-x86-20130219\/sdk\/platforms\/android-19\/android.jar&lt;java.lang(System.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommonDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/CommonDataTask.java">
-<persistable path="/jianyue/src/com/jianyue/DataTask/CommonDataTask.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EditProfileDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/EditProfileDataTask.java">
-<persistable path="/jianyue/src/com/jianyue/DataTask/EditProfileDataTask.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FetchChatDataTask.java" tooltip="jianyue/src/com/jianyue/DataTask/FetchChatDataTask.java">
-<persistable path="/jianyue/src/com/jianyue/DataTask/FetchChatDataTask.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="TelephonyManager.class" tooltip="android.telephony.TelephonyManager">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=jianyue/D:\/adt-bundle-windows-x86-20130219\/sdk\/platforms\/android-19\/android.jar&lt;android.telephony(TelephonyManager.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="DialogInterface.class" tooltip="android.content.DialogInterface">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=jianyue/D:\/adt-bundle-windows-x86-20130219\/sdk\/platforms\/android-19\/android.jar&lt;android.content(DialogInterface.class"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Handler.class" tooltip="android.os.Handler">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=AmazingListView/D:\/adt-bundle-windows-x86-20130219\/sdk\/platforms\/android-19\/android.jar&lt;android.os(Handler.class"/>
 </file>
 </mruList>
 </workbench>

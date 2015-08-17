@@ -12,8 +12,11 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
+import android.text.InputFilter;
+import android.text.InputType;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -96,14 +99,42 @@ public class ApplyEventActivity extends Activity {
 		tvApplyEvent.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				
 				try{
 					TelephonyManager phoneMgr=(TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
 					mobile = phoneMgr.getLine1Number();
 				}catch(Exception e){
-					mobile = "13800138000";//
+					e.printStackTrace();
+				}
+				//如果无法获取手机号码，则让用户自己输入
+				if(mobile == null || "".equals(mobile)){
+					final EditText inputServer = new EditText(ApplyEventActivity.this);
+					inputServer.setInputType(InputType.TYPE_CLASS_NUMBER);
+					inputServer.setFilters(new InputFilter[]{new InputFilter.LengthFilter(11)}); 
+					new AlertDialog.Builder(ApplyEventActivity.this).setTitle("请输入您的手机号码").setIcon(
+						     android.R.drawable.ic_dialog_info).setView(inputServer)
+						     .setPositiveButton("确定",
+						    		 new DialogInterface.OnClickListener() {
+						             @Override
+						             public void onClick(DialogInterface dialog, int which) {
+						            	 mobile = inputServer.getText().toString();
+						            	 applyEventWebservice();
+						           }
+						        })
+						     .setNegativeButton("取消", 
+						    		 new DialogInterface.OnClickListener() {
+					             @Override
+					             public void onClick(DialogInterface dialog, int which) {
+					            	 dialog.dismiss();
+					           }
+					        }).show();
+				}else{
+					applyEventWebservice();
 				}
 				
-				applyEventWebservice();
+				
+				
+		
 			}
 		});
         System.out.println("eventId:"+eventId);
@@ -113,7 +144,7 @@ public class ApplyEventActivity extends Activity {
 		final ClassAPIResponse apiResponse = new ClassAPIResponse();
 		String append_url = "r/event/"+eventId+"/apply";
 		ApplyEventDataTask task = new ApplyEventDataTask(ApplyEventActivity.this,
-				apiResponse , append_url,"13800138000" ) {
+				apiResponse , append_url ) {
 			@Override
 			protected void onPostExecute(String result) {
 				super.onPostExecute(result);
@@ -154,6 +185,7 @@ public class ApplyEventActivity extends Activity {
 					task.execute(reqEntity);
 					backToList();
 				} catch (Exception e) {
+					e.printStackTrace();
 
 				}
 			} catch (Exception e) {
@@ -169,7 +201,7 @@ public class ApplyEventActivity extends Activity {
 	
 	private void backToList() {
 		new AlertDialog.Builder(this)
-        .setMessage("报名成功！")
+        .setMessage("预约成功！")
         .setPositiveButton("确定",
                         new DialogInterface.OnClickListener(){
                                 public void onClick(DialogInterface dialoginterface, int i){

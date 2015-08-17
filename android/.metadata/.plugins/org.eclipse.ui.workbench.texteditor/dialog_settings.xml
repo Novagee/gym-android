@@ -8,14 +8,14 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="showLocationAlert"/>
+			<item value="is_first_time"/>
 			<item value="dialog"/>
 			<item value="SendMessageDataTask"/>
 			<item value="finish"/>
 			<item value="events_list"/>
 			<item value="event_list"/>
 			<item value="event_list_adapter"/>
-			<item value="requestFetchEventListWebservice()"/>
-			<item value="requestFetchEventListWebservice"/>
 		</list>
 		<list key="replacehistory">
 		</list>

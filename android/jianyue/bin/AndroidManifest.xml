@@ -92,14 +92,7 @@
         
          <activity
             android:name="org.fireking.app.imagelib.HostActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="org.fireking.app.imagelib.widget.PicSelectActivity"

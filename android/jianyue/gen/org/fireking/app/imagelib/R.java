@@ -41,27 +41,27 @@ public final class R {
 		public static final int AppTheme = 0x7f070001;
 	}
 	public static final class id {
-		public static final int preview = 0x7f0800ba;
+		public static final int preview = 0x7f0800bb;
 		public static final int image = 0x7f080037;
-		public static final int buttombanner = 0x7f0800b8;
+		public static final int buttombanner = 0x7f0800b9;
 		public static final int imagebrowser_ptv_page = 0x7f080058;
-		public static final int child_image = 0x7f0800bd;
-		public static final int framelayout = 0x7f0800bc;
-		public static final int topbanner = 0x7f0800b6;
-		public static final int album = 0x7f0800b9;
-		public static final int album_ck = 0x7f0800c3;
+		public static final int child_image = 0x7f0800be;
+		public static final int framelayout = 0x7f0800bd;
+		public static final int topbanner = 0x7f0800b7;
+		public static final int album = 0x7f0800ba;
+		public static final int album_ck = 0x7f0800c4;
 		public static final int back = 0x7f080056;
-		public static final int child_grid = 0x7f0800bb;
-		public static final int list = 0x7f0800bf;
+		public static final int child_grid = 0x7f0800bc;
+		public static final int list = 0x7f0800c0;
 		public static final int title = 0x7f08003b;
 		public static final int delete = 0x7f080057;
-		public static final int child_checkbox = 0x7f0800be;
-		public static final int album_count = 0x7f0800c2;
-		public static final int album_image = 0x7f0800c0;
-		public static final int album_name = 0x7f0800c1;
+		public static final int child_checkbox = 0x7f0800bf;
+		public static final int album_count = 0x7f0800c3;
+		public static final int album_image = 0x7f0800c1;
+		public static final int album_name = 0x7f0800c2;
 		public static final int image_selector = 0x7f0800a6;
-		public static final int complete = 0x7f0800b7;
-		public static final int menu_settings = 0x7f0800c6;
+		public static final int complete = 0x7f0800b8;
+		public static final int menu_settings = 0x7f0800c7;
 		public static final int imagebrowser_svp_pager = 0x7f080055;
 	}
 	public static final class menu {

@@ -54,7 +54,7 @@ public class CreateUserNameActivity extends Activity{
 				}
 				else
 				{
-					StaticMethodsUtility.showNegativeToast(CreateUserNameActivity.this, "Enter Nickname");
+					StaticMethodsUtility.showNegativeToast(CreateUserNameActivity.this, "请输入您的昵称");
 				}
 			}
 		});

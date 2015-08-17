@@ -20,7 +20,7 @@ public class ApplyEventDataTask extends AsyncTask<MultipartEntity, Void, String>
 	private String mobile;
 	private boolean is_refresh = false;
 
-	public ApplyEventDataTask(Context context, ClassAPIResponse apiResponse , String append_url , String mobile)
+	public ApplyEventDataTask(Context context, ClassAPIResponse apiResponse , String append_url)
 	{
 		this.context = context;
 		this.apiResponse = apiResponse;

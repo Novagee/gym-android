@@ -15,6 +15,6 @@ public class AlertDialogUtility
 	
 	public static void showLocationAlert(Context context, String msg, DialogInterface.OnClickListener onOkClick , DialogInterface.OnClickListener onDontallowClick)
 	{
-		new AlertDialog.Builder(context).setIcon(0).setTitle(context.getString(R.string.app_name)).setMessage(msg).setCancelable(false).setPositiveButton("Don't Allow", onDontallowClick).setNegativeButton("Ok", onOkClick).show();
+		new AlertDialog.Builder(context).setIcon(0).setTitle(context.getString(R.string.app_name)).setMessage(msg).setCancelable(false).setPositiveButton("不同意", onDontallowClick).setNegativeButton("同意", onOkClick).show();
 	}
 }

@@ -30,9 +30,11 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.jianyue.DataTask.SendMessageDataTask;
@@ -67,6 +69,15 @@ public class SendMessageActivity extends Activity {
 	}
 
 	private void initObjects() {
+		//点击屏幕空白处关闭输入法
+		findViewById(R.id.send_message_view).setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				InputMethodManager imm = (InputMethodManager)  
+				getSystemService(Context.INPUT_METHOD_SERVICE);  
+				imm.hideSoftInputFromWindow(v.getWindowToken(), 0);  
+			}
+		});
 		etMessage = (EditText)findViewById(R.id.etMessage);
 		ivClose = (ImageView) findViewById(R.id.ivClose);
 		ivClose.setOnClickListener(new OnClickListener() {
