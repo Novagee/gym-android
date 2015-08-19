@@ -116,17 +116,24 @@ public class TakePictureActivity extends Activity
 			}
 		});
 		ivCamaraBtn = (ImageView) findViewById(R.id.ivCamaraBtn);
+		ivCamaraBtn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(TakePictureActivity.this,
+		    			PicSelectActivity.class);
+		    	Config.setLimit(1);
+		    	startActivityForResult(intent, 0x123);
+			}
+		});
+
+		/*
 		ivCamaraBtn.setOnTouchListener(new OnTouchListener() {
 			
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				switch (event.getAction()) {
 			    case MotionEvent.ACTION_DOWN:
-			    	Intent intent = new Intent(TakePictureActivity.this,
-			    			PicSelectActivity.class);
-			    	Config.setLimit(1);
-			    	startActivityForResult(intent, 0x123);
-			    	/*
 			    	if (mPreview == null && enable_click)
 					{
 						mPreview = new CameraPreview(TakePictureActivity.this, flash_mode);
@@ -141,7 +148,7 @@ public class TakePictureActivity extends Activity
 						initFirst = true;
 					}else{
 						initFirst = false;
-					}*/
+					}
 			    	break;
 			    case MotionEvent.ACTION_MOVE:
 			    	break;
@@ -166,7 +173,7 @@ public class TakePictureActivity extends Activity
 				}
 				return true;
 			}
-		});
+		});*/
 	}
 
 	@Override
@@ -179,12 +186,13 @@ public class TakePictureActivity extends Activity
 	protected void onPause()
 	{
 		super.onPause();
+		/*
 		if (mPreview != null)
 		{
 			mPreview.onPause();
 			mPreview = null;
 		}
-		ivCamaraBtn.setEnabled(false);
+		ivCamaraBtn.setEnabled(false);*/
 	}
 
 	private void takePicture()
@@ -297,7 +305,7 @@ public class TakePictureActivity extends Activity
 		final ClassAPIResponse apiResponse = new ClassAPIResponse();
 
 		EditProfileDataTask task = new EditProfileDataTask(TakePictureActivity.this,
-				apiResponse , "r/user/profile/edit",  false ) {
+				apiResponse , "r/user/profile/edit",  true ) {
 			@Override
 			protected void onPostExecute(String result) {
 				super.onPostExecute(result);
@@ -314,7 +322,9 @@ public class TakePictureActivity extends Activity
 				
 				if(apiResponse.ack.equalsIgnoreCase("Success"))
 				{
-					//finish();
+					StaticMethodsUtility.showNegativeToast(
+							TakePictureActivity.this,"更新头像成功!");
+					backManage();
 				}
 				
 			}
@@ -362,7 +372,7 @@ public class TakePictureActivity extends Activity
 					reqEntity.addPart(WebElements.SIGNUP.PIC ,
 							new FileBody((new File(GlobalData.sd_path))));
 					task.execute(reqEntity);
-					backManage();
+					
 				} catch (Exception e) {
 
 				}

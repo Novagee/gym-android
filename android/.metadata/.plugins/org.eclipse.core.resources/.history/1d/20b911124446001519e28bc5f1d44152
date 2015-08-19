@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ivMessageImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher" />
+    
+
+    <ProgressBar android:id="@+id/pbMessage" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/scale_50dp"
+         >
+
+        <ImageView
+            android:id="@+id/ivMessageClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message_close" 
+            android:layout_marginRight="@dimen/scale_20dp"
+            />
+
+        <ImageView
+            android:id="@+id/ivMessageFriendRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message_add_friend" />
+        
+         <ImageView
+            android:id="@+id/ivMessageAcceptFriendRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message_accept" />
+
+        <ImageView
+            android:id="@+id/ivMessageReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/scale_20dp"
+            android:src="@drawable/message_reply" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -909,3 +909,1711 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-08-17 13:10:23.890 -----------------------------------------------
+eclipse.buildId=v21.1.0-569685
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 13:11:12.274
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer.processError(BaseClasspathContainerInitializer.java:54)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.allocateAndroidContainer(AndroidClasspathContainerInitializer.java:276)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.initialize(AndroidClasspathContainerInitializer.java:111)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2841)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1876)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.getExternalJars(ProjectClassLoader.java:274)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.loadClassFromJar(ProjectClassLoader.java:232)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.findClass(ProjectClassLoader.java:76)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.loadAndParseRClass(CompiledResourcesMonitor.java:217)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.projectOpenedWithWorkspace(CompiledResourcesMonitor.java:192)
+	at com.android.ide.eclipse.adt.internal.resources.manager.GlobalProjectMonitor.addProjectListener(GlobalProjectMonitor.java:427)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.setupMonitor(CompiledResourcesMonitor.java:64)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ResourceManager.setup(ResourceManager.java:120)
+	at com.android.ide.eclipse.adt.AdtPlugin.startEditors(AdtPlugin.java:1534)
+	at com.android.ide.eclipse.adt.AdtPlugin.start(AdtPlugin.java:264)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:2858)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:2834)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2822)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1876)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2689)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2853)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1958)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:461)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:518)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.JavaProject.getJavaProjectElementInfo(JavaProject.java:1638)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2325)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:59)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:66)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:26)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:176)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:269)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:190)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1244)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:178)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:114)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:136)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:105)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:406)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:173)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 13:11:12.305
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 13:11:16.208
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer.processError(BaseClasspathContainerInitializer.java:54)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.allocateAndroidContainer(AndroidClasspathContainerInitializer.java:276)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.initialize(AndroidClasspathContainerInitializer.java:111)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2841)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1876)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2689)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2853)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1958)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:461)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:518)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.JavaProject.getJavaProjectElementInfo(JavaProject.java:1638)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2325)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:59)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:66)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:26)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:176)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:269)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:190)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1244)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:178)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:114)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:136)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:105)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:406)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:173)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 13:11:16.208
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 13:11:20.950
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 13:11:20.950
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 13:11:20.950
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 13:11:20.950
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 13:11:20.966
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 13:11:20.966
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 13:11:20.966
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 13:11:20.966
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-17 13:11:32.868
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-17 13:11:32.869
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-08-17 14:37:54.131 -----------------------------------------------
+eclipse.buildId=v21.1.0-569685
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 14:38:13.570
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer.processError(BaseClasspathContainerInitializer.java:54)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.allocateAndroidContainer(AndroidClasspathContainerInitializer.java:276)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.initialize(AndroidClasspathContainerInitializer.java:111)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2841)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1876)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.getExternalJars(ProjectClassLoader.java:274)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.loadClassFromJar(ProjectClassLoader.java:232)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.findClass(ProjectClassLoader.java:76)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.loadAndParseRClass(CompiledResourcesMonitor.java:217)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.projectOpenedWithWorkspace(CompiledResourcesMonitor.java:192)
+	at com.android.ide.eclipse.adt.internal.resources.manager.GlobalProjectMonitor.addProjectListener(GlobalProjectMonitor.java:427)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.setupMonitor(CompiledResourcesMonitor.java:64)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ResourceManager.setup(ResourceManager.java:120)
+	at com.android.ide.eclipse.adt.AdtPlugin.startEditors(AdtPlugin.java:1534)
+	at com.android.ide.eclipse.adt.AdtPlugin.start(AdtPlugin.java:264)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:2858)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:2834)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2822)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1876)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2689)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2853)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1958)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:461)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:518)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.JavaProject.getJavaProjectElementInfo(JavaProject.java:1638)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2325)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:59)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:66)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:26)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:176)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:269)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:190)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1244)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:178)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:114)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:136)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:105)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:406)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:173)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 14:38:13.570
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 14:38:14.147
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer.processError(BaseClasspathContainerInitializer.java:54)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.allocateAndroidContainer(AndroidClasspathContainerInitializer.java:276)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.initialize(AndroidClasspathContainerInitializer.java:111)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2841)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1876)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2689)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2853)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1958)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:461)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:518)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.JavaProject.getJavaProjectElementInfo(JavaProject.java:1638)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2325)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:59)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:66)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:26)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:176)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:269)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:190)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1244)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:178)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:114)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:136)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:105)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:406)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:173)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 14:38:14.147
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 14:38:17.033
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 14:38:17.033
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 14:38:17.158
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 14:38:17.158
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 14:38:17.158
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 14:38:17.158
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 14:38:17.174
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 14:38:17.174
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-17 14:38:18.375
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-17 14:38:18.375
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-08-17 21:41:02.706 -----------------------------------------------
+eclipse.buildId=v21.1.0-569685
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-17 21:41:50.382
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-17 21:41:50.413
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 21:41:50.631
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:253)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.getIndexDiffDataOrNull(GitLightweightDecorator.java:206)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:180)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:166)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 21:41:50.663
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 21:41:50.819
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:253)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.getIndexDiffDataOrNull(GitLightweightDecorator.java:206)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:180)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:166)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 21:41:50.819
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 21:41:50.865
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:253)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.getIndexDiffDataOrNull(GitLightweightDecorator.java:206)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:180)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:166)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 21:41:50.865
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 21:41:50.975
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:253)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.getIndexDiffDataOrNull(GitLightweightDecorator.java:206)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:180)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:166)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 21:41:50.975
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 21:41:51.006
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:253)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.getIndexDiffDataOrNull(GitLightweightDecorator.java:206)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:180)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:166)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 21:41:51.006
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 21:41:51.146
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:253)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.getIndexDiffDataOrNull(GitLightweightDecorator.java:206)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:180)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:166)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 21:41:51.146
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+
+!ENTRY org.eclipse.osgi 2 0 2015-08-17 21:41:53.845
+!MESSAGE While loading class "com.android.ide.eclipse.adt.ToolsLocator", thread "Thread[Worker-3,5,main]" timed out waiting (5039ms) for thread "Thread[Worker-1,5,main]" to finish starting bundle "com.android.ide.eclipse.adt_21.1.0.2013-2-6-0-46 [2]". To avoid deadlock, thread "Thread[Worker-3,5,main]" is proceeding but "com.android.ide.eclipse.adt.ToolsLocator" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/com.android.ide.eclipse.adt_21.1.0.2013-2-6-0-46.jar" by thread "Worker-1".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at com.android.ide.eclipse.ddms.DdmsPlugin.instantiateToolsLocators(DdmsPlugin.java:376)
+	at com.android.ide.eclipse.ddms.DdmsPlugin.access$4(DdmsPlugin.java:367)
+	at com.android.ide.eclipse.ddms.DdmsPlugin$5.run(DdmsPlugin.java:304)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 24 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at com.android.ide.eclipse.ddms.DdmsPlugin.instantiateToolsLocators(DdmsPlugin.java:376)
+	at com.android.ide.eclipse.ddms.DdmsPlugin.access$4(DdmsPlugin.java:367)
+	at com.android.ide.eclipse.ddms.DdmsPlugin$5.run(DdmsPlugin.java:304)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2015-08-17 21:41:53.845
+!MESSAGE While loading class "com.android.ide.eclipse.adt.internal.project.LibraryClasspathContainerInitializer", thread "Thread[Worker-2,5,main]" timed out waiting (5008ms) for thread "Thread[Worker-1,5,main]" to finish starting bundle "com.android.ide.eclipse.adt_21.1.0.2013-2-6-0-46 [2]". To avoid deadlock, thread "Thread[Worker-2,5,main]" is proceeding but "com.android.ide.eclipse.adt.internal.project.LibraryClasspathContainerInitializer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/com.android.ide.eclipse.adt_21.1.0.2013-2-6-0-46.jar" by thread "Worker-1".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:2858)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:2834)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2822)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2747)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2787)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1871)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:3569)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 30 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:2858)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:2834)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2822)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2747)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2787)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1871)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:3569)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2015-08-17 22:09:37.690 -----------------------------------------------
+eclipse.buildId=v21.1.0-569685
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 22:10:09.475
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer.processError(BaseClasspathContainerInitializer.java:54)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.allocateAndroidContainer(AndroidClasspathContainerInitializer.java:276)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.initialize(AndroidClasspathContainerInitializer.java:111)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2841)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2747)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2787)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1871)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.getExternalJars(ProjectClassLoader.java:274)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.loadClassFromJar(ProjectClassLoader.java:232)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.findClass(ProjectClassLoader.java:76)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.loadAndParseRClass(CompiledResourcesMonitor.java:217)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.projectOpenedWithWorkspace(CompiledResourcesMonitor.java:192)
+	at com.android.ide.eclipse.adt.internal.resources.manager.GlobalProjectMonitor.addProjectListener(GlobalProjectMonitor.java:427)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.setupMonitor(CompiledResourcesMonitor.java:64)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ResourceManager.setup(ResourceManager.java:120)
+	at com.android.ide.eclipse.adt.AdtPlugin.startEditors(AdtPlugin.java:1534)
+	at com.android.ide.eclipse.adt.AdtPlugin.start(AdtPlugin.java:264)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:2858)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:2834)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2822)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2747)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2787)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1871)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:3569)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 22:10:09.475
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 22:10:09.740
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 22:10:09.740
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 22:10:09.740
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 22:10:09.740
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 22:10:09.755
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 22:10:09.755
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 22:10:09.771
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 22:10:09.771
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-17 22:10:09.771
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-17 22:10:09.771
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-17 22:10:10.457
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-17 22:10:10.457
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-08-18 14:45:48.507 -----------------------------------------------
+eclipse.buildId=v21.1.0-569685
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-08-18 14:45:57.402
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-18 14:45:59.336
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:167)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-18 14:45:59.367
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-18 14:45:59.461
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:167)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-18 14:45:59.461
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-18 14:45:59.757
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:167)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-18 14:45:59.757
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-18 14:46:00.475
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:167)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-18 14:46:00.475
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-18 14:46:00.772
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:167)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-18 14:46:00.772
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-18 14:46:00.803
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:167)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-18 14:46:00.803
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-18 14:46:34.831
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-18 14:46:34.831
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-08-19 09:54:01.849 -----------------------------------------------
+eclipse.buildId=v21.1.0-569685
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 09:54:18.036
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer.processError(BaseClasspathContainerInitializer.java:54)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.allocateAndroidContainer(AndroidClasspathContainerInitializer.java:276)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.initialize(AndroidClasspathContainerInitializer.java:111)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2841)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2747)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2787)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1871)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.getExternalJars(ProjectClassLoader.java:274)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.loadClassFromJar(ProjectClassLoader.java:232)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.findClass(ProjectClassLoader.java:76)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.loadAndParseRClass(CompiledResourcesMonitor.java:217)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.projectOpenedWithWorkspace(CompiledResourcesMonitor.java:192)
+	at com.android.ide.eclipse.adt.internal.resources.manager.GlobalProjectMonitor.addProjectListener(GlobalProjectMonitor.java:427)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.setupMonitor(CompiledResourcesMonitor.java:64)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ResourceManager.setup(ResourceManager.java:120)
+	at com.android.ide.eclipse.adt.AdtPlugin.startEditors(AdtPlugin.java:1534)
+	at com.android.ide.eclipse.adt.AdtPlugin.start(AdtPlugin.java:264)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:2858)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:2834)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2822)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2747)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2787)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1871)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:3569)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 09:54:18.040
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 09:54:19.412
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 09:54:19.413
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 09:54:19.416
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 09:54:19.416
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 09:54:19.418
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 09:54:19.418
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 09:54:19.420
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 09:54:19.421
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 09:54:19.423
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 09:54:19.423
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-19 09:54:19.589
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-19 09:54:19.590
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-08-19 14:26:09.011 -----------------------------------------------
+eclipse.buildId=v21.1.0-569685
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 14:26:36.914
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer.processError(BaseClasspathContainerInitializer.java:54)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.allocateAndroidContainer(AndroidClasspathContainerInitializer.java:276)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.initialize(AndroidClasspathContainerInitializer.java:111)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2841)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1876)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.getExternalJars(ProjectClassLoader.java:274)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.loadClassFromJar(ProjectClassLoader.java:232)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.findClass(ProjectClassLoader.java:76)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.loadAndParseRClass(CompiledResourcesMonitor.java:217)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.projectOpenedWithWorkspace(CompiledResourcesMonitor.java:192)
+	at com.android.ide.eclipse.adt.internal.resources.manager.GlobalProjectMonitor.addProjectListener(GlobalProjectMonitor.java:427)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.setupMonitor(CompiledResourcesMonitor.java:64)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ResourceManager.setup(ResourceManager.java:120)
+	at com.android.ide.eclipse.adt.AdtPlugin.startEditors(AdtPlugin.java:1534)
+	at com.android.ide.eclipse.adt.AdtPlugin.start(AdtPlugin.java:264)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:2858)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:2834)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2822)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1876)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2689)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2853)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1958)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:461)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:518)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.JavaProject.getJavaProjectElementInfo(JavaProject.java:1638)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2325)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:59)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:66)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:26)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:176)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:269)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:190)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1244)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:178)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:114)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:136)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:105)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:406)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:173)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 14:26:36.945
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 14:26:44.139
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer.processError(BaseClasspathContainerInitializer.java:54)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.allocateAndroidContainer(AndroidClasspathContainerInitializer.java:276)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.initialize(AndroidClasspathContainerInitializer.java:111)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2841)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1876)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2689)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2853)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1958)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:461)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:518)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.JavaProject.getJavaProjectElementInfo(JavaProject.java:1638)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2325)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:59)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:66)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:26)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:176)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:269)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:190)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1244)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:178)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:114)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:136)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:105)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:406)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:173)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 14:26:44.140
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 14:26:45.517
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 14:26:45.517
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 14:26:45.521
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 14:26:45.522
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 14:26:45.525
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 14:26:45.525
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 14:26:45.531
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 14:26:45.531
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-19 14:26:59.072
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-19 14:26:59.073
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-08-19 15:01:46.207 -----------------------------------------------
+eclipse.buildId=v21.1.0-569685
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 15:02:05.893
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer.processError(BaseClasspathContainerInitializer.java:54)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.allocateAndroidContainer(AndroidClasspathContainerInitializer.java:276)
+	at com.android.ide.eclipse.adt.internal.project.AndroidClasspathContainerInitializer.initialize(AndroidClasspathContainerInitializer.java:111)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2841)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1876)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.getExternalJars(ProjectClassLoader.java:274)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.loadClassFromJar(ProjectClassLoader.java:232)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.findClass(ProjectClassLoader.java:76)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.loadAndParseRClass(CompiledResourcesMonitor.java:217)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.projectOpenedWithWorkspace(CompiledResourcesMonitor.java:192)
+	at com.android.ide.eclipse.adt.internal.resources.manager.GlobalProjectMonitor.addProjectListener(GlobalProjectMonitor.java:427)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.setupMonitor(CompiledResourcesMonitor.java:64)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ResourceManager.setup(ResourceManager.java:120)
+	at com.android.ide.eclipse.adt.AdtPlugin.startEditors(AdtPlugin.java:1534)
+	at com.android.ide.eclipse.adt.AdtPlugin.start(AdtPlugin.java:264)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:2858)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:2834)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2822)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1876)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2811)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2689)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2853)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1958)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:461)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:518)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.JavaProject.getJavaProjectElementInfo(JavaProject.java:1638)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2325)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:59)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:66)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:26)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:176)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:269)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:190)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:788)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1244)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:178)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:114)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:136)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:105)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:406)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:173)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 15:02:06.002
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project AmazingListView.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 15:02:08.030
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 15:02:08.030
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project page_indicator_library.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 15:02:08.046
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 15:02:08.046
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project jianyue.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 15:02:08.046
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 15:02:08.046
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Android-Universal-Image-Loader.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 15:02:08.061
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 15:02:08.061
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project appcompat_v7.
+
+!ENTRY org.eclipse.team.core 4 0 2015-08-19 15:02:08.077
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1690)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markProject(BaseProjectHelper.java:217)
+	at com.android.ide.eclipse.adt.internal.project.BaseClasspathContainerInitializer$1.run(BaseClasspathContainerInitializer.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2015-08-19 15:02:08.077
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project Pull_to_Refresh_library.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-19 15:02:27.519
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-19 15:02:27.519
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

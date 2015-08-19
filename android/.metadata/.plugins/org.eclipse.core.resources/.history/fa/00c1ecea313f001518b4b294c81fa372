@@ -1,7 +1,0 @@
-package com.jianyue.main.controller;
-
-import ActivityGroup;
-
-public class MainGroupActivity extends ActivityGroup {
-
-}

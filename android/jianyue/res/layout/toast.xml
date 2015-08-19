@@ -13,6 +13,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/scale_10dp"
         android:padding="@dimen/scale_10dp"
-        android:textColor="@android:color/white" />
+        android:textSize="13sp"
+        android:textColor="@color/main_bg_color" />
 
 </RelativeLayout>

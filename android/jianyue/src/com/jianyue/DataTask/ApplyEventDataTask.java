@@ -1,6 +1,8 @@
 package com.jianyue.DataTask;
 
 import org.apache.http.entity.mime.MultipartEntity;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -25,7 +27,6 @@ public class ApplyEventDataTask extends AsyncTask<MultipartEntity, Void, String>
 		this.context = context;
 		this.apiResponse = apiResponse;
 		this.append_url = append_url;;
-		this.mobile = mobile;
 	}
 
 	protected void onPreExecute()
@@ -45,8 +46,7 @@ public class ApplyEventDataTask extends AsyncTask<MultipartEntity, Void, String>
 		try
 		{
 			String result = CallWebService.Webserice_Call_Json_Multipart(params[0] , append_url);
-			Log.d("result", result);
-
+			
 			if (result != null)
 			{
 				parceJsonResponse(result);
@@ -61,7 +61,16 @@ public class ApplyEventDataTask extends AsyncTask<MultipartEntity, Void, String>
 
 	private void parceJsonResponse(String result)
 	{
-		
+		try {
+			JSONObject j_result = new JSONObject(result);
+			apiResponse.ack = j_result.getString("ack");
+			if(apiResponse.ack.equalsIgnoreCase("Success"))
+			{
+			
+			}
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override

@@ -5,7 +5,6 @@ import org.apache.http.entity.mime.MultipartEntity;
 import org.apache.http.entity.mime.content.StringBody;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -22,6 +21,7 @@ import android.widget.TextView;
 
 import com.jianyue.DataTask.ApplyEventDataTask;
 import com.jianyue.utils.ClassAPIResponse;
+import com.jianyue.utils.CustomDialog;
 import com.jianyue.utils.GlobalData;
 import com.jianyue.utils.Internet_Check;
 import com.jianyue.utils.SessionManager;
@@ -111,13 +111,13 @@ public class ApplyEventActivity extends Activity {
 					final EditText inputServer = new EditText(ApplyEventActivity.this);
 					inputServer.setInputType(InputType.TYPE_CLASS_NUMBER);
 					inputServer.setFilters(new InputFilter[]{new InputFilter.LengthFilter(11)}); 
-					new AlertDialog.Builder(ApplyEventActivity.this).setTitle("请输入您的手机号码").setIcon(
-						     android.R.drawable.ic_dialog_info).setView(inputServer)
+					new CustomDialog.Builder(ApplyEventActivity.this).setTitle("请输入您的手机号码").setContentView(inputServer)
 						     .setPositiveButton("确定",
 						    		 new DialogInterface.OnClickListener() {
 						             @Override
 						             public void onClick(DialogInterface dialog, int which) {
 						            	 mobile = inputServer.getText().toString();
+						            	 dialog.dismiss();
 						            	 applyEventWebservice();
 						           }
 						        })
@@ -127,7 +127,7 @@ public class ApplyEventActivity extends Activity {
 					             public void onClick(DialogInterface dialog, int which) {
 					            	 dialog.dismiss();
 					           }
-					        }).show();
+					        }).create().show();
 				}else{
 					applyEventWebservice();
 				}
@@ -183,7 +183,6 @@ public class ApplyEventActivity extends Activity {
 					reqEntity.addPart(WebElements.FETCH_OR_APPLY_EVENT.TIMESTAMP,
 							new StringBody(String.valueOf(System.currentTimeMillis())));
 					task.execute(reqEntity);
-					backToList();
 				} catch (Exception e) {
 					e.printStackTrace();
 
@@ -199,17 +198,5 @@ public class ApplyEventActivity extends Activity {
 
 	}
 	
-	private void backToList() {
-		new AlertDialog.Builder(this)
-        .setMessage("预约成功！")
-        .setPositiveButton("确定",
-                        new DialogInterface.OnClickListener(){
-                                public void onClick(DialogInterface dialoginterface, int i){
-                                	finish();
-                                	overridePendingTransition(R.anim.slide_down, R.anim.slide_down_out);
-                                }
-                        })
-        .show();
-	}
 
 }

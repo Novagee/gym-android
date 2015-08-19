@@ -952,6 +952,11 @@ public class MainActivity extends Activity {
 							img_message_id++;
 							View v = MainActivity.this.getLayoutInflater()
 									.inflate(R.layout.message_image, null);
+							TextView tvMessageContent = (TextView) v.findViewById(R.id.messageContent);
+							System.out.println(tvMessageContent);
+							tvMessageContent.setText(message_list.get(i).senderName+":"+message_list.get(i).msg);
+							
+							
 							ImageView image = (ImageView) v
 									.findViewById(R.id.ivMessageImage);
 							image.getLayoutParams().height = height ;
@@ -1002,6 +1007,7 @@ public class MainActivity extends Activity {
 							ImageView ivMessageAcceptFriendRequest = (ImageView) v
 									.findViewById(R.id.ivMessageAcceptFriendRequest);
 
+						
 							if (message_list.get(i).isFriend
 									.equalsIgnoreCase("true")
 									|| message_list.get(i).isFriend
@@ -1070,6 +1076,10 @@ public class MainActivity extends Activity {
 															R.anim.slide_up_out);
 										}
 									});
+							
+							//隐藏添加好友按钮,add by seeyet 2015/08/18
+							ivMessageFriendRequest.setVisibility(View.INVISIBLE);
+							ivMessageAcceptFriendRequest.setVisibility(View.INVISIBLE);
 
 							llMessage.addView(v);
 						}
