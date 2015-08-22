@@ -29,7 +29,7 @@ public class CreateUserNameActivity extends Activity{
 		if(!SessionManager.getUUID(CreateUserNameActivity.this).equalsIgnoreCase(""))
 		{
 			finish();
-			Intent i = new Intent(CreateUserNameActivity.this , MainActivity.class);
+			Intent i = new Intent(CreateUserNameActivity.this , MainActivityNew.class);
 			startActivity(i);
 			return;
 		}

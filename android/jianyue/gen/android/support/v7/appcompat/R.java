@@ -10,7 +10,7 @@ public final class R {
 	public static final class layout {
 		public static final int abc_activity_chooser_view_include = 0x7f03000d;
 		public static final int abc_search_view = 0x7f030016;
-		public static final int support_simple_spinner_dropdown_item = 0x7f030030;
+		public static final int support_simple_spinner_dropdown_item = 0x7f030038;
 		public static final int abc_action_bar_tabbar = 0x7f030005;
 		public static final int abc_action_bar_view_list_nav_layout = 0x7f030007;
 		public static final int abc_expanded_menu_layout = 0x7f03000f;

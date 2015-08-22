@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="12" version="2.0">
+<workbench progressCount="29" version="2.0">
 <workbenchAdvisor/>
 <window height="760" maximized="true" width="1024" x="175" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -18,7 +18,7 @@
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="78" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="261" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
@@ -78,7 +78,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (89 items)"/>
+<category IMemento.internal.id="Warnings (100 of 129 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -317,8 +317,8 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.37746257" ratioLeft="479" ratioRight="790" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.6634921" ratioLeft="418" ratioRight="212" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.39007092" ratioLeft="495" ratioRight="774" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.53492063" ratioLeft="337" ratioRight="293" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -400,10 +400,10 @@
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
-<view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.cdt.debug.ui.executablesView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
@@ -422,7 +422,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.57757294" ratioLeft="376" ratioRight="275" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.51766515" ratioLeft="337" ratioRight="314" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.cdt.debug.ui.executablesView" label="Executables"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
@@ -441,7 +441,7 @@
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.58176947" ratioLeft="217" ratioRight="156" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info part="org.eclipse.ui.editorss" ratio="0.37533513" ratioLeft="140" ratioRight="233" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
 <info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7495895" ratioLeft="913" ratioRight="305" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view" label="LabelNotFound"/>
@@ -488,50 +488,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="View.class" tooltip="android.view.View">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=jianyue/D:\/adt-bundle-windows-x86-20130219\/sdk\/platforms\/android-19\/android.jar&lt;android.view(View.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BuildConfig.java" tooltip="IMpp_appcompat_v7/gen/android/support/v7/appcompat/BuildConfig.java">
+<persistable path="/IMpp_appcompat_v7/gen/android/support/v7/appcompat/BuildConfig.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ApplyEventActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/ApplyEventActivity.java">
-<persistable path="/jianyue/src/com/jianyue/main/controller/ApplyEventActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="abc_ic_ab_back_mtrl_am_alpha.png" tooltip="IMpp_appcompat_v7/res/drawable-ldrtl-xxxhdpi/abc_ic_ab_back_mtrl_am_alpha.png">
+<persistable path="/IMpp_appcompat_v7/res/drawable-ldrtl-xxxhdpi/abc_ic_ab_back_mtrl_am_alpha.png"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_apply_event.xml" tooltip="jianyue/res/layout/activity_apply_event.xml">
-<persistable path="/jianyue/res/layout/activity_apply_event.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="HorizontalListView/src/com/example/horizontallistview/MainActivity.java">
+<persistable path="/HorizontalListView/src/com/example/horizontallistview/MainActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="HorizontalListView/res/layout/activity_main.xml">
+<persistable path="/HorizontalListView/res/layout/activity_main.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="list_item.xml" tooltip="HorizontalListView/res/layout/list_item.xml">
+<persistable path="/HorizontalListView/res/layout/list_item.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="jianyue/res/values/strings.xml">
+<persistable path="/jianyue/res/values/strings.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="message_image.xml" tooltip="jianyue/res/layout/message_image.xml">
 <persistable path="/jianyue/res/layout/message_image.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/MainActivity.java">
-<persistable path="/jianyue/src/com/jianyue/main/controller/MainActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_apply_event.xml" tooltip="jianyue/res/layout/activity_apply_event.xml">
+<persistable path="/jianyue/res/layout/activity_apply_event.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AppContext.java" tooltip="ZiHaoViewpager/src/org/aisen/weibo/sina/base/AppContext.java">
-<persistable path="/ZiHaoViewpager/src/org/aisen/weibo/sina/base/AppContext.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="user_img_item.xml" tooltip="Demo_WeChat_Friends_Circle/res/layout/user_img_item.xml">
+<persistable path="/Demo_WeChat_Friends_Circle/res/layout/user_img_item.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="styles.xml" tooltip="ZiHaoViewpager/res/values/styles.xml">
-<persistable path="/ZiHaoViewpager/res/values/styles.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="Demo_WeChat_Friends_Circle/res/layout/activity_main.xml">
+<persistable path="/Demo_WeChat_Friends_Circle/res/layout/activity_main.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClassChat.java" tooltip="jianyue/src/com/jianyue/utils/ClassChat.java">
-<persistable path="/jianyue/src/com/jianyue/utils/ClassChat.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyGridAdapter.java" tooltip="Demo_WeChat_Friends_Circle/src/com/msquirrel/adapter/MyGridAdapter.java">
+<persistable path="/Demo_WeChat_Friends_Circle/src/com/msquirrel/adapter/MyGridAdapter.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SendMessageActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/SendMessageActivity.java">
-<persistable path="/jianyue/src/com/jianyue/main/controller/SendMessageActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="friends_circle_item.xml" tooltip="Demo_WeChat_Friends_Circle/res/layout/friends_circle_item.xml">
+<persistable path="/Demo_WeChat_Friends_Circle/res/layout/friends_circle_item.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SettingActivity.java" tooltip="jianyue/src/com/jianyue/main/controller/SettingActivity.java">
-<persistable path="/jianyue/src/com/jianyue/main/controller/SettingActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="ic_launcher.png" tooltip="jianyue/res/drawable-hdpi/ic_launcher.png">
-<persistable path="/jianyue/res/drawable-hdpi/ic_launcher.png"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="jianyue/AndroidManifest.xml">
-<persistable path="/jianyue/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyApplication.java" tooltip="Demo_WeChat_Friends_Circle/src/com/msquirrel/ui/MyApplication.java">
-<persistable path="/Demo_WeChat_Friends_Circle/src/com/msquirrel/ui/MyApplication.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeChatAdapter.java" tooltip="Demo_WeChat_Friends_Circle/src/com/msquirrel/adapter/WeChatAdapter.java">
+<persistable path="/Demo_WeChat_Friends_Circle/src/com/msquirrel/adapter/WeChatAdapter.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="Demo_WeChat_Friends_Circle/src/com/msquirrel/ui/MainActivity.java">
 <persistable path="/Demo_WeChat_Friends_Circle/src/com/msquirrel/ui/MainActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="ic_launcher-web.png" tooltip="jianyue/ic_launcher-web.png">
-<persistable path="/jianyue/ic_launcher-web.png"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NoScrollGridView.java" tooltip="Demo_WeChat_Friends_Circle/src/com/msquirrel/widget/NoScrollGridView.java">
+<persistable path="/Demo_WeChat_Friends_Circle/src/com/msquirrel/widget/NoScrollGridView.java"/>
 </file>
 </mruList>
 </workbench>

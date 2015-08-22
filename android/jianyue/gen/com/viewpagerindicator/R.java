@@ -8,13 +8,13 @@ package com.viewpagerindicator;
 
 public final class R {
 	public static final class drawable {
-		public static final int vpi__tab_unselected_holo = 0x7f0200ba;
-		public static final int vpi__tab_selected_holo = 0x7f0200b7;
-		public static final int vpi__tab_unselected_focused_holo = 0x7f0200b9;
-		public static final int vpi__tab_selected_pressed_holo = 0x7f0200b8;
-		public static final int vpi__tab_unselected_pressed_holo = 0x7f0200bb;
-		public static final int vpi__tab_selected_focused_holo = 0x7f0200b6;
-		public static final int vpi__tab_indicator = 0x7f0200b5;
+		public static final int vpi__tab_unselected_holo = 0x7f0200c2;
+		public static final int vpi__tab_selected_holo = 0x7f0200bf;
+		public static final int vpi__tab_unselected_focused_holo = 0x7f0200c1;
+		public static final int vpi__tab_selected_pressed_holo = 0x7f0200c0;
+		public static final int vpi__tab_unselected_pressed_holo = 0x7f0200c3;
+		public static final int vpi__tab_selected_focused_holo = 0x7f0200be;
+		public static final int vpi__tab_indicator = 0x7f0200bd;
 	}
 	public static final class dimen {
 		public static final int default_line_indicator_stroke_width = 0x7f05000b;

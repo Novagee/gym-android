@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="ivMessageFriendRequest" key="selection"/>
+		<item value="bottomPanel" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="bottomPanel"/>
+			<item value="currFragTag"/>
 			<item value="ivMessageFriendRequest"/>
 			<item value="message_list"/>
 			<item value="ivCamaraBtn"/>
 			<item value="setResult"/>
 			<item value="message"/>
 			<item value="contentView"/>
-			<item value="CallWebService.Webserice_Call_Json_Multipart"/>
-			<item value="showLocationAlert"/>
 		</list>
 		<list key="replacehistory">
 		</list>
