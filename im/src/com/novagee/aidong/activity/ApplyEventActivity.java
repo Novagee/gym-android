@@ -40,11 +40,35 @@ public class ApplyEventActivity extends Activity {
         eventId = intent.getStringExtra("id");
         TextView tvEventTitle = (TextView)findViewById(R.id.event_title);
 		tvEventTitle.setText(intent.getStringExtra("title"));
+		
+		TextView tvEventTime = (TextView)findViewById(R.id.event_time);
+		String endTime = intent.getStringExtra("endtime");
+		if(!(endTime== null || "".equals(endTime)))
+		{
+			tvEventTime.setText(intent.getStringExtra("starttime")+"-"+endTime);
+		}else{
+			tvEventTime.setText(intent.getStringExtra("starttime"));
+		}
+		
+		TextView tvEventAddress = (TextView)findViewById(R.id.event_address);
+		String address = intent.getStringExtra("address");
+		if(!(address == null || "".equals(address))){
+			tvEventAddress.setText(address);
+		}
+		
+		TextView tvEventMoney = (TextView)findViewById(R.id.event_money);
+		String fee = intent.getStringExtra("fee");
+		if("0".equals(fee)){
+			tvEventMoney.setText(this.getString(R.string.event_money_free));
+		}else{
+			tvEventMoney.setText(fee);
+		}
+		
 		ImageView imageView = (ImageView) findViewById(R.id.event_pic);
 		String pic = intent.getStringExtra("pic");
 		if(!(pic == null || "".equals(pic))){
 			System.out.println("event pic:"+pic);
-			ImageLoader.getInstance(this).DisplayImage(pic, imageView, R.drawable.friend_default, false);	
+			ImageLoader.getInstance(this).DisplayImage(pic, imageView, null, false);	
 		}
 		TextView tvEventDescription = (TextView)findViewById(R.id.event_description);
 		tvEventDescription.setText(intent.getStringExtra("description"));
@@ -79,10 +103,14 @@ public class ApplyEventActivity extends Activity {
 						             @Override
 						             public void onClick(DialogInterface dialog, int which) {
 						            	 mobile = inputServer.getText().toString();
-						            	 dialog.dismiss();
+						            	// dialog.dismiss();
 						            	 if(mobile == null || "".equals(mobile)){
-						            		 Toast.makeText(context, context.getString(R.string.event_mobile_cannot_null),Toast.LENGTH_LONG).show();
-						            	 }else{
+						            		 Toast.makeText(context, context.getString(R.string.event_mobile_cannot_null),Toast.LENGTH_SHORT).show();
+						            	 }else if(mobile.length() !=11){
+						            		 Toast.makeText(context, context.getString(R.string.event_mobile_check_error),Toast.LENGTH_SHORT).show();
+						            	 }
+						            	 else{
+						            		 dialog.dismiss();
 						            		 doApply();
 						            	 }
 						           }

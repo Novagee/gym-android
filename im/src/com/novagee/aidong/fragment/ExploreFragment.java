@@ -51,6 +51,7 @@ public class ExploreFragment extends BaseFragment {
         this.ct = getActivity();
         mWallView = (WallView)rootView.findViewById(R.id.wall_wallView);
         addBtn = (ImageView)rootView.findViewById(R.id.wall_addBtn);
+        addBtn.setVisibility(View.GONE);
         addBtn.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {

@@ -73,9 +73,10 @@ public class MainActivity extends BaseActivity implements Observer{
 			}else if(frag instanceof FriendListFragment){
 				onFriendListFragmentShown((FriendListFragment)frag);
 			}else if(frag instanceof ExploreFragment){
-				mAppbar.getMenuItemView1().setVisibility(View.GONE);
+				onExploreFragmentShown((ExploreFragment)frag);
 			}else if(frag instanceof SettingFragment){
 				mAppbar.getMenuItemView1().setVisibility(View.GONE);
+				mAppbar.getMenuItemView2().setVisibility(View.GONE);
 			}
 			
 		}
@@ -294,6 +295,20 @@ public class MainActivity extends BaseActivity implements Observer{
 			}
 		});
 		
+	}
+	
+	private void onExploreFragmentShown(final ExploreFragment frag){
+		mAppbar.getMenuItemView1().setVisibility(View.GONE);
+		mAppbar.getMenuItemView2().setVisibility(View.VISIBLE);
+		mAppbar.getMenuItemView2().setImageResource(R.drawable.menu_add);
+		mAppbar.getMenuItemView2().setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(v.getContext(),CreatePostActivity.class);
+				startActivityForResult(intent, 0);
+				overridePendingTransition(R.anim.slide_in_right,android.R.anim.fade_out);
+			}
+		});
 	}
 	
 	@Override

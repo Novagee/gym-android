@@ -97,7 +97,7 @@
         android:layout_height="wrap_content" 
         android:src="@drawable/ico_pos" />
             <TextView
-            android:id="@+id/event_content_item"
+            android:id="@+id/event_address"
             android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
         android:layout_height="wrap_content" 
         android:src="@drawable/ico_time" />
             <TextView
-            android:id="@+id/event_content_item"
+            android:id="@+id/event_time"
             android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
         android:layout_height="wrap_content" 
         android:src="@drawable/ico_money" />
             <TextView
-            android:id="@+id/event_content_item"
+            android:id="@+id/event_money"
             android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

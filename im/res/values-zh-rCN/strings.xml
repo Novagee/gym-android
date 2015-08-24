@@ -107,12 +107,14 @@
     <string name="event_unknown">不详</string>
     <string name="event_apply">报名</string>
     <string name="event_apply_me">我要报名</string>
-    <string name="event_input_mobile">请输入您的电话号码</string>
-    <string name="event_mobile_cannot_null">电话号码不能为空</string>
+    <string name="event_input_mobile">请输入您的手机号码</string>
+    <string name="event_mobile_cannot_null">手机号码不能为空</string>
     <string name="event_no_internet">无网络连接</string>
     <string name="event_apply_successful">报名成功</string>
     <string name="event_get_data_failed">获取活动数据失败</string>
     <string name="event_apply_loader_message">正在报名...</string>
+    <string name="event_money_free">免费</string>
+    <string name="event_mobile_check_error">手机号码格式错误！</string>
     
     <!-- Custom Dialog -->
     <string name="dialog_title">提示信息</string>
