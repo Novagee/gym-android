@@ -104,6 +104,7 @@
     <string name="wall_create_post">Say something…</string>
     <string name="wall_create_post_title">New Post</string>
     <string name="wall_comment_reply">Replied</string>
+    <string name="wall_post_loader">Now submiting,please wait...</string>
     
  	<!-- IM -->
     <string name="im_disconnect">IM Disconnect</string>

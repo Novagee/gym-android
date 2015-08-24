@@ -101,6 +101,7 @@
     <string name="wall_create_post">今天的心情…</string>
     <string name="wall_create_post_title">创建贴文</string>
     <string name="wall_comment_reply">回应</string>
+    <string name="wall_post_loader">正在提交，请稍侯...</string>
     
     <!-- Event -->
     <string name="event_detail">活动详情</string>

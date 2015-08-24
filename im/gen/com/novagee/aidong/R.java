@@ -2055,34 +2055,34 @@ containing a value of this type.
         public static final int chat_video_chat=0x7f0a0039;
         public static final int chat_view_picture=0x7f0a003a;
         public static final int chat_voice_chat=0x7f0a0038;
-        public static final int dialog_cancel=0x7f0a0075;
-        public static final int dialog_ok=0x7f0a0074;
+        public static final int dialog_cancel=0x7f0a0076;
+        public static final int dialog_ok=0x7f0a0075;
         /**  Custom Dialog 
  Custom Dialog 
  Custom Dialog 
          */
-        public static final int dialog_title=0x7f0a0073;
+        public static final int dialog_title=0x7f0a0074;
         /**  Settings 
  Settings 
  Settings 
          */
         public static final int else_sign_out=0x7f0a0059;
-        public static final int event_apply=0x7f0a0069;
-        public static final int event_apply_loader_message=0x7f0a0070;
-        public static final int event_apply_me=0x7f0a006a;
-        public static final int event_apply_successful=0x7f0a006e;
+        public static final int event_apply=0x7f0a006a;
+        public static final int event_apply_loader_message=0x7f0a0071;
+        public static final int event_apply_me=0x7f0a006b;
+        public static final int event_apply_successful=0x7f0a006f;
         /**  Event 
  Event 
  Event 
          */
-        public static final int event_detail=0x7f0a0067;
-        public static final int event_get_data_failed=0x7f0a006f;
-        public static final int event_input_mobile=0x7f0a006b;
-        public static final int event_mobile_cannot_null=0x7f0a006c;
-        public static final int event_mobile_check_error=0x7f0a0072;
-        public static final int event_money_free=0x7f0a0071;
-        public static final int event_no_internet=0x7f0a006d;
-        public static final int event_unknown=0x7f0a0068;
+        public static final int event_detail=0x7f0a0068;
+        public static final int event_get_data_failed=0x7f0a0070;
+        public static final int event_input_mobile=0x7f0a006c;
+        public static final int event_mobile_cannot_null=0x7f0a006d;
+        public static final int event_mobile_check_error=0x7f0a0073;
+        public static final int event_money_free=0x7f0a0072;
+        public static final int event_no_internet=0x7f0a006e;
+        public static final int event_unknown=0x7f0a0069;
         public static final int friend_action_new_friend=0x7f0a0024;
         public static final int friend_action_new_topic=0x7f0a0025;
         public static final int friend_friend_list=0x7f0a0022;
@@ -2111,10 +2111,10 @@ containing a value of this type.
          */
         public static final int general_ok=0x7f0a0017;
         public static final int general_press_again_to_exit=0x7f0a0019;
-        public static final int im_connect=0x7f0a0066;
+        public static final int im_connect=0x7f0a0067;
         /**  IM 
          */
-        public static final int im_disconnect=0x7f0a0065;
+        public static final int im_disconnect=0x7f0a0066;
         public static final int login_failed=0x7f0a001c;
         public static final int login_pwd=0x7f0a001e;
         public static final int login_sign_in=0x7f0a001b;
@@ -2157,6 +2157,7 @@ containing a value of this type.
         public static final int wall_create_post_title=0x7f0a0063;
         public static final int wall_id=0x7f0a0010;
         public static final int wall_like=0x7f0a0060;
+        public static final int wall_post_loader=0x7f0a0065;
     }
     public static final class style {
         /** 
