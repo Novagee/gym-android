@@ -1672,18 +1672,19 @@ containing a value of this type.
         public static final int ico_time=0x7f02004f;
         public static final int like=0x7f020050;
         public static final int login_logo=0x7f020051;
-        public static final int menu_back=0x7f020052;
-        public static final int menu_done=0x7f020053;
-        public static final int menu_edit=0x7f020054;
-        public static final int menu_logo=0x7f020055;
-        public static final int menu_search=0x7f020056;
-        public static final int send_arrow=0x7f020057;
-        public static final int textview_style=0x7f020058;
-        public static final int voice_alert=0x7f020059;
-        public static final int voice_deliver=0x7f02005a;
-        public static final int voice_receive=0x7f02005b;
-        public static final int voice_record=0x7f02005c;
-        public static final int voice_record_bg=0x7f02005d;
+        public static final int menu_add=0x7f020052;
+        public static final int menu_back=0x7f020053;
+        public static final int menu_done=0x7f020054;
+        public static final int menu_edit=0x7f020055;
+        public static final int menu_logo=0x7f020056;
+        public static final int menu_search=0x7f020057;
+        public static final int send_arrow=0x7f020058;
+        public static final int textview_style=0x7f020059;
+        public static final int voice_alert=0x7f02005a;
+        public static final int voice_deliver=0x7f02005b;
+        public static final int voice_receive=0x7f02005c;
+        public static final int voice_record=0x7f02005d;
+        public static final int voice_record_bg=0x7f02005e;
     }
     public static final class id {
         public static final int ImageView01=0x7f05008f;
@@ -2006,95 +2007,96 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000d;
-        public static final int afternoon=0x7f0a0032;
-        public static final int anlive_accept=0x7f0a0052;
-        public static final int anlive_disable_camera=0x7f0a0054;
-        public static final int anlive_enable_camera=0x7f0a0053;
-        public static final int anlive_hangup=0x7f0a0050;
-        public static final int anlive_mute=0x7f0a004e;
-        public static final int anlive_push_call=0x7f0a0055;
-        public static final int anlive_push_video_call=0x7f0a0056;
-        public static final int anlive_received_video_invitation=0x7f0a004a;
+        public static final int afternoon=0x7f0a0034;
+        public static final int anlive_accept=0x7f0a0054;
+        public static final int anlive_disable_camera=0x7f0a0056;
+        public static final int anlive_enable_camera=0x7f0a0055;
+        public static final int anlive_hangup=0x7f0a0052;
+        public static final int anlive_mute=0x7f0a0050;
+        public static final int anlive_push_call=0x7f0a0057;
+        public static final int anlive_push_video_call=0x7f0a0058;
+        public static final int anlive_received_video_invitation=0x7f0a004c;
         /**  Live 
  Live 
  Live 
          */
-        public static final int anlive_received_voice_invitation=0x7f0a0049;
-        public static final int anlive_reject=0x7f0a0051;
-        public static final int anlive_unmute=0x7f0a004f;
-        public static final int anlive_video_oncall=0x7f0a004c;
-        public static final int anlive_voice_oncall=0x7f0a004b;
-        public static final int anlive_waiting_reply=0x7f0a004d;
+        public static final int anlive_received_voice_invitation=0x7f0a004b;
+        public static final int anlive_reject=0x7f0a0053;
+        public static final int anlive_unmute=0x7f0a0051;
+        public static final int anlive_video_oncall=0x7f0a004e;
+        public static final int anlive_voice_oncall=0x7f0a004d;
+        public static final int anlive_waiting_reply=0x7f0a004f;
         public static final int app_key=0x7f0a000f;
         public static final int app_name=0x7f0a0011;
-        public static final int chat_delete_chat_confirm=0x7f0a0048;
-        public static final int chat_pick_picture=0x7f0a0034;
-        public static final int chat_received_image=0x7f0a0039;
-        public static final int chat_received_record=0x7f0a003a;
-        public static final int chat_record=0x7f0a0035;
-        public static final int chat_record_cancel=0x7f0a0043;
-        public static final int chat_record_press=0x7f0a003d;
-        public static final int chat_record_release=0x7f0a003e;
-        public static final int chat_record_release_to_cancel=0x7f0a0041;
-        public static final int chat_record_tooshort=0x7f0a0040;
-        public static final int chat_recording=0x7f0a003f;
-        public static final int chat_send=0x7f0a0042;
-        public static final int chat_send_image=0x7f0a003b;
-        public static final int chat_send_record=0x7f0a003c;
-        public static final int chat_take_picture=0x7f0a0033;
-        public static final int chat_topic_edit=0x7f0a0044;
-        public static final int chat_topic_invite=0x7f0a0045;
-        public static final int chat_topic_leave=0x7f0a0046;
-        public static final int chat_topic_leave_owner=0x7f0a0047;
-        public static final int chat_video_chat=0x7f0a0037;
-        public static final int chat_view_picture=0x7f0a0038;
-        public static final int chat_voice_chat=0x7f0a0036;
-        public static final int dialog_cancel=0x7f0a0070;
-        public static final int dialog_ok=0x7f0a006f;
+        public static final int chat_delete_chat_confirm=0x7f0a004a;
+        public static final int chat_pick_picture=0x7f0a0036;
+        public static final int chat_received_image=0x7f0a003b;
+        public static final int chat_received_record=0x7f0a003c;
+        public static final int chat_record=0x7f0a0037;
+        public static final int chat_record_cancel=0x7f0a0045;
+        public static final int chat_record_press=0x7f0a003f;
+        public static final int chat_record_release=0x7f0a0040;
+        public static final int chat_record_release_to_cancel=0x7f0a0043;
+        public static final int chat_record_tooshort=0x7f0a0042;
+        public static final int chat_recording=0x7f0a0041;
+        public static final int chat_send=0x7f0a0044;
+        public static final int chat_send_image=0x7f0a003d;
+        public static final int chat_send_record=0x7f0a003e;
+        public static final int chat_take_picture=0x7f0a0035;
+        public static final int chat_topic_edit=0x7f0a0046;
+        public static final int chat_topic_invite=0x7f0a0047;
+        public static final int chat_topic_leave=0x7f0a0048;
+        public static final int chat_topic_leave_owner=0x7f0a0049;
+        public static final int chat_video_chat=0x7f0a0039;
+        public static final int chat_view_picture=0x7f0a003a;
+        public static final int chat_voice_chat=0x7f0a0038;
+        public static final int dialog_cancel=0x7f0a0073;
+        public static final int dialog_ok=0x7f0a0072;
         /**  Custom Dialog 
  Custom Dialog 
  Custom Dialog 
          */
-        public static final int dialog_title=0x7f0a006e;
+        public static final int dialog_title=0x7f0a0071;
         /**  Settings 
  Settings 
  Settings 
          */
-        public static final int else_sign_out=0x7f0a0057;
-        public static final int event_apply=0x7f0a0067;
-        public static final int event_apply_me=0x7f0a0068;
-        public static final int event_apply_successful=0x7f0a006c;
+        public static final int else_sign_out=0x7f0a0059;
+        public static final int event_apply=0x7f0a0069;
+        public static final int event_apply_loader_message=0x7f0a0070;
+        public static final int event_apply_me=0x7f0a006a;
+        public static final int event_apply_successful=0x7f0a006e;
         /**  Event 
  Event 
  Event 
          */
-        public static final int event_detail=0x7f0a0065;
-        public static final int event_get_data_failed=0x7f0a006d;
-        public static final int event_input_mobile=0x7f0a0069;
-        public static final int event_mobile_cannot_null=0x7f0a006a;
-        public static final int event_no_internet=0x7f0a006b;
-        public static final int event_unknown=0x7f0a0066;
-        public static final int friend_action_new_friend=0x7f0a0022;
-        public static final int friend_action_new_topic=0x7f0a0023;
-        public static final int friend_friend_list=0x7f0a0020;
-        public static final int friend_friend_request=0x7f0a0021;
-        public static final int friend_list_search=0x7f0a002b;
-        public static final int friend_request_accepted=0x7f0a002e;
-        public static final int friend_request_received=0x7f0a002f;
-        public static final int friend_request_rejected=0x7f0a002d;
-        public static final int friend_request_search=0x7f0a002a;
-        public static final int friend_request_sent=0x7f0a002c;
-        public static final int friend_request_status_add=0x7f0a0025;
-        public static final int friend_request_status_approved=0x7f0a0028;
-        public static final int friend_request_status_isfriend=0x7f0a0027;
-        public static final int friend_request_status_rejected=0x7f0a0029;
-        public static final int friend_request_status_sent=0x7f0a0026;
-        public static final int friend_search_username=0x7f0a0024;
+        public static final int event_detail=0x7f0a0067;
+        public static final int event_get_data_failed=0x7f0a006f;
+        public static final int event_input_mobile=0x7f0a006b;
+        public static final int event_mobile_cannot_null=0x7f0a006c;
+        public static final int event_no_internet=0x7f0a006d;
+        public static final int event_unknown=0x7f0a0068;
+        public static final int friend_action_new_friend=0x7f0a0024;
+        public static final int friend_action_new_topic=0x7f0a0025;
+        public static final int friend_friend_list=0x7f0a0022;
+        public static final int friend_friend_request=0x7f0a0023;
+        public static final int friend_list_search=0x7f0a002d;
+        public static final int friend_request_accepted=0x7f0a0030;
+        public static final int friend_request_received=0x7f0a0031;
+        public static final int friend_request_rejected=0x7f0a002f;
+        public static final int friend_request_search=0x7f0a002c;
+        public static final int friend_request_sent=0x7f0a002e;
+        public static final int friend_request_status_add=0x7f0a0027;
+        public static final int friend_request_status_approved=0x7f0a002a;
+        public static final int friend_request_status_isfriend=0x7f0a0029;
+        public static final int friend_request_status_rejected=0x7f0a002b;
+        public static final int friend_request_status_sent=0x7f0a0028;
+        public static final int friend_search_username=0x7f0a0026;
         /**  Friend 
  Friend 
  Friend 
          */
-        public static final int friend_topic_list=0x7f0a001f;
+        public static final int friend_topic_list=0x7f0a0021;
         public static final int general_cancel=0x7f0a0018;
         /**  General 
  General 
@@ -2102,34 +2104,36 @@ containing a value of this type.
          */
         public static final int general_ok=0x7f0a0017;
         public static final int general_press_again_to_exit=0x7f0a0019;
-        public static final int im_connect=0x7f0a0064;
+        public static final int im_connect=0x7f0a0066;
         /**  IM 
          */
-        public static final int im_disconnect=0x7f0a0063;
+        public static final int im_disconnect=0x7f0a0065;
         public static final int login_failed=0x7f0a001c;
         public static final int login_pwd=0x7f0a001e;
         public static final int login_sign_in=0x7f0a001b;
+        public static final int login_sign_in_message=0x7f0a001f;
         /**  Login 
  Login 
  Login 
          */
         public static final int login_sign_up=0x7f0a001a;
+        public static final int login_sign_up_message=0x7f0a0020;
         public static final int login_username=0x7f0a001d;
-        public static final int morning=0x7f0a0031;
+        public static final int morning=0x7f0a0033;
         /**  Notification 
  Notification 
  Notification 
          */
-        public static final int noti_image=0x7f0a0059;
-        public static final int noti_record=0x7f0a005a;
-        public static final int noti_video_call=0x7f0a005c;
-        public static final int noti_voice_call=0x7f0a005b;
+        public static final int noti_image=0x7f0a005b;
+        public static final int noti_record=0x7f0a005c;
+        public static final int noti_video_call=0x7f0a005e;
+        public static final int noti_voice_call=0x7f0a005d;
         /**  Chat 
  Chat 
  Chat 
          */
-        public static final int readed=0x7f0a0030;
-        public static final int setting_send_msg=0x7f0a0058;
+        public static final int readed=0x7f0a0032;
+        public static final int setting_send_msg=0x7f0a005a;
         public static final int tab_title_chat=0x7f0a0012;
         public static final int tab_title_event=0x7f0a0015;
         public static final int tab_title_explore=0x7f0a0014;
@@ -2139,13 +2143,13 @@ containing a value of this type.
  Wall 
  Wall 
          */
-        public static final int wall_circle=0x7f0a005d;
-        public static final int wall_comment=0x7f0a005f;
-        public static final int wall_comment_reply=0x7f0a0062;
-        public static final int wall_create_post=0x7f0a0060;
-        public static final int wall_create_post_title=0x7f0a0061;
+        public static final int wall_circle=0x7f0a005f;
+        public static final int wall_comment=0x7f0a0061;
+        public static final int wall_comment_reply=0x7f0a0064;
+        public static final int wall_create_post=0x7f0a0062;
+        public static final int wall_create_post_title=0x7f0a0063;
         public static final int wall_id=0x7f0a0010;
-        public static final int wall_like=0x7f0a005e;
+        public static final int wall_like=0x7f0a0060;
     }
     public static final class style {
         /** 

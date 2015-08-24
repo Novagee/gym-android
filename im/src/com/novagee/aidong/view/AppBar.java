@@ -20,7 +20,7 @@ import android.widget.FrameLayout.LayoutParams;
 import android.widget.TextView;
 
 public class AppBar extends RelativeLayout {
-	private ImageView logo, menuItem;
+	private ImageView logo, menuItem1,menuItem2;
 	private EditText etSearch;
 	private TextView textTitle;
 	private int id = 1;
@@ -63,9 +63,13 @@ public class AppBar extends RelativeLayout {
 		textTitle.setTextColor(ct.getResources().getColor(R.color.no5));
 		addView(textTitle);
 		
-		menuItem = new ImageView(ct);
-		menuItem.setId(id++);
-		addView(menuItem);
+		menuItem1 = new ImageView(ct);
+		menuItem1.setId(id++);
+		addView(menuItem1);
+		
+		menuItem2 = new ImageView(ct);
+		menuItem2.setId(id++);
+		addView(menuItem2);
 		
 		initLayout();
 	}
@@ -88,25 +92,36 @@ public class AppBar extends RelativeLayout {
 		RelativeLayout.LayoutParams rlpTt = new RelativeLayout.LayoutParams(-1,-2);
 		rlpTt.leftMargin = Utils.px2Dp(getContext(), 16);
 		rlpTt.addRule(RelativeLayout.RIGHT_OF,logo.getId());
-		rlpTt.addRule(RelativeLayout.LEFT_OF,menuItem.getId());
+		rlpTt.addRule(RelativeLayout.LEFT_OF,menuItem1.getId());
 		rlpTt.addRule(RelativeLayout.CENTER_VERTICAL);
 		textTitle.setLayoutParams(rlpTt);
 		textTitle.setVisibility(View.GONE);
 		textTitle.setText("");
 		
-		RelativeLayout.LayoutParams rlpMenuItem = new RelativeLayout.LayoutParams(
+		RelativeLayout.LayoutParams rlpMenuItem1 = new RelativeLayout.LayoutParams(
 				Utils.px2Dp(getContext(), 56), Utils.px2Dp(getContext(), 56));
-		rlpMenuItem.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-		menuItem.setLayoutParams(rlpMenuItem);
-		menuItem.setVisibility(View.GONE);
+		rlpMenuItem1.rightMargin = Utils.px2Dp(getContext(), 40);
+		rlpMenuItem1.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+		menuItem1.setLayoutParams(rlpMenuItem1);
+		menuItem1.setVisibility(View.GONE);
+		
+		
+		RelativeLayout.LayoutParams rlpMenuItem2 = new RelativeLayout.LayoutParams(
+				Utils.px2Dp(getContext(), 56), Utils.px2Dp(getContext(), 56));
+		rlpMenuItem2.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+		menuItem2.setLayoutParams(rlpMenuItem2);
+		menuItem2.setVisibility(View.GONE);
 	}
 	
 	public ImageView getLogoView() {
 		return logo;
 	}
 
-	public ImageView getMenuItemView() {
-		return menuItem;
+	public ImageView getMenuItemView1() {
+		return menuItem1;
+	}
+	public ImageView getMenuItemView2() {
+		return menuItem2;
 	}
 	public EditText getEditText() {
 		return etSearch;

@@ -149,6 +149,7 @@ public class FriendListFragment extends BaseFragment implements Observer{
         });
         
         imgNewBtn = (ImageView) getActivity().findViewById(R.id.img_new_btn);
+        imgNewBtn.setVisibility(View.GONE);//modified by seeyet,2015/08/23，隐藏添加好友按钮
         imgNewBtn.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {

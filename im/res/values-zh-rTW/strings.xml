@@ -19,6 +19,9 @@
     <string name="login_failed">您的用戶名稱必須是大小寫的英文字母</string>
     <string name="login_username">用戶名稱</string>
     <string name="login_pwd">密碼</string>
+    <string name="login_sign_in_message">正在登錄...</string>
+    <string name="login_sign_up_message">正在註冊...</string>
+    
 
     <!-- Friend -->
     <string name="friend_topic_list">群組列表</string>
@@ -110,6 +113,7 @@
     <string name="event_no_internet">無網路連接</string>
     <string name="event_apply_successful">報名成功</string>
     <string name="event_get_data_failed">獲取活動資料失敗</string>
+    <string name="event_apply_loader_message">正在報名...</string>
     
     <!-- Custom Dialog -->
     <string name="dialog_title">提示資訊</string>

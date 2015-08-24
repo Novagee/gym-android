@@ -81,12 +81,12 @@ public class CreatePostActivity extends BaseActivity {
 		appbar.getTextView().setVisibility(View.VISIBLE);
 		appbar.getTextView().setText(R.string.wall_create_post_title);
 
-		appbar.getMenuItemView().setVisibility(View.VISIBLE);
-		appbar.getMenuItemView().setImageResource(R.drawable.menu_done);
+		appbar.getMenuItemView1().setVisibility(View.VISIBLE);
+		appbar.getMenuItemView1().setImageResource(R.drawable.menu_done);
 		RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(Utils.px2Dp(this, 56),Utils.px2Dp(this, 56));
 		rlp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-		appbar.getMenuItemView().setLayoutParams(rlp);
-		appbar.getMenuItemView().setOnClickListener(new OnClickListener(){
+		appbar.getMenuItemView1().setLayoutParams(rlp);
+		appbar.getMenuItemView1().setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {
 				createPost();
@@ -160,13 +160,13 @@ public class CreatePostActivity extends BaseActivity {
 			return;
 		}
 
-		appbar.getMenuItemView().setEnabled(false);
+		appbar.getMenuItemView1().setEnabled(false);
 		SocialManager.createPost(this, getString(R.string.wall_id), UserManager.getInstance(this).getCurrentUser().userId, 
 				etContent.getText().toString() ,data, new IAnSocialCallback(){
 					@Override
 					public void onFailure(JSONObject arg0) {
 						DBug.e("createPost.onFailure",arg0.toString());
-						appbar.getMenuItemView().setEnabled(true);
+						appbar.getMenuItemView1().setEnabled(true);
 					}
 					@Override
 					public void onSuccess(JSONObject arg0) {

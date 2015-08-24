@@ -22,6 +22,8 @@
     <string name="login_failed">Alphanumeric characters only</string>
     <string name="login_username">User Name</string>
     <string name="login_pwd">Password</string>
+    <string name="login_sign_in_message">Now login...</string>
+    <string name="login_sign_up_message">Now sign up...</string>
 
     <!-- Friend -->
     <string name="friend_topic_list">Groups</string>
@@ -117,6 +119,7 @@
     <string name="event_no_internet">No Internet</string>
     <string name="event_apply_successful">Apply successful</string>
     <string name="event_get_data_failed">Get event data failed</string>
+    <string name="event_apply_loader_message">Now applying</string>
     
     <!-- Custom Dialog -->
     <string name="dialog_title">Tips</string>

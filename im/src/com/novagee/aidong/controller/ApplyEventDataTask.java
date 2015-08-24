@@ -4,6 +4,7 @@ import org.apache.http.entity.mime.MultipartEntity;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.novagee.aidong.R;
 import com.novagee.aidong.utils.Constant;
 import com.novagee.aidong.utils.webservices.APIResponse;
 import com.novagee.aidong.utils.webservices.CallWebService;
@@ -33,7 +34,7 @@ public class ApplyEventDataTask extends AsyncTask<MultipartEntity, Void, String>
 		if(!is_refresh)
 		{
 			mDialog = new ProgressDialog(context);
-			mDialog.setMessage("正在报名...  ");
+			mDialog.setMessage(context.getString(R.string.event_apply_loader_message));
 			mDialog.setCancelable(false);
 			mDialog.setCanceledOnTouchOutside(false);
 			mDialog.show();

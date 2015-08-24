@@ -26,6 +26,7 @@ import com.novagee.aidong.utils.Utils;
 import com.novagee.aidong.view.AppBar;
 import com.novagee.aidong.view.SlidingTabLayout;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -72,9 +73,9 @@ public class MainActivity extends BaseActivity implements Observer{
 			}else if(frag instanceof FriendListFragment){
 				onFriendListFragmentShown((FriendListFragment)frag);
 			}else if(frag instanceof ExploreFragment){
-				mAppbar.getMenuItemView().setVisibility(View.GONE);
+				mAppbar.getMenuItemView1().setVisibility(View.GONE);
 			}else if(frag instanceof SettingFragment){
-				mAppbar.getMenuItemView().setVisibility(View.GONE);
+				mAppbar.getMenuItemView1().setVisibility(View.GONE);
 			}
 			
 		}
@@ -180,12 +181,15 @@ public class MainActivity extends BaseActivity implements Observer{
 	}
 	
 	private void onChatListFragmentShown(final ChatListFragment frag){
-		mAppbar.getMenuItemView().setVisibility(View.VISIBLE);
-		mAppbar.getMenuItemView().setImageResource(R.drawable.menu_search);
-		mAppbar.getMenuItemView().setOnClickListener(new OnClickListener(){
+		//modified by seeyet,2015/08/23 增加添加好友
+		final Context context = this;
+		mAppbar.getMenuItemView1().setVisibility(View.VISIBLE);
+		mAppbar.getMenuItemView1().setImageResource(R.drawable.menu_search);
+		mAppbar.getMenuItemView1().setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {
-				mAppbar.getMenuItemView().setVisibility(View.GONE);
+				mAppbar.getMenuItemView1().setVisibility(View.GONE);
+				mAppbar.getMenuItemView2().setVisibility(View.GONE);
 				mAppbar.getLogoView().setImageResource(R.drawable.menu_back);
 				RelativeLayout.LayoutParams rlpLogo = (LayoutParams) mAppbar.getLogoView().getLayoutParams();
 				rlpLogo.width = Utils.px2Dp(v.getContext(), 56);
@@ -202,7 +206,8 @@ public class MainActivity extends BaseActivity implements Observer{
 						mAppbar.getLogoView().setLayoutParams(rlpLogo);
 						mAppbar.getLogoView().setImageResource(R.drawable.menu_logo);
 						mAppbar.getEditText().setVisibility(View.GONE);
-						mAppbar.getMenuItemView().setVisibility(View.VISIBLE);
+						mAppbar.getMenuItemView1().setVisibility(View.VISIBLE);
+						mAppbar.getMenuItemView2().setVisibility(View.VISIBLE);
 						mAppbar.getEditText().setText("");
 					}
 				});
@@ -220,15 +225,29 @@ public class MainActivity extends BaseActivity implements Observer{
 				});
 			}
 		});
+		
+		mAppbar.getMenuItemView2().setVisibility(View.VISIBLE);
+		mAppbar.getMenuItemView2().setImageResource(R.drawable.menu_add);
+		mAppbar.getMenuItemView2().setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(context,SearchUserActivity.class);
+				context.startActivity(i);
+			}
+		});
+	
 	}
 	
 	private void onFriendListFragmentShown(final FriendListFragment frag){
-		mAppbar.getMenuItemView().setVisibility(View.VISIBLE);
-		mAppbar.getMenuItemView().setImageResource(R.drawable.menu_search);
-		mAppbar.getMenuItemView().setOnClickListener(new OnClickListener(){
+		//modified by seeyet,2015/08/23 增加添加好友
+		final Context context = this;
+		mAppbar.getMenuItemView1().setVisibility(View.VISIBLE);
+		mAppbar.getMenuItemView1().setImageResource(R.drawable.menu_search);
+		mAppbar.getMenuItemView1().setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {
-				mAppbar.getMenuItemView().setVisibility(View.GONE);
+				mAppbar.getMenuItemView1().setVisibility(View.GONE);
+				mAppbar.getMenuItemView2().setVisibility(View.GONE);
 				mAppbar.getLogoView().setImageResource(R.drawable.menu_back);
 				RelativeLayout.LayoutParams rlpLogo = (LayoutParams) mAppbar.getLogoView().getLayoutParams();
 				rlpLogo.width = Utils.px2Dp(v.getContext(), 56);
@@ -245,7 +264,8 @@ public class MainActivity extends BaseActivity implements Observer{
 						mAppbar.getLogoView().setLayoutParams(rlpLogo);
 						mAppbar.getLogoView().setImageResource(R.drawable.menu_logo);
 						mAppbar.getEditText().setVisibility(View.GONE);
-						mAppbar.getMenuItemView().setVisibility(View.VISIBLE);
+						mAppbar.getMenuItemView1().setVisibility(View.VISIBLE);
+						mAppbar.getMenuItemView2().setVisibility(View.VISIBLE);
 						mAppbar.getEditText().setText("");
 					}
 				});
@@ -263,6 +283,17 @@ public class MainActivity extends BaseActivity implements Observer{
 				});
 			}
 		});
+		
+		mAppbar.getMenuItemView2().setVisibility(View.VISIBLE);
+		mAppbar.getMenuItemView2().setImageResource(R.drawable.menu_add);
+		mAppbar.getMenuItemView2().setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(context,SearchUserActivity.class);
+				context.startActivity(i);
+			}
+		});
+		
 	}
 	
 	@Override

@@ -91,9 +91,8 @@ public class FetchEventListDataTask extends AsyncTask<String, Void, String>
 					Event obj = new Event();
 					obj.setId(j_obj1.getString("id"));
 					obj.setTitle(j_obj1.getString("title"));
-					obj.setDescription(j_obj1.getString("description"));
+					obj.setDescription(j_obj1.getString("description").replace("\\n", ""));
 					obj.setPic(j_obj1.getString("pic"));
-					
 					try{
 						obj.setStarttime(new Date(j_obj1.getLong("starttime")));
 					}catch(Exception e){
