@@ -3,48 +3,34 @@ package com.novagee.aidong.adapter;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Random;
 import java.util.TimeZone;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.text.TextPaint;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.ImageView.ScaleType;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.novagee.aidong.R;
 import com.novagee.aidong.activity.CommentActivity;
 import com.novagee.aidong.activity.PictureActivity;
 import com.novagee.aidong.activity.UserDetailActivity;
 import com.novagee.aidong.controller.UserManager;
 import com.novagee.aidong.controller.WallManager;
 import com.novagee.aidong.controller.WallManager.LikeCallback;
-import com.novagee.aidong.im.controller.IMManager;
-import com.novagee.aidong.im.controller.IMManager.GetMessageCallback;
-import com.novagee.aidong.im.model.Chat;
-import com.novagee.aidong.im.model.ChatUser;
-import com.novagee.aidong.im.model.Message;
-import com.novagee.aidong.im.view.MessageListItem;
 import com.novagee.aidong.imageloader.ImageLoader;
-import com.novagee.aidong.model.Like;
 import com.novagee.aidong.model.Post;
-import com.novagee.aidong.model.User;
 import com.novagee.aidong.utils.Constant;
-import com.novagee.aidong.utils.DBug;
 import com.novagee.aidong.utils.Utils;
-
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Handler;
-import android.util.TypedValue;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AbsListView;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.ImageView.ScaleType;
-import com.novagee.aidong.R;
 
 public class PostListAdapter extends BaseAdapter {
 	private Context ct;
@@ -180,11 +166,18 @@ public class PostListAdapter extends BaseAdapter {
 		}
 		
 		private void setLikeBtnStatus(boolean bool){
+			TextPaint tp = textLike.getPaint(); 
+			if(bool){
+				tp.setFakeBoldText(true); 
+			}else{
+				tp.setFakeBoldText(false); 
+			}
+			/*
 			if(bool){
 				btnLike.setBackgroundColor(0xffd6503e);
 			}else{
 				btnLike.setBackgroundColor(ct.getResources().getColor(R.color.no1));
-			}
+			}*/
 		}
 		
 		private void setPhotos(Post data){
@@ -197,11 +190,19 @@ public class PostListAdapter extends BaseAdapter {
 					View leftMargin = new View(ct);
 					//Modified by seeyet 2015/08/22，取消左边距，以便图片刚好一屏显示完
 				//	photoContainer.addView(leftMargin,new LinearLayout.LayoutParams(Utils.px2Dp(ct, 12),-1));
+					WindowManager wm = (WindowManager) ct.getSystemService(Context.WINDOW_SERVICE);
+					int screenWidth =  wm.getDefaultDisplay().getWidth();
+					int imageLeftMargin = Utils.px2Dp(ct, 20);
+					int imageHeight = photoUrls.length>1?(screenWidth-imageLeftMargin):screenWidth;
+					photoContainer.getLayoutParams().height = imageHeight;
+					int imageWidth = photoUrls.length>1?imageHeight:screenWidth;
+					//modified by seeyet 2015/08/25,图片布局仿feel
 					for(int i=0;i<photoUrls.length;i++){
 						ImageView imgPhoto = new ImageView(ct);
 						imgPhoto.setScaleType(ScaleType.CENTER_CROP);
-						LinearLayout.LayoutParams llp = new LinearLayout.LayoutParams(Utils.px2Dp(ct, 312),-1);//modified by seeyet,2015/8/22把图片大小由156调整至312
-						llp.leftMargin = Utils.px2Dp(ct, 4);
+		
+						LinearLayout.LayoutParams llp = new LinearLayout.LayoutParams(/*Utils.px2Dp(ct, 312)*/imageWidth,-1);//modified by seeyet,2015/8/22把图片大小由156调整至312
+						llp.leftMargin = i ==0 ?0:Utils.px2Dp(ct, 5);
 						photoContainer.addView(imgPhoto,llp);
 						final int index = i;
 						imgPhoto.setOnClickListener(new OnClickListener(){

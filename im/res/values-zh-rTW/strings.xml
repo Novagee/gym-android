@@ -102,18 +102,22 @@
     <string name="wall_create_post">撰寫貼文…</string>
     <string name="wall_create_post_title">新增貼文</string>
     <string name="wall_comment_reply">回覆</string>
+    <string name="wall_post_loader">正在提交，請稍侯...</string>
 
     <!-- Event -->
     <string name="event_detail">活動詳情</string>
     <string name="event_unknown">不詳</string>
     <string name="event_apply">報名</string>
     <string name="event_apply_me">我要報名</string>
-    <string name="event_input_mobile">請輸入您的電話號碼</string>
-    <string name="event_mobile_cannot_null">電話號碼不能為空</string>
+    <string name="event_input_mobile">請輸入您的手機號碼</string>
+    <string name="event_mobile_cannot_null">手機號碼不能為空</string>
     <string name="event_no_internet">無網路連接</string>
     <string name="event_apply_successful">報名成功</string>
     <string name="event_get_data_failed">獲取活動資料失敗</string>
     <string name="event_apply_loader_message">正在報名...</string>
+    <string name="event_money_free">免費</string>
+    <string name="event_mobile_check_error">手機號碼格式錯誤！</string>
+
     
     <!-- Custom Dialog -->
     <string name="dialog_title">提示資訊</string>

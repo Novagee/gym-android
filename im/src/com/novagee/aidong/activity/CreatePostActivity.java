@@ -14,6 +14,7 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
@@ -56,7 +57,7 @@ public class CreatePostActivity extends BaseActivity {
 	private Dialog mActionDialog;
 	private PhotoGridAdapter mPhotoGridAdapter;
 	private List<Object> dataList;
-	
+	private ProgressDialog mDialog;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +68,11 @@ public class CreatePostActivity extends BaseActivity {
 	
 	private void initView(){
 		setContentView(R.layout.activity_create_post);
+		//add by seeyet,2015/08/24,create loader
+		mDialog = new ProgressDialog(this);
+		mDialog.setMessage(getString(R.string.wall_post_loader));
+		mDialog.setCancelable(false);
+		mDialog.setCanceledOnTouchOutside(false);
 		
 		appbar = (AppBar) findViewById(R.id.create_post_app_bar);
 		appbar.getLogoView().setImageResource(R.drawable.menu_back);
@@ -160,17 +166,21 @@ public class CreatePostActivity extends BaseActivity {
 			return;
 		}
 
+		mDialog.show();//add by seeyet,2015/08/24
 		appbar.getMenuItemView1().setEnabled(false);
 		SocialManager.createPost(this, getString(R.string.wall_id), UserManager.getInstance(this).getCurrentUser().userId, 
 				etContent.getText().toString() ,data, new IAnSocialCallback(){
 					@Override
 					public void onFailure(JSONObject arg0) {
 						DBug.e("createPost.onFailure",arg0.toString());
+						mDialog.dismiss();//add by seeyet,2015/08/24,close the loader
 						appbar.getMenuItemView1().setEnabled(true);
+						
 					}
 					@Override
 					public void onSuccess(JSONObject arg0) {
 						DBug.e("createPost.onSuccess",arg0.toString());
+						mDialog.dismiss();//add by seeyet,2015/08/24,close the loader
 						setResult(Activity.RESULT_OK);
 						onBackPressed();
 					}

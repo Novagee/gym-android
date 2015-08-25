@@ -79,7 +79,7 @@
         android:layout_below="@id/horizontalScrollView1"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        android:background="@color/no1"
+        android:background="@drawable/button_bg"
         android:paddingLeft="24dp"
         android:paddingRight="24dp" >
 
@@ -97,8 +97,8 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="4dp"
             android:layout_toRightOf="@id/imageView2"
-            android:text="讚 11"
-            android:textColor="@color/no5"
+            android:text="@string/wall_like"
+            android:textColor="@color/no1"
             android:textSize="13dp" />
 
     </RelativeLayout>
@@ -110,7 +110,7 @@
         android:layout_alignTop="@id/btnLike"
         android:layout_marginLeft="8dp"
         android:layout_toRightOf="@+id/btnLike"
-        android:background="@color/no1"
+        android:background="@drawable/button_bg"
         android:paddingLeft="24dp"
         android:paddingRight="24dp" >
 
@@ -129,7 +129,7 @@
             android:layout_marginLeft="4dp"
             android:layout_toRightOf="@+id/ImageView01"
             android:text="@string/wall_comment"
-            android:textColor="@color/no5"
+            android:textColor="@color/no1"
             android:textSize="13dp" />
     </RelativeLayout>
 

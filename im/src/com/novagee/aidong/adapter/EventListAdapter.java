@@ -64,7 +64,7 @@ public class EventListAdapter extends BaseAdapter {
 		String pic = mDataList.get(position).getPic();
 		if(!(pic == null || "".equals(pic))){
 			System.out.println("event pic:"+pic);
-			ImageLoader.getInstance(ct).DisplayImage(pic, imageView, R.drawable.friend_default, false);
+			ImageLoader.getInstance(ct).DisplayImage(pic, imageView, null, false);
 		}
 			
 		TextView tvEventTitle = (TextView)v.findViewById(R.id.event_title);
@@ -87,9 +87,12 @@ public class EventListAdapter extends BaseAdapter {
 						ApplyEventActivity.class);
 				i.putExtra("id", event.getId());
 				i.putExtra("title", event.getTitle());
+				i.putExtra("starttime", event.getStarttime());
+				i.putExtra("endtime", event.getEndtime());
+				i.putExtra("address", event.getAddress());
 				i.putExtra("description", event.getDescription());
 				i.putExtra("pic", event.getPic());
-				System.out.println(event.getStarttime());
+				i.putExtra("fee", Integer.toString(event.getFee()));
 				ct.startActivity(i);
 				
 			//	overridePendingTransition(R.anim.slide_up, R.anim.slide_up_out);

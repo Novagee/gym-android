@@ -27,12 +27,12 @@ public class Event {
 	 /**
 	  * �?始时�?
 	  */
-	 private Date starttime;
+	 private String starttime;
 	 
 	 /**
 	  * 结束时间
 	  */
-	 private Date endtime;
+	 private String endtime;
 	 
 	 /**
 	  * ？不知道
@@ -43,6 +43,16 @@ public class Event {
 	  * 活动图片
 	  */
 	 private String pic;
+	 
+	 /**
+	  * 活动地点
+	  */
+	 private String address;
+	 
+	 /**
+	  * 费嗯
+	  */
+	 private int fee;
 	 
 
 	public Event(){
@@ -80,19 +90,19 @@ public class Event {
 		this.description = description;
 	}
 
-	public Date getStarttime() {
+	public String getStarttime() {
 		return starttime;
 	}
 
-	public void setStarttime(Date starttime) {
+	public void setStarttime(String starttime) {
 		this.starttime = starttime;
 	}
 
-	public Date getEndtime() {
+	public String getEndtime() {
 		return endtime;
 	}
 
-	public void setEndtime(Date endtime) {
+	public void setEndtime(String endtime) {
 		this.endtime = endtime;
 	}
 
@@ -110,6 +120,22 @@ public class Event {
 
 	public void setPic(String pic) {
 		this.pic = pic;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public int getFee() {
+		return fee;
+	}
+
+	public void setFee(int fee) {
+		this.fee = fee;
 	}
 	 
 	 
