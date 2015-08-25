@@ -1,29 +1,16 @@
 package com.novagee.aidong.controller;
 
-import java.io.ByteArrayInputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Observable;
-import java.util.Set;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import com.novagee.aidong.R;
-
+import android.content.Context;
+import android.os.Handler;
+import android.widget.Toast;
 import com.activeandroid.query.Select;
 import com.arrownock.exception.ArrownockException;
-import com.arrownock.im.callback.IAnIMPushBindingCallback;
 import com.arrownock.social.AnSocial;
 import com.arrownock.social.AnSocialFile;
 import com.arrownock.social.AnSocialMethod;
 import com.arrownock.social.IAnSocialCallback;
 import com.novagee.aidong.IMppApp;
-import com.novagee.aidong.activity.LoginActivity;
+import com.novagee.aidong.R;
 import com.novagee.aidong.im.controller.IMManager;
 import com.novagee.aidong.model.Friend;
 import com.novagee.aidong.model.FriendRequest;
@@ -31,11 +18,12 @@ import com.novagee.aidong.model.User;
 import com.novagee.aidong.utils.Constant;
 import com.novagee.aidong.utils.DBug;
 import com.novagee.aidong.utils.SpfHelper;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.Handler;
-import android.widget.Toast;
+import java.io.ByteArrayInputStream;
+import java.util.*;
 
 public class UserManager extends Observable{
 	public static UserManager sUserManager;
@@ -76,9 +64,9 @@ public class UserManager extends Observable{
 			public void run() {
 				try {
 					Map<String, Object> params = new HashMap<String, Object>();
-					params.put("user_id", currentUser.userId);
+//					params.put("user_id", currentUser.userId);
 					params.put("limit", 100);
-					anSocial.sendRequest("friends/list.json", AnSocialMethod.GET, params,  new IAnSocialCallback() {
+					anSocial.sendRequest("users/query.json", AnSocialMethod.GET, params,  new IAnSocialCallback() {
 					    @Override
 					    public void onFailure(JSONObject response) {
 					    	DBug.e("fetchMyRemoteFriend.onFailure", response.toString());
@@ -90,7 +78,7 @@ public class UserManager extends Observable{
 					    public void onSuccess(JSONObject response) {
 					    	DBug.e("fetchMyRemoteFriend.onSuccess", response.toString());
 					    	try {
-								JSONArray users = response.getJSONObject("response").getJSONArray("friends");
+								JSONArray users = response.getJSONObject("response").getJSONArray("users");
 								for(int i =0;i<users.length();i++){
 									JSONObject userJson = users.getJSONObject(i);
 									User user = new User(userJson);
@@ -471,11 +459,11 @@ public class UserManager extends Observable{
 	}
 	
 	public void addFriendLocal(String targetClientId,boolean isMutual){
-		if(!currentUser.isFriend(targetClientId)){
+//		if(!currentUser.isFriend(targetClientId)){
 			currentUser.addFriend(targetClientId, isMutual);
 			setChanged();
 			notifyObservers(UpdateType.Friend);
-		}
+//		}
 	}
 	
 	public void saveUser(User user){
@@ -484,7 +472,7 @@ public class UserManager extends Observable{
 		}
 		if(!user.same()){
 			user.update();
-			
+
 			setChanged();
 			notifyObservers(UpdateType.User);
 		}

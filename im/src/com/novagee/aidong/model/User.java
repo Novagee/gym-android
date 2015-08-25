@@ -1,21 +1,15 @@
 package com.novagee.aidong.model;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-
 import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
 import com.activeandroid.query.Select;
-import com.novagee.aidong.controller.UserManager;
-import com.novagee.aidong.im.model.TopicMember;
-import com.novagee.aidong.utils.DBug;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Table(name = "User")
 public class User extends Model implements Serializable{
