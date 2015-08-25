@@ -58,24 +58,18 @@ public class ChatListFragment extends BaseFragment{
 		if(mChatListAdapter!=null){
 			mChatListAdapter.fillLocalData();
 		}
-		//checkBadge();
+		checkBadge();
 	}
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_chat, container, false);
+        initView(rootView);//modified by seeyet,2015/08/25，修复聊天列表有时候出不来的问题
         return rootView;
 	}
 	
-	public void onViewCreated(View view, Bundle savedInstanceState){
-		super.onViewCreated(view, savedInstanceState);
-		
-		initView();
-		checkBadge();
-	}
-	
-	private void initView(){
-		mListView = (ListView) getActivity().findViewById(R.id.listView);
+	private void initView(View rootView){
+		mListView = (ListView) rootView.findViewById(R.id.listView);
 		mChatListAdapter = new ChatListAdapter(getActivity());
 		mListView.setAdapter(mChatListAdapter);
 		mListView.setOnItemClickListener(new OnItemClickListener(){

@@ -79,12 +79,14 @@ public class UserManager extends Observable{
 					    	DBug.e("fetchMyRemoteFriend.onSuccess", response.toString());
 					    	try {
 								JSONArray users = response.getJSONObject("response").getJSONArray("users");
+								System.out.println("user size:"+users.length());
 								for(int i =0;i<users.length();i++){
 									JSONObject userJson = users.getJSONObject(i);
 									User user = new User(userJson);
 									saveUser(user);
-									boolean isMutual = userJson.getJSONObject("friendProperties").getBoolean("isMutual");
-									addFriendLocal(user.clientId,isMutual);
+									//Remark by seeyet,2015/08/25,此处有bug,会报错，添加addFriendLocal无法执行，现在要求可以开到所有人，因此不需要判断是否为相互好友了。
+								//	boolean isMutual = userJson.getJSONObject("friendProperties").getBoolean("isMutual");
+									addFriendLocal(user.clientId,true);
 								}
 							} catch (JSONException e) {
 								// TODO Auto-generated catch block

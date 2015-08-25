@@ -50,11 +50,11 @@ public class EditTopicActivity extends BaseActivity {
 		mAppBar.getTextView().setVisibility(View.VISIBLE);
 		mAppBar.getTextView().setText(R.string.chat_topic_edit);
 		
-		mAppBar.getMenuItemView1().setVisibility(View.VISIBLE);
-		mAppBar.getMenuItemView1().setImageResource(R.drawable.menu_done);
+		mAppBar.getMenuItemView().setVisibility(View.VISIBLE);
+		mAppBar.getMenuItemView().setImageResource(R.drawable.menu_done);
 		RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(Utils.px2Dp(this, 56),Utils.px2Dp(this, 56));
 		rlp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-		mAppBar.getMenuItemView1().setLayoutParams(rlp);
+		mAppBar.getMenuItemView().setLayoutParams(rlp);
 		
 		etTopicName = (MaterialEditText)findViewById(R.id.edit_topic_materialEditText);
 		etTopicName.setLineFocusedColor(getResources().getColor(R.color.no1));
@@ -73,7 +73,7 @@ public class EditTopicActivity extends BaseActivity {
 		if(getIntent().getExtras()!=null && getIntent().getExtras().containsKey(Constant.INTENT_EXTRA_KEY_TOPIC)){
 			mTopic = (Topic) getIntent().getExtras().getSerializable(Constant.INTENT_EXTRA_KEY_TOPIC);
 			
-			mAppBar.getMenuItemView1().setOnClickListener(new OnClickListener(){
+			mAppBar.getMenuItemView().setOnClickListener(new OnClickListener(){
 				@Override
 				public void onClick(View v) {
 					IMManager.getInstance(v.getContext()).updateTopicName(etTopicName.getEditText().getText().toString(),mTopic);

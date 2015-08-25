@@ -195,11 +195,11 @@ public class ChatActivity extends BaseActivity implements Observer{
 			mAppBar.getTextView().setVisibility(View.VISIBLE);
 			if(mChat.topic!=null){
 				mAppBar.getTextView().setText(mChat.topic.topicName +"("+mChat.topic.members().size()+")");
-				mAppBar.getMenuItemView1().setVisibility(View.VISIBLE);
-				mAppBar.getMenuItemView1().setImageResource(R.drawable.menu_edit);
+				mAppBar.getMenuItemView().setVisibility(View.VISIBLE);
+				mAppBar.getMenuItemView().setImageResource(R.drawable.menu_edit);
 				RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(Utils.px2Dp(this, 56),Utils.px2Dp(this, 56));
 				rlp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-				mAppBar.getMenuItemView1().setLayoutParams(rlp);
+				mAppBar.getMenuItemView().setLayoutParams(rlp);
 				mAppBar.setOnClickListener(new OnClickListener(){
 					@Override
 					public void onClick(View v) {

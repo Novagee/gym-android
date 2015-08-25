@@ -75,8 +75,7 @@ public class MainActivity extends BaseActivity implements Observer{
 			}else if(frag instanceof ExploreFragment){
 				onExploreFragmentShown((ExploreFragment)frag);
 			}else if(frag instanceof SettingFragment){
-				mAppbar.getMenuItemView1().setVisibility(View.GONE);
-				mAppbar.getMenuItemView2().setVisibility(View.GONE);
+				mAppbar.getMenuItemView().setVisibility(View.GONE);
 			}
 			
 		}
@@ -184,13 +183,12 @@ public class MainActivity extends BaseActivity implements Observer{
 	private void onChatListFragmentShown(final ChatListFragment frag){
 		//modified by seeyet,2015/08/23 增加添加好友
 		final Context context = this;
-		mAppbar.getMenuItemView1().setVisibility(View.VISIBLE);
-		mAppbar.getMenuItemView1().setImageResource(R.drawable.menu_search);
-		mAppbar.getMenuItemView1().setOnClickListener(new OnClickListener(){
+		mAppbar.getMenuItemView().setVisibility(View.VISIBLE);
+		mAppbar.getMenuItemView().setImageResource(R.drawable.menu_search);
+		mAppbar.getMenuItemView().setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {
-				mAppbar.getMenuItemView1().setVisibility(View.GONE);
-				mAppbar.getMenuItemView2().setVisibility(View.GONE);
+				mAppbar.getMenuItemView().setVisibility(View.GONE);
 				mAppbar.getLogoView().setImageResource(R.drawable.menu_back);
 				RelativeLayout.LayoutParams rlpLogo = (LayoutParams) mAppbar.getLogoView().getLayoutParams();
 				rlpLogo.width = Utils.px2Dp(v.getContext(), 56);
@@ -207,8 +205,7 @@ public class MainActivity extends BaseActivity implements Observer{
 						mAppbar.getLogoView().setLayoutParams(rlpLogo);
 						mAppbar.getLogoView().setImageResource(R.drawable.menu_logo);
 						mAppbar.getEditText().setVisibility(View.GONE);
-						mAppbar.getMenuItemView1().setVisibility(View.VISIBLE);
-						mAppbar.getMenuItemView2().setVisibility(View.VISIBLE);
+						mAppbar.getMenuItemView().setVisibility(View.VISIBLE);
 						mAppbar.getEditText().setText("");
 					}
 				});
@@ -227,28 +224,18 @@ public class MainActivity extends BaseActivity implements Observer{
 			}
 		});
 		
-		mAppbar.getMenuItemView2().setVisibility(View.VISIBLE);
-		mAppbar.getMenuItemView2().setImageResource(R.drawable.menu_add);
-		mAppbar.getMenuItemView2().setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View v) {
-				Intent i = new Intent(context,SearchUserActivity.class);
-				context.startActivity(i);
-			}
-		});
 	
 	}
 	
 	private void onFriendListFragmentShown(final FriendListFragment frag){
 		//modified by seeyet,2015/08/23 增加添加好友
 		final Context context = this;
-		mAppbar.getMenuItemView1().setVisibility(View.VISIBLE);
-		mAppbar.getMenuItemView1().setImageResource(R.drawable.menu_search);
-		mAppbar.getMenuItemView1().setOnClickListener(new OnClickListener(){
+		mAppbar.getMenuItemView().setVisibility(View.VISIBLE);
+		mAppbar.getMenuItemView().setImageResource(R.drawable.menu_search);
+		mAppbar.getMenuItemView().setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {
-				mAppbar.getMenuItemView1().setVisibility(View.GONE);
-				mAppbar.getMenuItemView2().setVisibility(View.GONE);
+				mAppbar.getMenuItemView().setVisibility(View.GONE);
 				mAppbar.getLogoView().setImageResource(R.drawable.menu_back);
 				RelativeLayout.LayoutParams rlpLogo = (LayoutParams) mAppbar.getLogoView().getLayoutParams();
 				rlpLogo.width = Utils.px2Dp(v.getContext(), 56);
@@ -265,8 +252,7 @@ public class MainActivity extends BaseActivity implements Observer{
 						mAppbar.getLogoView().setLayoutParams(rlpLogo);
 						mAppbar.getLogoView().setImageResource(R.drawable.menu_logo);
 						mAppbar.getEditText().setVisibility(View.GONE);
-						mAppbar.getMenuItemView1().setVisibility(View.VISIBLE);
-						mAppbar.getMenuItemView2().setVisibility(View.VISIBLE);
+						mAppbar.getMenuItemView().setVisibility(View.VISIBLE);
 						mAppbar.getEditText().setText("");
 					}
 				});
@@ -285,23 +271,12 @@ public class MainActivity extends BaseActivity implements Observer{
 			}
 		});
 		
-		mAppbar.getMenuItemView2().setVisibility(View.VISIBLE);
-		mAppbar.getMenuItemView2().setImageResource(R.drawable.menu_add);
-		mAppbar.getMenuItemView2().setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View v) {
-				Intent i = new Intent(context,SearchUserActivity.class);
-				context.startActivity(i);
-			}
-		});
-		
 	}
 	
 	private void onExploreFragmentShown(final ExploreFragment frag){
-		mAppbar.getMenuItemView1().setVisibility(View.GONE);
-		mAppbar.getMenuItemView2().setVisibility(View.VISIBLE);
-		mAppbar.getMenuItemView2().setImageResource(R.drawable.menu_add);
-		mAppbar.getMenuItemView2().setOnClickListener(new OnClickListener(){
+		mAppbar.getMenuItemView().setVisibility(View.VISIBLE);
+		mAppbar.getMenuItemView().setImageResource(R.drawable.menu_add);
+		mAppbar.getMenuItemView().setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(v.getContext(),CreatePostActivity.class);

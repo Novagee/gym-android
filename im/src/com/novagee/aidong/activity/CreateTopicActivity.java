@@ -91,11 +91,11 @@ public class CreateTopicActivity extends BaseActivity  implements Observer{
 				onBackPressed();
 			}
 		});
-		mAppbar.getMenuItemView1().setImageResource(R.drawable.menu_done);
+		mAppbar.getMenuItemView().setImageResource(R.drawable.menu_done);
 		RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(Utils.px2Dp(this, 56),Utils.px2Dp(this, 56));
 		rlp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-		mAppbar.getMenuItemView1().setLayoutParams(rlp);
-		mAppbar.getMenuItemView1().setOnClickListener(new OnClickListener(){
+		mAppbar.getMenuItemView().setLayoutParams(rlp);
+		mAppbar.getMenuItemView().setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {
 				if(type.equals(TYPE_INVITE)){
@@ -159,9 +159,9 @@ public class CreateTopicActivity extends BaseActivity  implements Observer{
 	
 	public void enableSumitButton(boolean enable){
 		if(enable){
-			mAppbar.getMenuItemView1().setVisibility(View.VISIBLE);
+			mAppbar.getMenuItemView().setVisibility(View.VISIBLE);
 		}else{
-			mAppbar.getMenuItemView1().setVisibility(View.GONE);
+			mAppbar.getMenuItemView().setVisibility(View.GONE);
 		}
 	}
 

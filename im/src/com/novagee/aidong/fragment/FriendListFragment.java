@@ -114,7 +114,8 @@ public class FriendListFragment extends BaseFragment implements Observer{
         rlpBadge.addRule(RelativeLayout.CENTER_VERTICAL);
         rlpBadge.rightMargin = Utils.px2Dp(ct, 20);
         friendRequestBtn.addView(friendRequestBadge,rlpBadge);
-        mListView.addHeaderView(friendRequestBtn);
+        //Remark by seeyet,2015/08/25,已经不需要添加好友功能了
+    //   mListView.addHeaderView(friendRequestBtn);
         friendRequestBtn.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {
