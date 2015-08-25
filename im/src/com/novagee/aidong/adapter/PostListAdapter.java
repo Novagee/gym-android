@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.text.TextPaint;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
@@ -189,11 +190,19 @@ public class PostListAdapter extends BaseAdapter {
 					View leftMargin = new View(ct);
 					//Modified by seeyet 2015/08/22，取消左边距，以便图片刚好一屏显示完
 				//	photoContainer.addView(leftMargin,new LinearLayout.LayoutParams(Utils.px2Dp(ct, 12),-1));
+					WindowManager wm = (WindowManager) ct.getSystemService(Context.WINDOW_SERVICE);
+					int screenWidth =  wm.getDefaultDisplay().getWidth();
+					int imageLeftMargin = Utils.px2Dp(ct, 20);
+					int imageHeight = photoUrls.length>1?(screenWidth-imageLeftMargin):screenWidth;
+					photoContainer.getLayoutParams().height = imageHeight;
+					int imageWidth = photoUrls.length>1?imageHeight:screenWidth;
+					//modified by seeyet 2015/08/25,图片布局仿feel
 					for(int i=0;i<photoUrls.length;i++){
 						ImageView imgPhoto = new ImageView(ct);
 						imgPhoto.setScaleType(ScaleType.CENTER_CROP);
-						LinearLayout.LayoutParams llp = new LinearLayout.LayoutParams(Utils.px2Dp(ct, 312),-1);//modified by seeyet,2015/8/22把图片大小由156调整至312
-						llp.leftMargin = Utils.px2Dp(ct, 4);
+		
+						LinearLayout.LayoutParams llp = new LinearLayout.LayoutParams(/*Utils.px2Dp(ct, 312)*/imageWidth,-1);//modified by seeyet,2015/8/22把图片大小由156调整至312
+						llp.leftMargin = i ==0 ?0:Utils.px2Dp(ct, 5);
 						photoContainer.addView(imgPhoto,llp);
 						final int index = i;
 						imgPhoto.setOnClickListener(new OnClickListener(){
