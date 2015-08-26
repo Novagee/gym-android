@@ -70,7 +70,7 @@ public class ChatListFragment extends BaseFragment{
 	
 	private void initView(View rootView){
 		mListView = (ListView) rootView.findViewById(R.id.listView);
-		mChatListAdapter = new ChatListAdapter(getActivity());
+		mChatListAdapter = new ChatListAdapter(getActivity(),mListView);
 		mListView.setAdapter(mChatListAdapter);
 		mListView.setOnItemClickListener(new OnItemClickListener(){
 			@Override

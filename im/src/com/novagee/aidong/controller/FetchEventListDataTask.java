@@ -43,11 +43,13 @@ public class FetchEventListDataTask extends AsyncTask<String, Void, String>
 	{
 		if(!is_refresh)
 		{
+			/*
 			mDialog = new ProgressDialog(context);
 			mDialog.setMessage("获取活动数据...  ");
 			mDialog.setCancelable(false);
 			mDialog.setCanceledOnTouchOutside(false);
 			mDialog.show();
+			*/
 		}
 	}
 
@@ -84,6 +86,7 @@ public class FetchEventListDataTask extends AsyncTask<String, Void, String>
 			{
 			//	JSONObject j_obj = j_result.getJSONObject("object");
 			//	apiResponse.count = j_obj.getString("count");
+				events_list.clear();
 				JSONArray j_frineds = j_result.getJSONArray("object");
 				for(int i = 0 ; i < j_frineds.length() ; i++)
 				{
@@ -118,14 +121,14 @@ public class FetchEventListDataTask extends AsyncTask<String, Void, String>
 	protected void onPostExecute(String result)
 	{
 		if(!is_refresh)
-		{
+		{/*
 			try
 			{
 				mDialog.dismiss();
 			} catch (Exception e)
 			{
 	
-			}
+			}*/
 		}
 	}
 

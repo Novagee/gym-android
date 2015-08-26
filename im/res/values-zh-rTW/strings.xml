@@ -124,4 +124,10 @@
     <string name="dialog_ok">確定</string>
     <string name="dialog_cancel">取消</string>
     
+    <!-- ListView loader -->
+    <string name="loader_loading">正在玩命載入中...</string>
+    <string name="loader_error">資料載入錯誤...</string>
+    <string name="loader_try_again">重試</string>
+    <string name="loader_empty">暫無數據</string>
+    
 </resources>

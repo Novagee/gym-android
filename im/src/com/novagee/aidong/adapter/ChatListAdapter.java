@@ -28,6 +28,7 @@ import com.novagee.aidong.model.User;
 import com.novagee.aidong.utils.DBug;
 import com.novagee.aidong.utils.Utils;
 import com.novagee.aidong.view.BadgeView;
+import com.novagee.aidong.view.ListViewLoader;
 import com.novagee.aidong.view.UserListItem;
 
 import com.novagee.aidong.R;
@@ -38,10 +39,12 @@ import android.provider.CalendarContract.CalendarCache;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -53,13 +56,16 @@ public class ChatListAdapter extends BaseAdapter {
 	private Map<String,User> userMap;
 	private Context ct;
 	private Handler handler;
+	private ListViewLoader m_loader;
 	
-	public ChatListAdapter(Context ct){
+	public ChatListAdapter(Context ct, ListView listView){
 		this.ct = ct;
 		chatList = new ArrayList<Chat>();
 		filteredChatList = new ArrayList<Chat>();
 		userMap = new HashMap<String,User>();
 		handler = new Handler();
+		this.m_loader = new ListViewLoader(ct, listView);
+		this.m_loader.setErrorButtonClickListener(mErrorClickListener);
 	}
 	
 	public Map<String,User> getUserMap(){
@@ -69,6 +75,9 @@ public class ChatListAdapter extends BaseAdapter {
 	public void removeItem(int position){
 		filteredChatList.remove(position);
 		notifyDataSetChanged();
+		if(filteredChatList.size() == 0){
+			m_loader.showEmpty();
+		}
 	}
 	
 	public void applyData(List<Chat> chats){
@@ -78,10 +87,13 @@ public class ChatListAdapter extends BaseAdapter {
 		
 		refreshUseMap();
 		notifyDataSetChanged();
-		
+		if(filteredChatList.size() == 0){
+			m_loader.showEmpty();
+		}
 	}
 	
 	public void fillLocalData(){
+		m_loader.showLoading();
 		IMManager.getInstance(ct).getAllMyChat(new GetChatCallback(){
 			@Override
 			public void onFinish(List<Chat> data) {
@@ -160,6 +172,13 @@ public class ChatListAdapter extends BaseAdapter {
 		
 		return view;
 	}
+	
+	private View.OnClickListener mErrorClickListener = new OnClickListener() {			
+		@Override
+		public void onClick(View v) {
+			fillLocalData();			
+		}
+	};
 	
 	public class ChatListItem extends RelativeLayout{
 		private TextView textName,textMsg,textTime;

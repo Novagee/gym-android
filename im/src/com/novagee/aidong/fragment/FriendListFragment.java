@@ -124,7 +124,7 @@ public class FriendListFragment extends BaseFragment implements Observer{
 			}
         });
         
-        mFriendListAdapter = new FriendListAdapter(ct);
+        mFriendListAdapter = new FriendListAdapter(ct,mListView);
         mListView.setAdapter(mFriendListAdapter);
         mListView.setOnItemClickListener(new OnItemClickListener(){
 			@Override

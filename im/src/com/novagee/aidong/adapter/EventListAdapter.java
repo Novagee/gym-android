@@ -10,6 +10,7 @@ import com.novagee.aidong.model.Event;
 import com.novagee.aidong.utils.Constant;
 import com.novagee.aidong.utils.InternetChecker;
 import com.novagee.aidong.utils.webservices.APIResponse;
+import com.novagee.aidong.view.ListViewLoader;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,6 +20,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.novagee.aidong.R;
@@ -28,11 +30,14 @@ import com.novagee.aidong.R;
 public class EventListAdapter extends BaseAdapter {
 	private List<Event> mDataList = null;
 	private Context ct;
+	private ListViewLoader m_loader;
 
 
-	public EventListAdapter(Context context){
+	public EventListAdapter(Context context, ListView listView){
 		this.ct = context;
 		this.mDataList = new ArrayList<Event>();
+		this.m_loader = new ListViewLoader(ct, listView);
+		this.m_loader.setErrorButtonClickListener(mErrorClickListener);
 	}
 	
 	
@@ -105,7 +110,7 @@ public class EventListAdapter extends BaseAdapter {
 	public void fillData() {
 		final APIResponse apiResponse = new APIResponse();
 		final Context context = ct;
-		mDataList.clear();
+		m_loader.showLoading();
 		FetchEventListDataTask task = new FetchEventListDataTask(ct,
 				apiResponse, "r/event/", mDataList, false) {
 			@Override
@@ -134,6 +139,14 @@ public class EventListAdapter extends BaseAdapter {
 		} else {
 			Toast.makeText(context, context.getString(R.string.event_no_internet),Toast.LENGTH_LONG).show();
 		}
+		
 	}
+	
+	private View.OnClickListener mErrorClickListener = new OnClickListener() {			
+		@Override
+		public void onClick(View v) {
+			fillData();			
+		}
+	};
 
 }

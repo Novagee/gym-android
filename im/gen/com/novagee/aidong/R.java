@@ -1666,27 +1666,30 @@ containing a value of this type.
         public static final int friend_default=0x7f020048;
         public static final int friend_group=0x7f020049;
         public static final int friend_request=0x7f02004a;
-        public static final int ic_launcher=0x7f02004b;
-        public static final int ic_splash_logo=0x7f02004c;
-        public static final int ico_love=0x7f02004d;
-        public static final int ico_money=0x7f02004e;
-        public static final int ico_pos=0x7f02004f;
-        public static final int ico_time=0x7f020050;
-        public static final int like=0x7f020051;
-        public static final int login_logo=0x7f020052;
-        public static final int menu_add=0x7f020053;
-        public static final int menu_back=0x7f020054;
-        public static final int menu_done=0x7f020055;
-        public static final int menu_edit=0x7f020056;
-        public static final int menu_logo=0x7f020057;
-        public static final int menu_search=0x7f020058;
-        public static final int send_arrow=0x7f020059;
-        public static final int textview_style=0x7f02005a;
-        public static final int voice_alert=0x7f02005b;
-        public static final int voice_deliver=0x7f02005c;
-        public static final int voice_receive=0x7f02005d;
-        public static final int voice_record=0x7f02005e;
-        public static final int voice_record_bg=0x7f02005f;
+        public static final int ic_empty=0x7f02004b;
+        public static final int ic_error=0x7f02004c;
+        public static final int ic_launcher=0x7f02004d;
+        public static final int ic_loading=0x7f02004e;
+        public static final int ic_splash_logo=0x7f02004f;
+        public static final int ico_love=0x7f020050;
+        public static final int ico_money=0x7f020051;
+        public static final int ico_pos=0x7f020052;
+        public static final int ico_time=0x7f020053;
+        public static final int like=0x7f020054;
+        public static final int login_logo=0x7f020055;
+        public static final int menu_add=0x7f020056;
+        public static final int menu_back=0x7f020057;
+        public static final int menu_done=0x7f020058;
+        public static final int menu_edit=0x7f020059;
+        public static final int menu_logo=0x7f02005a;
+        public static final int menu_search=0x7f02005b;
+        public static final int send_arrow=0x7f02005c;
+        public static final int textview_style=0x7f02005d;
+        public static final int voice_alert=0x7f02005e;
+        public static final int voice_deliver=0x7f02005f;
+        public static final int voice_receive=0x7f020060;
+        public static final int voice_record=0x7f020061;
+        public static final int voice_record_bg=0x7f020062;
     }
     public static final class id {
         public static final int ImageView01=0x7f050092;
@@ -1695,7 +1698,7 @@ containing a value of this type.
         public static final int ImageView04=0x7f050087;
         public static final int LinearLayout1=0x7f05005d;
         public static final int LinearLayout2=0x7f05005e;
-        public static final int RelativeLayout1=0x7f0500a3;
+        public static final int RelativeLayout1=0x7f0500a8;
         public static final int TextView01=0x7f050093;
         public static final int TextView02=0x7f05008e;
         public static final int TextView03=0x7f05008b;
@@ -1715,10 +1718,10 @@ containing a value of this type.
         public static final int action_dialog_chat_voice_chat=0x7f05008f;
         public static final int action_dialog_friend_btn=0x7f05009d;
         public static final int action_dialog_topic_btn=0x7f0500a0;
-        public static final int action_dialog_topic_edit=0x7f0500af;
-        public static final int action_dialog_topic_invite=0x7f0500b0;
-        public static final int action_dialog_topic_leave=0x7f0500b1;
-        public static final int action_dialog_topic_leave_text=0x7f0500b2;
+        public static final int action_dialog_topic_edit=0x7f0500b4;
+        public static final int action_dialog_topic_invite=0x7f0500b5;
+        public static final int action_dialog_topic_leave=0x7f0500b6;
+        public static final int action_dialog_topic_leave_text=0x7f0500b7;
         public static final int action_menu_divider=0x7f05001c;
         public static final int action_menu_presenter=0x7f05001d;
         public static final int action_mode_bar=0x7f050030;
@@ -1730,14 +1733,17 @@ containing a value of this type.
         public static final int beginning=0x7f050012;
         public static final int bottom=0x7f050016;
         public static final int btnAnswer=0x7f050076;
-        public static final int btnComment=0x7f0500ad;
+        public static final int btnComment=0x7f0500b2;
         public static final int btnDisableVideo=0x7f050079;
         public static final int btnHangUp=0x7f05007a;
-        public static final int btnLike=0x7f0500aa;
+        public static final int btnLike=0x7f0500af;
         public static final int btnMute=0x7f050078;
         public static final int btnReject=0x7f050075;
         public static final int btn_sign_in=0x7f050063;
         public static final int btn_sign_up=0x7f050062;
+        public static final int buttonEmpty=0x7f0500a4;
+        public static final int buttonError=0x7f0500a5;
+        public static final int buttonLoading=0x7f0500a7;
         public static final int chatView=0x7f05004e;
         public static final int chat_app_bar=0x7f05004d;
         public static final int chat_list_item_badge=0x7f050098;
@@ -1792,13 +1798,14 @@ containing a value of this type.
         public static final int functionView=0x7f050077;
         public static final int home=0x7f050017;
         public static final int homeAsUp=0x7f050007;
-        public static final int horizontalScrollView1=0x7f0500a8;
+        public static final int horizontalScrollView1=0x7f0500ad;
         public static final int ic_splash_logo=0x7f050068;
         public static final int icon=0x7f050028;
         public static final int ifRoom=0x7f05000c;
         public static final int image=0x7f050025;
         public static final int imageView1=0x7f05005f;
-        public static final int imageView2=0x7f0500ab;
+        public static final int imageView2=0x7f0500b0;
+        public static final int imageViewLoading=0x7f0500a6;
         public static final int imgPhoto=0x7f050071;
         public static final int img_msg_item=0x7f050045;
         public static final int img_new_btn=0x7f050084;
@@ -1842,6 +1849,7 @@ containing a value of this type.
         public static final int textStatus=0x7f050073;
         public static final int textUserName=0x7f050072;
         public static final int textView1=0x7f050090;
+        public static final int textViewMessage=0x7f0500a3;
         public static final int title=0x7f050029;
         public static final int toolbar=0x7f050058;
         public static final int top=0x7f050015;
@@ -1851,22 +1859,22 @@ containing a value of this type.
         public static final int userInfoFrame=0x7f05006f;
         public static final int userInfoView=0x7f050070;
         public static final int user_detail_app_bar=0x7f050069;
-        public static final int user_detail_img=0x7f0500b3;
-        public static final int user_detail_text_btn=0x7f0500b5;
-        public static final int user_detail_text_name=0x7f0500b4;
-        public static final int user_list_item_icon=0x7f0500b6;
-        public static final int user_list_item_name=0x7f0500b7;
+        public static final int user_detail_img=0x7f0500b8;
+        public static final int user_detail_text_btn=0x7f0500ba;
+        public static final int user_detail_text_name=0x7f0500b9;
+        public static final int user_list_item_icon=0x7f0500bb;
+        public static final int user_list_item_name=0x7f0500bc;
         public static final int view1=0x7f050056;
         public static final int viewTouch=0x7f05006c;
-        public static final int view_post_comment_text=0x7f0500ae;
-        public static final int view_post_like_text=0x7f0500ac;
-        public static final int view_post_scrollView=0x7f0500a9;
-        public static final int view_post_timestamp=0x7f0500a6;
-        public static final int view_post_user_content=0x7f0500a7;
-        public static final int view_post_user_icon=0x7f0500a4;
-        public static final int view_post_user_name=0x7f0500a5;
-        public static final int view_wall_header_icon=0x7f0500b8;
-        public static final int view_wall_header_text=0x7f0500b9;
+        public static final int view_post_comment_text=0x7f0500b3;
+        public static final int view_post_like_text=0x7f0500b1;
+        public static final int view_post_scrollView=0x7f0500ae;
+        public static final int view_post_timestamp=0x7f0500ab;
+        public static final int view_post_user_content=0x7f0500ac;
+        public static final int view_post_user_icon=0x7f0500a9;
+        public static final int view_post_user_name=0x7f0500aa;
+        public static final int view_wall_header_icon=0x7f0500bd;
+        public static final int view_wall_header_text=0x7f0500be;
         public static final int viewpager=0x7f050065;
         public static final int wall_addBtn=0x7f05007d;
         public static final int wall_app_bar=0x7f05007b;
@@ -1952,11 +1960,14 @@ containing a value of this type.
         public static final int view_comment_list_item=0x7f03002f;
         public static final int view_event_list_item=0x7f030030;
         public static final int view_friend_alert=0x7f030031;
-        public static final int view_post_item=0x7f030032;
-        public static final int view_topic_alert=0x7f030033;
-        public static final int view_user_detail=0x7f030034;
-        public static final int view_user_list_item=0x7f030035;
-        public static final int view_wall_header=0x7f030036;
+        public static final int view_loader_empty=0x7f030032;
+        public static final int view_loader_error=0x7f030033;
+        public static final int view_loader_loading=0x7f030034;
+        public static final int view_post_item=0x7f030035;
+        public static final int view_topic_alert=0x7f030036;
+        public static final int view_user_detail=0x7f030037;
+        public static final int view_user_list_item=0x7f030038;
+        public static final int view_wall_header=0x7f030039;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -2115,6 +2126,14 @@ containing a value of this type.
         /**  IM 
          */
         public static final int im_disconnect=0x7f0a0066;
+        public static final int loader_empty=0x7f0a007a;
+        public static final int loader_error=0x7f0a0078;
+        /**  ListView loader 
+ ListView loader 
+ ListView loader 
+         */
+        public static final int loader_loading=0x7f0a0077;
+        public static final int loader_try_again=0x7f0a0079;
         public static final int login_failed=0x7f0a001c;
         public static final int login_pwd=0x7f0a001e;
         public static final int login_sign_in=0x7f0a001b;

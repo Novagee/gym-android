@@ -128,4 +128,10 @@
     <string name="dialog_title">Tips</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_cancel">Cancel</string>
+    
+    <!-- ListView loader -->
+    <string name="loader_loading">Now Loading,Please wait...</string>
+    <string name="loader_error">Load error...</string>
+    <string name="loader_try_again">Try agin</string>
+    <string name="loader_empty">No items yet</string>
 </resources>

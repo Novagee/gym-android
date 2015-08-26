@@ -35,7 +35,7 @@ public class WallManager extends Observable{
 	private AnSocial anSocial;
 	private Handler handler;
 	private Context ct;
-	private final static int POST_LIMIT = 20;
+	private final static int POST_LIMIT = 10;
 	
 	private int page = 0;
 	private int totalPostCount = 0;

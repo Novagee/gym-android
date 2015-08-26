@@ -132,6 +132,7 @@ public class WallView extends SwipeRefreshLayout implements Observer{
 	}
 
 	public void initWallData(){
+		setRefreshing(true);
 		postIdIndexMap = new HashMap<String,Integer>();
 		mWallManager.init(new FetchPostsCallback(){
 			@Override

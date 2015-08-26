@@ -18,6 +18,7 @@ import com.novagee.aidong.model.Friend;
 import com.novagee.aidong.model.User;
 import com.novagee.aidong.utils.DBug;
 import com.novagee.aidong.utils.Utils;
+import com.novagee.aidong.view.ListViewLoader;
 import com.novagee.aidong.view.UserListItem;
 
 import com.novagee.aidong.R;
@@ -26,9 +27,11 @@ import android.content.Context;
 import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -41,16 +44,18 @@ public class FriendListAdapter extends BaseAdapter {
 	private List<Topic> filteredTopicData;
 	private List<Object> data;
 	private Context ct;
+	private ListViewLoader m_loader;
 	
 	private long lastTimeFetch = 0l;
 	private final static long REFRESH_RATE = 5000l;
 	
-	public FriendListAdapter(Context ct){
+	public FriendListAdapter(Context ct, ListView listView){
 		this.ct = ct;
 		userData = new ArrayList<User>();
 		topicData = new ArrayList<Topic>();
 		data = new ArrayList<Object>();
-		
+		this.m_loader = new ListViewLoader(ct, listView);
+		this.m_loader.setErrorButtonClickListener(mErrorClickListener);
 	}
 	
 	public void fillRemoteData(boolean fillLocalDataFirst){
@@ -79,6 +84,7 @@ public class FriendListAdapter extends BaseAdapter {
 	
 	public void fillLocalData(){
 		DBug.e("FriendListAda", "fillLocalData");
+		m_loader.showLoading();
 		UserManager.getInstance(ct).getMyLocalFriends(new FetchUserCallback(){
 			@Override
 			public void onFinish(List<User> users) {
@@ -116,6 +122,9 @@ public class FriendListAdapter extends BaseAdapter {
 		}
 		
 		notifyDataSetChanged();
+		if(data.size() == 0){
+			m_loader.showEmpty();
+		}
 	}
 	
 	public void filter(String charText) {
@@ -173,6 +182,13 @@ public class FriendListAdapter extends BaseAdapter {
 		
 		return view;
 	}
+	
+	private View.OnClickListener mErrorClickListener = new OnClickListener() {			
+		@Override
+		public void onClick(View v) {
+			fillLocalData();			
+		}
+	};
 
 	public class FriendListItem extends FrameLayout{
 		private UserListItem mUserListItem;
