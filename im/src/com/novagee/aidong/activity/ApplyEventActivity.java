@@ -21,6 +21,7 @@ import android.telephony.TelephonyManager;
 import android.text.InputFilter;
 import android.text.InputType;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -70,6 +71,12 @@ public class ApplyEventActivity extends Activity {
 			System.out.println("event pic:"+pic);
 			ImageLoader.getInstance(this).DisplayImage(pic, imageView, null, false);	
 		}
+		//Add by seeyet,2015/08/27,活动图片按16:9显示
+		WindowManager wm = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
+		int screenWidth =  wm.getDefaultDisplay().getWidth();
+		int height = screenWidth*9/16;
+		imageView.getLayoutParams().height = height;
+				
 		TextView tvEventDescription = (TextView)findViewById(R.id.event_description);
 		tvEventDescription.setText(intent.getStringExtra("description"));
 		ImageView backImageView = (ImageView) findViewById(R.id.event_back);

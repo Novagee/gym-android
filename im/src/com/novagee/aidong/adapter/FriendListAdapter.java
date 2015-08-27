@@ -120,7 +120,17 @@ public class FriendListAdapter extends BaseAdapter {
 			data.add(ct.getString(R.string.friend_friend_list));
 			data.addAll(filteredUserData);
 		}
-		
+		//Add by seeyet,2015/08/27,好友列表里面去掉自己
+		for(int i =0;i<data.size();i++){
+			if(data.get(i) instanceof User){
+				User user = (User)data.get(i);
+			    if(user.userId.equals(UserManager.getInstance(ct).getCurrentUser().userId)){
+			        System.out.println("remove user:"+user.userId);
+				   data.remove(i);
+				   break;
+			    }
+			}
+		}
 		notifyDataSetChanged();
 		if(data.size() == 0){
 			m_loader.showEmpty();

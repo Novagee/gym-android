@@ -8,6 +8,21 @@ import java.util.Observer;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.RelativeLayout;
+import android.widget.RelativeLayout.LayoutParams;
+import android.widget.Toast;
+
+import com.novagee.aidong.R;
 import com.novagee.aidong.adapter.FragmentPagerAdapter;
 import com.novagee.aidong.fragment.BaseFragment;
 import com.novagee.aidong.fragment.ChatListFragment;
@@ -24,28 +39,14 @@ import com.novagee.aidong.utils.Constant;
 import com.novagee.aidong.utils.DBug;
 import com.novagee.aidong.utils.Utils;
 import com.novagee.aidong.view.AppBar;
+import com.novagee.aidong.view.CustomViewPager;
 import com.novagee.aidong.view.SlidingTabLayout;
-
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.os.Handler;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.RelativeLayout;
-import android.widget.RelativeLayout.LayoutParams;
-import android.widget.Toast;
-import com.novagee.aidong.R;
 
 public class MainActivity extends BaseActivity implements Observer{
 	
 	
 	private SlidingTabLayout mSlidingTabLayout;
-	private ViewPager mViewPager;
+	private CustomViewPager mViewPager;
 	private AppBar mAppbar;
 	
 	private ChatListFragment mChatListFragment;
@@ -152,7 +153,7 @@ public class MainActivity extends BaseActivity implements Observer{
 		mAppbar = (AppBar)findViewById(R.id.toolbar);
 		mAppbar.getLogoView().setImageResource(R.drawable.menu_logo);
 		
-		mViewPager = (ViewPager)findViewById(R.id.viewpager);
+		mViewPager = (CustomViewPager)findViewById(R.id.viewpager);
 		fragList = new ArrayList<BaseFragment>();
 		fragList.add(mChatListFragment);
 		fragList.add(mFriendListFragment);
@@ -161,6 +162,8 @@ public class MainActivity extends BaseActivity implements Observer{
 		fragList.add(mSettingFragment);
 		FragmentPagerAdapter mFragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager(),fragList);
 		mViewPager.setAdapter(mFragmentPagerAdapter);
+		mViewPager.setNoScroll(true);//add by seeyet,2015/08/27,禁止导航左右滑动
+
 		
 		mSlidingTabLayout = (SlidingTabLayout)findViewById(R.id.sliding_tabs);
 		mSlidingTabLayout.setDistributeEvenly(true);

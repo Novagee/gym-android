@@ -16,6 +16,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -71,9 +72,16 @@ public class EventListAdapter extends BaseAdapter {
 			System.out.println("event pic:"+pic);
 			ImageLoader.getInstance(ct).DisplayImage(pic, imageView, null, false);
 		}
+		imageView.setOnClickListener(getOnClickListener(mDataList.get(position)));
+		//Add by seeyet,2015/08/27,活动图片按16:9显示
+		WindowManager wm = (WindowManager) ct.getSystemService(Context.WINDOW_SERVICE);
+		int screenWidth =  wm.getDefaultDisplay().getWidth();
+		int height = screenWidth*9/16;
+		imageView.getLayoutParams().height = height;
 			
 		TextView tvEventTitle = (TextView)v.findViewById(R.id.event_title);
 		tvEventTitle.setText(mDataList.get(position).getTitle());
+		tvEventTitle.setOnClickListener(getOnClickListener(mDataList.get(position)));
 
 		TextView tvEventDescription = (TextView)v.findViewById(R.id.event_description);
 		tvEventDescription.setText(mDataList.get(position).getDescription());
@@ -97,7 +105,7 @@ public class EventListAdapter extends BaseAdapter {
 				i.putExtra("address", event.getAddress());
 				i.putExtra("description", event.getDescription());
 				i.putExtra("pic", event.getPic());
-				i.putExtra("fee", Integer.toString(event.getFee()));
+				i.putExtra("fee", event.getFee());
 				ct.startActivity(i);
 				
 			//	overridePendingTransition(R.anim.slide_up, R.anim.slide_up_out);

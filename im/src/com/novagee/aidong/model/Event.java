@@ -52,7 +52,7 @@ public class Event {
 	 /**
 	  * 费嗯
 	  */
-	 private int fee;
+	 private String fee;
 	 
 
 	public Event(){
@@ -130,11 +130,11 @@ public class Event {
 		this.address = address;
 	}
 
-	public int getFee() {
+	public String getFee() {
 		return fee;
 	}
 
-	public void setFee(int fee) {
+	public void setFee(String fee) {
 		this.fee = fee;
 	}
 	 
