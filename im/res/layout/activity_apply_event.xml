@@ -65,13 +65,15 @@
         android:id="@+id/img_msg_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
-        android:src="@drawable/ico_love" />
+        android:src="@drawable/ico_love" 
+        android:visibility="gone"/>
             <TextView
             android:id="@+id/event_apply_num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/event_unknown"
-            android:textSize="12sp" />
+            android:textSize="12sp" 
+            android:visibility="gone"/>
         </LinearLayout>
      </LinearLayout>  
 
