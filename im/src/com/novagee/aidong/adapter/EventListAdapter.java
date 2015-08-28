@@ -70,7 +70,7 @@ public class EventListAdapter extends BaseAdapter {
 		String pic = mDataList.get(position).getPic();
 		if(!(pic == null || "".equals(pic))){
 			System.out.println("event pic:"+pic);
-			ImageLoader.getInstance(ct).DisplayImage(pic, imageView, null, false);
+			ImageLoader.getInstance(ct).DisplayImage(pic, imageView, R.drawable.no_pic_16_9, false);
 		}
 		imageView.setOnClickListener(getOnClickListener(mDataList.get(position)));
 		//Add by seeyet,2015/08/27,活动图片按16:9显示

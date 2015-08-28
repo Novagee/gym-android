@@ -214,7 +214,7 @@ public class PostListAdapter extends BaseAdapter {
 								((Activity) getContext()).overridePendingTransition(R.anim.push_up_in,android.R.anim.fade_out);
 							}
 						});
-						ImageLoader.getInstance(ct).DisplayImage(photoUrls[i], imgPhoto, null, false);
+						ImageLoader.getInstance(ct).DisplayImage(photoUrls[i], imgPhoto, R.drawable.no_pic_1_1, false);
 					}
 					View rightMargin = new View(ct);
 					photoContainer.addView(rightMargin,new LinearLayout.LayoutParams(Utils.px2Dp(ct, 16),-1));

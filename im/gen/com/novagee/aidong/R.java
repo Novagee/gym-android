@@ -1683,13 +1683,15 @@ containing a value of this type.
         public static final int menu_edit=0x7f020059;
         public static final int menu_logo=0x7f02005a;
         public static final int menu_search=0x7f02005b;
-        public static final int send_arrow=0x7f02005c;
-        public static final int textview_style=0x7f02005d;
-        public static final int voice_alert=0x7f02005e;
-        public static final int voice_deliver=0x7f02005f;
-        public static final int voice_receive=0x7f020060;
-        public static final int voice_record=0x7f020061;
-        public static final int voice_record_bg=0x7f020062;
+        public static final int no_pic_16_9=0x7f02005c;
+        public static final int no_pic_1_1=0x7f02005d;
+        public static final int send_arrow=0x7f02005e;
+        public static final int textview_style=0x7f02005f;
+        public static final int voice_alert=0x7f020060;
+        public static final int voice_deliver=0x7f020061;
+        public static final int voice_receive=0x7f020062;
+        public static final int voice_record=0x7f020063;
+        public static final int voice_record_bg=0x7f020064;
     }
     public static final class id {
         public static final int ImageView01=0x7f050092;
