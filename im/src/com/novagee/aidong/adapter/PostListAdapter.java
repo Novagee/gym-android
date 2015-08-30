@@ -24,10 +24,13 @@ import com.novagee.aidong.R;
 import com.novagee.aidong.activity.CommentActivity;
 import com.novagee.aidong.activity.PictureActivity;
 import com.novagee.aidong.activity.UserDetailActivity;
+import com.novagee.aidong.controller.SocialManager;
 import com.novagee.aidong.controller.UserManager;
 import com.novagee.aidong.controller.WallManager;
+import com.novagee.aidong.controller.SocialManager.FetchCommentCallback;
 import com.novagee.aidong.controller.WallManager.LikeCallback;
 import com.novagee.aidong.imageloader.ImageLoader;
+import com.novagee.aidong.model.Comment;
 import com.novagee.aidong.model.Post;
 import com.novagee.aidong.utils.Constant;
 import com.novagee.aidong.utils.Utils;
@@ -163,6 +166,8 @@ public class PostListAdapter extends BaseAdapter {
 			}else{
 				textContent.setVisibility(View.GONE);
 			}
+			
+			initCommentData(data.postId);
 		}
 		
 		private void setLikeBtnStatus(boolean bool){
@@ -223,4 +228,27 @@ public class PostListAdapter extends BaseAdapter {
 		}
 	}
 	
+	
+	private synchronized void initCommentData(String postId){
+		SocialManager.getLocalComment(postId, new FetchCommentCallback(){
+			@Override
+			public void onFailure() {}
+			@Override
+			public void onSuccess(List<Comment> data) {
+				for(int i=0;i<data.size();i++){
+					System.out.println(data.get(i).content);
+				}
+			}
+		});
+		SocialManager.fetchRemoteComment(ct, postId, new FetchCommentCallback(){
+			@Override
+			public void onFailure() {}
+			@Override
+			public void onSuccess(List<Comment> data) {
+				for(int i=0;i<data.size();i++){
+					System.out.println(data.get(i).content);
+				}
+			}
+		});
+	}
 }
