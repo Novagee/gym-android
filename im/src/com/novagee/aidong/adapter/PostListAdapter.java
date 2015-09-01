@@ -167,7 +167,7 @@ public class PostListAdapter extends BaseAdapter {
 				textContent.setVisibility(View.GONE);
 			}
 			
-			initCommentData(data.postId);
+			//initCommentData(data.postId);
 		}
 		
 		private void setLikeBtnStatus(boolean bool){

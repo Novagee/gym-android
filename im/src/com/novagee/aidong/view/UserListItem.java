@@ -17,7 +17,7 @@ public class UserListItem extends RelativeLayout {
 	public UserListItem(Context ct) {
 		super(ct);
 		this.ct = ct;
-        inflate(getContext(), R.layout.view_user_list_item, this);
+        inflate(getContext(), R.layout.view_user_list_item_new, this);
         this.textName = (TextView)findViewById(R.id.user_list_item_name);
         this.imgIcon = (ImageView)findViewById(R.id.user_list_item_icon);
 	}

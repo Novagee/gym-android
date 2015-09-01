@@ -12,7 +12,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -29,6 +28,7 @@ import com.novagee.aidong.fragment.ChatListFragment;
 import com.novagee.aidong.fragment.EventFragment;
 import com.novagee.aidong.fragment.ExploreFragment;
 import com.novagee.aidong.fragment.FriendListFragment;
+import com.novagee.aidong.fragment.FriendListFragmentNew;
 import com.novagee.aidong.fragment.SettingFragment;
 import com.novagee.aidong.im.controller.IMManager;
 import com.novagee.aidong.im.controller.IMManager.GetUnReadedMessageCountCallback;
@@ -50,7 +50,7 @@ public class MainActivity extends BaseActivity implements Observer{
 	private AppBar mAppbar;
 	
 	private ChatListFragment mChatListFragment;
-	private FriendListFragment mFriendListFragment;
+	private FriendListFragmentNew mFriendListFragment;
 	private ExploreFragment mExploreFragment;
 	private SettingFragment mSettingFragment;
 	private EventFragment mEventFragment;
@@ -71,8 +71,8 @@ public class MainActivity extends BaseActivity implements Observer{
 			mAppbar.getLogoView().setImageResource(R.drawable.menu_logo);
 			if(frag instanceof ChatListFragment){
 				onChatListFragmentShown((ChatListFragment)frag);
-			}else if(frag instanceof FriendListFragment){
-				onFriendListFragmentShown((FriendListFragment)frag);
+			}else if(frag instanceof FriendListFragmentNew){
+				onFriendListFragmentShown((FriendListFragmentNew)frag);
 			}else if(frag instanceof ExploreFragment){
 				onExploreFragmentShown((ExploreFragment)frag);
 			}else if(frag instanceof SettingFragment){
@@ -145,7 +145,7 @@ public class MainActivity extends BaseActivity implements Observer{
 	
 	private void initView(){
 		mChatListFragment = new ChatListFragment(getString(R.string.tab_title_chat));
-		mFriendListFragment = new FriendListFragment(getString(R.string.tab_title_friend));
+		mFriendListFragment = new FriendListFragmentNew(getString(R.string.tab_title_friend));
 		mExploreFragment = new ExploreFragment(getString(R.string.tab_title_explore));
 		mSettingFragment = new SettingFragment(getString(R.string.tab_title_setting));
 		mEventFragment = new EventFragment(getString(R.string.tab_title_event));
@@ -230,7 +230,7 @@ public class MainActivity extends BaseActivity implements Observer{
 	
 	}
 	
-	private void onFriendListFragmentShown(final FriendListFragment frag){
+	private void onFriendListFragmentShown(final FriendListFragmentNew frag){
 		//modified by seeyet,2015/08/23 增加添加好友
 		final Context context = this;
 		mAppbar.getMenuItemView().setVisibility(View.VISIBLE);

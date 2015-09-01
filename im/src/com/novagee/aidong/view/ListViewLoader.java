@@ -1,7 +1,5 @@
 package com.novagee.aidong.view;
 
-import com.novagee.aidong.R;
-
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,10 +9,12 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
+import android.widget.AbsListView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
-import android.widget.TextView;
+
+import com.novagee.aidong.R;
 
 public class ListViewLoader {
 
@@ -23,7 +23,7 @@ public class ListViewLoader {
 	private ViewGroup mEmptyView;
 	private ViewGroup mErrorView;
 	private Animation mLoadingAnimation;
-	private ListView mListView;
+	private AbsListView mListView;
 	private int mErrorMessageViewId;
 	private int mEmptyMessageViewId;
 	private int mLoadingMessageViewId;
@@ -164,7 +164,7 @@ public class ListViewLoader {
 	 * Gets the list view for which this library is being used
 	 * @return the list view
 	 */
-	public ListView getListView() {
+	public AbsListView getListView() {
 		return mListView;
 	}
 	
@@ -172,7 +172,7 @@ public class ListViewLoader {
 	 * Sets the list view for which this library is being used
 	 * @param listView
 	 */
-	public void setListView(ListView listView) {
+	public void setListView(AbsListView listView) {
 		this.mListView = listView;
 	}
 	
@@ -505,7 +505,7 @@ public class ListViewLoader {
 	 * @param context the context (preferred context is any activity)
 	 * @param listView the list view for which this library is being used
 	 */
-	public ListViewLoader(Context context, ListView listView) {
+	public ListViewLoader(Context context, AbsListView listView) {
 		mContext = context;
 		mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		mListView = listView; 
