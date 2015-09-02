@@ -134,7 +134,7 @@ public class FriendListFragmentNew extends BaseFragment implements Observer{
 				}else if(observable instanceof UserManager){
 					DBug.e("UserManager", "update()");
 					if(data instanceof UserManager.UpdateType){
-				//		mFriendListAdapter.fillLocalData();
+						mFriendListAdapter.fillLocalData();
 						if(((UserManager.UpdateType)data).equals(UserManager.UpdateType.Friend)){
 							
 						}
