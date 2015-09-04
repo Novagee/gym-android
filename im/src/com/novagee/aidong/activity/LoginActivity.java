@@ -75,7 +75,6 @@ public class LoginActivity extends BaseActivity{
 	private Button btnSignUp,btnSignIn;
 	private String payload;
 	private boolean doubleBackToExistPressedOnce = false;
-	private ProgressDialog mDialog;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -125,9 +124,6 @@ public class LoginActivity extends BaseActivity{
 	private void initView(){
 		setContentView(R.layout.activity_login);
 		final Context context = this;
-		mDialog = new ProgressDialog(this);//add by jiff,2015/08/23 loader
-		mDialog.setCancelable(false);
-		mDialog.setCanceledOnTouchOutside(false);
 		
 		etUsername = (MaterialEditText)findViewById(R.id.et_username);
 		etUsername.setLineFocusedColor(getResources().getColor(R.color.no5));
@@ -167,13 +163,16 @@ public class LoginActivity extends BaseActivity{
 		btnSignUp.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {
-				mDialog.setMessage(context.getString(R.string.login_sign_up_message));
-				mDialog.show();
+				Intent i = new Intent(context,
+            			CreateUserActivity.class);
+				context.startActivity(i);
+				/*
+				showLoading(context.getString(R.string.login_sign_up_message));
 				UserManager.getInstance(LoginActivity.this).signUp(etUsername.getEditText().getText().toString(),etPwd.getEditText().getText().toString(),new IAnSocialCallback(){
 					@Override
 					public void onFailure(JSONObject arg0) {
 						try {
-							mDialog.dismiss();//add by seeyet,2015/08/23,close the loader
+							dismissLoading();//add by seeyet,2015/08/23,close the loader
 							String errorMsg = arg0.getJSONObject("meta").getString("message");
 							Toast.makeText(getBaseContext(), errorMsg,Toast.LENGTH_LONG).show();
 						} catch (JSONException e) {
@@ -192,6 +191,7 @@ public class LoginActivity extends BaseActivity{
 						}
 					}
 				});
+				*/
 			}
 		});
 		
@@ -200,13 +200,12 @@ public class LoginActivity extends BaseActivity{
 		btnSignIn.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {
-				mDialog.setMessage(context.getString(R.string.login_sign_in_message));
-				mDialog.show();
+				showLoading(context.getString(R.string.login_sign_in_message));
 				UserManager.getInstance(LoginActivity.this).login(etUsername.getEditText().getText().toString(),etPwd.getEditText().getText().toString(),new IAnSocialCallback(){
 					@Override
 					public void onFailure(JSONObject arg0) {
 						try {
-							mDialog.dismiss();//add by seeyet,2015/08/23,close the loader
+							dismissLoading();//add by seeyet,2015/08/23,close the loader
 							String errorMsg = arg0.getJSONObject("meta").getString("message");
 							Toast.makeText(getBaseContext(), errorMsg,Toast.LENGTH_LONG).show();
 						} catch (JSONException e) {
@@ -243,7 +242,7 @@ public class LoginActivity extends BaseActivity{
     	
     	IMManager.getInstance(this).bindAnPush();
     	
-    	mDialog.dismiss();//add by seeyet,2015/08/23,close the loader
+    	dismissLoading();//add by seeyet,2015/08/23,close the loader
     	
     	Intent i = new Intent(this,MainActivity.class);
     	if(payload!=null){

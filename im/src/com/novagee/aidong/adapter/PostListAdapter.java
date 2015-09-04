@@ -160,6 +160,8 @@ public class PostListAdapter extends BaseAdapter {
 				}
 			});
 			
+			textComment.setText(ct.getString(R.string.wall_comment) +" "+ Integer.toString(data.commentCount));
+			
 			if(data.content!=null&&data.content.length()>0){
 				textContent.setVisibility(View.VISIBLE);
 				textContent.setText(data.content);

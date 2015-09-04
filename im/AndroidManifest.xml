@@ -119,6 +119,11 @@
             android:name="com.novagee.aidong.activity.ApplyEventActivity"
             android:screenOrientation="portrait" >
         </activity>
+        
+        <activity
+            android:name="com.novagee.aidong.activity.CreateUserActivity"
+            android:screenOrientation="portrait" >
+        </activity>
 
         <service android:name="com.arrownock.push.PushService" />
 

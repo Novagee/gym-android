@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/no5"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.novagee.aidong.view.AppBar
+        android:id="@+id/create_user_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/no1" >
+    </com.novagee.aidong.view.AppBar>
+
+    <EditText
+        android:id="@+id/create_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_user_app_bar"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="@string/login_username"
+        android:padding="16dp"
+        android:textColor="@color/no10"
+        android:textColorHint="@color/no8" >
+
+        <requestFocus />
+    </EditText>
+     <View
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/create_username"
+        android:background="@color/no7" />
+    <EditText
+        android:id="@+id/create_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_1"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="@string/login_pwd"
+        android:padding="16dp"
+        android:textColor="@color/no10"
+        android:textColorHint="@color/no8" >
+
+        <requestFocus />
+    </EditText>
+    
+    <View
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/create_password"
+        android:background="@color/no7" />
+
+
+
+</RelativeLayout>
